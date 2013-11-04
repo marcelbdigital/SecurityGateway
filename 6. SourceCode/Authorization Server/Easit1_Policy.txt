@@ -1,0 +1,33 @@
+<Policy xmlns="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17"  PolicyId="Easit1_Policy" RuleCombiningAlgId="urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-overrides" Version="1.0">
+   <Target>
+      <AnyOf>
+         <AllOf>
+            <Match MatchId="urn:oasis:names:tc:xacml:1.0:function:string-regexp-match">
+               <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">easit1</AttributeValue>
+               <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:subject:subject-id" Category="urn:oasis:names:tc:xacml:1.0:subject-category:access-subject" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"></AttributeDesignator>
+            </Match>
+         </AllOf>
+      </AnyOf>
+   </Target>
+   <Rule Effect="Permit" RuleId="Rule1">
+      <Target></Target>
+      <Condition>
+         <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:and">
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-is-in">
+               <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">read</AttributeValue>
+               <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" Category="urn:oasis:names:tc:xacml:3.0:attribute-category:action" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"></AttributeDesignator>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:any-of">
+               <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"></Function>
+               <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">172.20.100.127</AttributeValue>
+               <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:environment:IP" Category="urn:oasis:names:tc:xacml:1.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"></AttributeDesignator>
+            </Apply>
+            <Apply FunctionId="urn:oasis:names:tc:xacml:1.0:function:any-of">
+               <Function FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal"></Function>
+               <AttributeValue DataType="http://www.w3.org/2001/XMLSchema#string">12345</AttributeValue>
+               <AttributeDesignator AttributeId="urn:oasis:names:tc:xacml:1.0:environment:IDApp" Category="urn:oasis:names:tc:xacml:1.0:attribute-category:environment" DataType="http://www.w3.org/2001/XMLSchema#string" MustBePresent="true"></AttributeDesignator>
+            </Apply>
+         </Apply>
+      </Condition>
+   </Rule>
+</Policy> 

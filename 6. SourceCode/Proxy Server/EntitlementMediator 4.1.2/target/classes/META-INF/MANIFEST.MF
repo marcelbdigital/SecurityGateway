@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Export-Package: org.wso2.carbon.identity.entitlement.mediator.config.x
+ ml;uses:="org.apache.synapse,org.apache.synapse.config.xml,org.apache
+ .synapse.mediators.base,org.wso2.carbon.identity.entitlement.mediator
+ ,org.apache.axiom.om";version="4.1.2",org.wso2.carbon.identity.entitl
+ ement.mediator.callback;uses:="org.apache.axiom.soap,org.apache.axis2
+ .addressing,org.apache.synapse,org.apache.commons.logging,org.apache.
+ synapse.core.axis2,org.apache.axis2.context,org.apache.axis2.client";
+ version="4.1.2",org.wso2.carbon.identity.entitlement.mediator;uses:="
+ org.apache.axis2,org.wso2.carbon.identity.entitlement.proxy.exception
+ ,org.apache.commons.logging,org.apache.synapse.core.axis2,org.apache.
+ axis2.context,org.apache.synapse.mediators.base,org.apache.axiom.om,o
+ rg.apache.axiom.soap,org.apache.synapse,org.apache.axiom.om.impl.llom
+ .util,org.wso2.carbon.identity.entitlement.proxy,org.jaxen,org.wso2.c
+ arbon.core.util,org.apache.synapse.util,org.wso2.carbon.identity.enti
+ tlement.mediator.callback,org.apache.synapse.core,org.wso2.carbon.uti
+ ls,org.apache.synapse.mediators";version="4.1.2"
+Ignore-Package: javax.xml.namespace
+Built-By: mmalet
+Tool: Bnd-1.43.0
+Bundle-Name: org.wso2.carbon.identity.entitlement.mediator
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: WSO2 Inc
+Fragment-Host: synapse-core
+Build-Jdk: 1.7.0_25
+Bundle-Version: 4.1.2
+Bnd-LastModified: 1381243996312
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0
+Bundle-Description: A custom wso2 products or solution
+Import-Package: org.apache.axiom.om;resolution:=optional;version="[1.2
+ ,2)",org.apache.axiom.om.impl.llom.util;resolution:=optional;version=
+ "[1.2,2)",org.apache.axiom.soap;resolution:=optional;version="[1.2,2)
+ ",org.apache.axis2;resolution:=optional;version="[1.6,2)",org.apache.
+ axis2.addressing;resolution:=optional;version="[1.6,2)",org.apache.ax
+ is2.client;resolution:=optional;version="[1.6,2)",org.apache.axis2.co
+ ntext;resolution:=optional;version="[1.6,2)",org.apache.commons.loggi
+ ng;version="1.0.4",org.apache.synapse;resolution:=optional,org.apache
+ .synapse.config.xml;resolution:=optional,org.apache.synapse.core;reso
+ lution:=optional,org.apache.synapse.core.axis2;resolution:=optional,o
+ rg.apache.synapse.mediators;resolution:=optional,org.apache.synapse.m
+ ediators.base;resolution:=optional,org.apache.synapse.util;resolution
+ :=optional,org.jaxen;resolution:=optional;version="[1.1,2)",org.wso2.
+ carbon.core.util;resolution:=optional;version="[4.0,5)",org.wso2.carb
+ on.identity.entitlement.proxy;version="[4.1,5)",org.wso2.carbon.ident
+ ity.entitlement.proxy.exception;version="[4.1,5)",org.wso2.carbon.uti
+ ls;resolution:=optional;version="[4.1,5)"
+Bundle-DocURL: http://wso2.org
+Bundle-SymbolicName: org.wso2.carbon.identity.entitlement.mediator
+

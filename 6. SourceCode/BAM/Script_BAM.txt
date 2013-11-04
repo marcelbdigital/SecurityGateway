@@ -1,0 +1,75 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS Users 
+	(logId STRING, token STRING) 
+	STORED BY 'org.apache.hadoop.hive.cassandra.CassandraStorageHandler'
+	WITH SERDEPROPERTIES ( 
+	"cassandra.host" = "127.0.0.1" , 
+	"cassandra.port" = "9163" , 
+	"cassandra.ks.name" = "EVENT_KS" , 
+	"cassandra.ks.username" = "admin" , 
+	"cassandra.ks.password" = "admin" , 
+	"cassandra.cf.name" = "C4all_stream" , 
+	"cassandra.columns.mapping" = ":key,payload_token," );
+	
+CREATE EXTERNAL TABLE IF NOT EXISTS UsersSummary(
+	token STRING, requestCount INT) 
+	STORED BY 'org.wso2.carbon.hadoop.hive.jdbc.storage.JDBCStorageHandler' 
+	TBLPROPERTIES ( 
+	'mapred.jdbc.driver.class' = 'org.h2.Driver' , 
+	'mapred.jdbc.url' = 'jdbc:h2:repository/database/samples/WSO2CARBON_DB;AUTO_SERVER=TRUE' , 
+	'mapred.jdbc.username' = 'wso2carbon' , 
+	'mapred.jdbc.password' = 'wso2carbon' , 
+	'hive.jdbc.update.on.duplicate' = 'true' , 
+	'hive.jdbc.primary.key.fields' = 'token' , 
+	'hive.jdbc.table.create.query' = 
+	'CREATE TABLE UsersSummary (token VARCHAR(100) NOT NULL PRIMARY KEY, requestCount  INT)' );
+insert overwrite table UsersSummary 
+        SELECT token, count(DISTINCT logId) as req_count 
+        FROM Users group by token SORT BY req_count DESC;
+
+Consulta:
+-------
+
+SELECT token, requestCount FROM UsersSummary 
+
+
+
+---------------------------------------
+
+Per el deny:
+
+CREATE EXTERNAL TABLE IF NOT EXISTS UsersDenied 
+	(logId STRING, token STRING) 
+	STORED BY 'org.apache.hadoop.hive.cassandra.CassandraStorageHandler'
+	WITH SERDEPROPERTIES ( 
+	"cassandra.host" = "127.0.0.1" , 
+	"cassandra.port" = "9163" , 
+	"cassandra.ks.name" = "EVENT_KS" , 
+	"cassandra.ks.username" = "admin" , 
+	"cassandra.ks.password" = "admin" , 
+	"cassandra.cf.name" = "C4all_stream_deny" , 
+	"cassandra.columns.mapping" = ":key,payload_token," );
+	
+CREATE EXTERNAL TABLE IF NOT EXISTS UsersSummaryDenied(
+	token STRING, requestCount INT) 
+	STORED BY 'org.wso2.carbon.hadoop.hive.jdbc.storage.JDBCStorageHandler' 
+	TBLPROPERTIES ( 
+	'mapred.jdbc.driver.class' = 'org.h2.Driver' , 
+	'mapred.jdbc.url' = 'jdbc:h2:repository/database/samples/WSO2CARBON_DB;AUTO_SERVER=TRUE' , 
+	'mapred.jdbc.username' = 'wso2carbon' , 
+	'mapred.jdbc.password' = 'wso2carbon' , 
+	'hive.jdbc.update.on.duplicate' = 'true' , 
+	'hive.jdbc.primary.key.fields' = 'token' , 
+	'hive.jdbc.table.create.query' = 
+	'CREATE TABLE UsersSummaryDenied (token VARCHAR(100) NOT NULL PRIMARY KEY, requestCount  INT)' );
+insert overwrite table UsersSummaryDenied 
+        SELECT token, count(DISTINCT logId) as req_count 
+        FROM UsersDenied group by token SORT BY req_count DESC;
+
+Consulta:
+-------
+
+SELECT token, requestCount FROM UsersSummaryDenied
+
+
+
+
