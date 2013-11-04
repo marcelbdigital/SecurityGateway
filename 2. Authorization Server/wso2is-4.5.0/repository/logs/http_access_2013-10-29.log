@@ -1,0 +1,2 @@
+172.20.10.118 - - [29/Oct/2013:10:50:48 +0100] "POST /services/EntitlementPolicyAdminService/ HTTP/1.1" 500 464 "-" "Synapse-PT-HttpComponents-NIO"
+172.20.10.118 - - [29/Oct/2013:10:51:16 +0100] "GET /services/EntitlementPolicyAdminService/user/easit1/policy/high HTTP/1.1" 500 227 "-" "Synapse-PT-HttpComponents-NIO"

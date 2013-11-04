@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><serviceGroup name="org.wso2.carbon.identity.authorization.core" successfullyAdded="true">
+    <parameter name="adminService" locked="true">false</parameter>
+    <parameter name="hiddenService" locked="true">false</parameter>
+    <service name="AuthorizationAdminService" serviceDocumentation="AuthorizationAdminService" exposedAllTransports="false" serviceDeployedTime="1379932190839" successfullyAdded="true">
+        <operation name="deleteUserPermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="clearPermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="isAuthorized">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="removeModule">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getPermission">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updateAuthorizedActions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="addRolePermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="deleteRolePermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getVersion">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="createModule">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getModule">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="addUserPermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updateUserPermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updateRolePermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getPermissionList">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="createPermissions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="deletePermission">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="loadModules">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="AuthorizationAdminServiceSoap12Binding">
+                <operation name="deleteUserPermissions"/>
+                <operation name="clearPermissions"/>
+                <operation name="isAuthorized"/>
+                <operation name="removeModule"/>
+                <operation name="getPermission"/>
+                <operation name="updateAuthorizedActions"/>
+                <operation name="addRolePermissions"/>
+                <operation name="deleteRolePermissions"/>
+                <operation name="getVersion"/>
+                <operation name="createModule"/>
+                <operation name="getModule"/>
+                <operation name="addUserPermissions"/>
+                <operation name="updateUserPermissions"/>
+                <operation name="updateRolePermissions"/>
+                <operation name="getPermissionList"/>
+                <operation name="deletePermission"/>
+                <operation name="createPermissions"/>
+                <operation name="loadModules"/>
+            </binding>
+            <binding name="AuthorizationAdminServiceSoap11Binding">
+                <operation name="deleteUserPermissions"/>
+                <operation name="clearPermissions"/>
+                <operation name="isAuthorized"/>
+                <operation name="removeModule"/>
+                <operation name="getPermission"/>
+                <operation name="updateAuthorizedActions"/>
+                <operation name="addRolePermissions"/>
+                <operation name="deleteRolePermissions"/>
+                <operation name="getVersion"/>
+                <operation name="createModule"/>
+                <operation name="getModule"/>
+                <operation name="addUserPermissions"/>
+                <operation name="updateUserPermissions"/>
+                <operation name="updateRolePermissions"/>
+                <operation name="getPermissionList"/>
+                <operation name="deletePermission"/>
+                <operation name="createPermissions"/>
+                <operation name="loadModules"/>
+            </binding>
+            <binding name="AuthorizationAdminServiceHttpBinding">
+                <operation name="deleteUserPermissions"/>
+                <operation name="clearPermissions"/>
+                <operation name="isAuthorized"/>
+                <operation name="removeModule"/>
+                <operation name="getPermission"/>
+                <operation name="updateAuthorizedActions"/>
+                <operation name="addRolePermissions"/>
+                <operation name="deleteRolePermissions"/>
+                <operation name="getVersion"/>
+                <operation name="createModule"/>
+                <operation name="getModule"/>
+                <operation name="addUserPermissions"/>
+                <operation name="updateUserPermissions"/>
+                <operation name="updateRolePermissions"/>
+                <operation name="getPermissionList"/>
+                <operation name="deletePermission"/>
+                <operation name="createPermissions"/>
+                <operation name="loadModules"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <module name="addressing" version="4.2.0" type="engagedModules"/>
+        <parameter name="ServiceClass">
+			org.wso2.carbon.identity.authorization.core.AuthorizationAdminService
+		</parameter>
+        <parameter name="AuthorizationAction" locked="true">/permission/admin/configure
+		</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+    </service>
+</serviceGroup>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><serviceGroup name="org.wso2.carbon.xkms" successfullyAdded="true">
+    <service name="XKMS" serviceDocumentation="XKMS" exposedAllTransports="false" serviceDeployedTime="1379932193232" successfullyAdded="true">
+        <operation name="ReissueRequest">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="ValidateRequest">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="RecoverRequest">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="RevokeRequest">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="RegisterRequest">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="LocateRequest">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="XKMSSoap12Binding">
+                <operation name="ReissueRequest"/>
+                <operation name="ValidateRequest"/>
+                <operation name="RecoverRequest"/>
+                <operation name="RevokeRequest"/>
+                <operation name="RegisterRequest"/>
+                <operation name="LocateRequest"/>
+            </binding>
+            <binding name="XKMSSoap11Binding">
+                <operation name="ReissueRequest"/>
+                <operation name="ValidateRequest"/>
+                <operation name="RecoverRequest"/>
+                <operation name="RevokeRequest"/>
+                <operation name="RegisterRequest"/>
+                <operation name="LocateRequest"/>
+            </binding>
+            <binding name="XKMSHttpBinding">
+                <operation name="ReissueRequest"/>
+                <operation name="ValidateRequest"/>
+                <operation name="RecoverRequest"/>
+                <operation name="RevokeRequest"/>
+                <operation name="RegisterRequest"/>
+                <operation name="LocateRequest"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <module name="addressing" version="4.2.0" type="engagedModules"/>
+        <parameter name="org.wso2.xkms2.service.crypto.issuer.key.password">password</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.keystore.location">keystore.jks</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.server.cert.aliase">bob</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.server.key.password">password</parameter>
+        <parameter name="disableDeletion" locked="true">true</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.default.private.key.password">password</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.authen.code">secret</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.persistence.enabled">true</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.issuer.cert.aliase">alice</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.keystore.password">password</parameter>
+        <parameter name="AuthorizationAction" locked="true">/permission/admin/manage</parameter>
+        <parameter name="org.wso2.xkms2.service.crypto.default.expriy.interval">365</parameter>
+        <parameter name="disableTryIt" locked="true">true</parameter>
+        <association destinationPath="/repository/transports/http/listener" type="exposedTransports"/>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+    </service>
+</serviceGroup>

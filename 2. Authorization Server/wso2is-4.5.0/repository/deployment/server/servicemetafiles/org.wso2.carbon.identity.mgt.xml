@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><serviceGroup name="org.wso2.carbon.identity.mgt" successfullyAdded="true">
+    <service name="UserInformationRecoveryService" serviceDocumentation="UserInformationRecoveryService" exposedAllTransports="false" serviceDeployedTime="1379932191323" successfullyAdded="true">
+        <operation name="getAllChallengeQuestions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="sendRecoveryNotification">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getCaptcha">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="verifyConfirmationCode">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getUserChallengeQuestionIds">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getUserChallengeQuestion">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="confirmUserSelfRegistration">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="verifyUserChallengeAnswer">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updatePassword">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getUserIdentitySupportedClaims">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="registerUser">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="verifyUser">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="verifyAccount">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="UserInformationRecoveryServiceSoap12Binding">
+                <operation name="sendRecoveryNotification"/>
+                <operation name="getAllChallengeQuestions"/>
+                <operation name="getCaptcha"/>
+                <operation name="verifyConfirmationCode"/>
+                <operation name="getUserChallengeQuestionIds"/>
+                <operation name="getUserChallengeQuestion"/>
+                <operation name="confirmUserSelfRegistration"/>
+                <operation name="verifyUserChallengeAnswer"/>
+                <operation name="updatePassword"/>
+                <operation name="registerUser"/>
+                <operation name="getUserIdentitySupportedClaims"/>
+                <operation name="verifyAccount"/>
+                <operation name="verifyUser"/>
+            </binding>
+            <binding name="UserInformationRecoveryServiceSoap11Binding">
+                <operation name="sendRecoveryNotification"/>
+                <operation name="getAllChallengeQuestions"/>
+                <operation name="getCaptcha"/>
+                <operation name="verifyConfirmationCode"/>
+                <operation name="getUserChallengeQuestionIds"/>
+                <operation name="getUserChallengeQuestion"/>
+                <operation name="confirmUserSelfRegistration"/>
+                <operation name="verifyUserChallengeAnswer"/>
+                <operation name="updatePassword"/>
+                <operation name="registerUser"/>
+                <operation name="getUserIdentitySupportedClaims"/>
+                <operation name="verifyAccount"/>
+                <operation name="verifyUser"/>
+            </binding>
+            <binding name="UserInformationRecoveryServiceHttpBinding">
+                <operation name="sendRecoveryNotification"/>
+                <operation name="getAllChallengeQuestions"/>
+                <operation name="getCaptcha"/>
+                <operation name="verifyConfirmationCode"/>
+                <operation name="getUserChallengeQuestionIds"/>
+                <operation name="getUserChallengeQuestion"/>
+                <operation name="confirmUserSelfRegistration"/>
+                <operation name="verifyUserChallengeAnswer"/>
+                <operation name="updatePassword"/>
+                <operation name="registerUser"/>
+                <operation name="getUserIdentitySupportedClaims"/>
+                <operation name="verifyAccount"/>
+                <operation name="verifyUser"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <module name="addressing" version="4.2.0" type="engagedModules"/>
+        <parameter name="adminService" locked="true">true</parameter>
+        <parameter name="ServiceClass" locked="false">
+			org.wso2.carbon.identity.mgt.services.UserInformationRecoveryService
+		</parameter>
+        <parameter name="AuthorizationAction" locked="true">/permission/admin/login
+		</parameter>
+        <parameter name="hiddenService" locked="false">false</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+        <module name="addressing" version="4.2.0" type="engagedModules"/>
+        <module name="addressing" version="4.2.0" type="engagedModules"/>
+    </service>
+    <service name="UserIdentityManagementAdminService" serviceDocumentation="UserIdentityManagementAdminService" exposedAllTransports="false" serviceDeployedTime="1379932191513" successfullyAdded="true">
+        <operation name="getAllChallengeQuestions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getChallengeQuestionsOfUser">
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/login</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="isReadOnlyUserStore">
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/login</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updateUserIdentityClaims">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="setChallengeQuestionsOfUser">
+            <parameter name="AuthorizationAction" locked="true">/permission/admin/login</parameter>
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="deleteUser">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getAllPromotedUserChallenge">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="setChallengeQuestions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getAllUserIdentityClaims">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="unlockUserAccount">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="resetUserPassword">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="changeUserPassword">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="lockUserAccount">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="UserIdentityManagementAdminServiceHttpBinding">
+                <operation name="getChallengeQuestionsOfUser"/>
+                <operation name="getAllChallengeQuestions"/>
+                <operation name="isReadOnlyUserStore"/>
+                <operation name="updateUserIdentityClaims"/>
+                <operation name="setChallengeQuestionsOfUser"/>
+                <operation name="deleteUser"/>
+                <operation name="getAllPromotedUserChallenge"/>
+                <operation name="setChallengeQuestions"/>
+                <operation name="getAllUserIdentityClaims"/>
+                <operation name="unlockUserAccount"/>
+                <operation name="resetUserPassword"/>
+                <operation name="lockUserAccount"/>
+                <operation name="changeUserPassword"/>
+            </binding>
+            <binding name="UserIdentityManagementAdminServiceSoap11Binding">
+                <operation name="getChallengeQuestionsOfUser"/>
+                <operation name="getAllChallengeQuestions"/>
+                <operation name="isReadOnlyUserStore"/>
+                <operation name="updateUserIdentityClaims"/>
+                <operation name="setChallengeQuestionsOfUser"/>
+                <operation name="deleteUser"/>
+                <operation name="getAllPromotedUserChallenge"/>
+                <operation name="setChallengeQuestions"/>
+                <operation name="getAllUserIdentityClaims"/>
+                <operation name="unlockUserAccount"/>
+                <operation name="resetUserPassword"/>
+                <operation name="lockUserAccount"/>
+                <operation name="changeUserPassword"/>
+            </binding>
+            <binding name="UserIdentityManagementAdminServiceSoap12Binding">
+                <operation name="getChallengeQuestionsOfUser"/>
+                <operation name="getAllChallengeQuestions"/>
+                <operation name="isReadOnlyUserStore"/>
+                <operation name="updateUserIdentityClaims"/>
+                <operation name="setChallengeQuestionsOfUser"/>
+                <operation name="deleteUser"/>
+                <operation name="getAllPromotedUserChallenge"/>
+                <operation name="setChallengeQuestions"/>
+                <operation name="getAllUserIdentityClaims"/>
+                <operation name="unlockUserAccount"/>
+                <operation name="resetUserPassword"/>
+                <operation name="lockUserAccount"/>
+                <operation name="changeUserPassword"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <parameter name="adminService" locked="false">true</parameter>
+        <parameter name="ServiceClass" locked="false">
+            org.wso2.carbon.identity.mgt.services.UserIdentityManagementAdminService
+        </parameter>
+        <parameter name="AuthorizationAction" locked="false">/permission/admin/login</parameter>
+        <parameter name="hiddenService" locked="false">false</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+    </service>
+    <service name="UserIdentityManagementService" serviceDocumentation="UserIdentityManagementService" exposedAllTransports="false" serviceDeployedTime="1379932191645" successfullyAdded="true">
+        <operation name="authenticateWithTemporaryCredentials">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="updateCredential">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="recoverUserIdentityWithSecurityQuestions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getPrimarySecurityQuestions">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="getChallengeQuestionsForUser">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="processPasswordRecovery">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="confirmUserRegistration">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="confirmUserAccount">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="verifyChallengeQuestion">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <operation name="recoverUserIdentityWithEmail">
+            <module name="addressing" version="4.2.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="UserIdentityManagementServiceSoap11Binding">
+                <operation name="authenticateWithTemporaryCredentials"/>
+                <operation name="updateCredential"/>
+                <operation name="recoverUserIdentityWithSecurityQuestions"/>
+                <operation name="getPrimarySecurityQuestions"/>
+                <operation name="getChallengeQuestionsForUser"/>
+                <operation name="processPasswordRecovery"/>
+                <operation name="confirmUserRegistration"/>
+                <operation name="confirmUserAccount"/>
+                <operation name="verifyChallengeQuestion"/>
+                <operation name="recoverUserIdentityWithEmail"/>
+            </binding>
+            <binding name="UserIdentityManagementServiceSoap12Binding">
+                <operation name="authenticateWithTemporaryCredentials"/>
+                <operation name="updateCredential"/>
+                <operation name="recoverUserIdentityWithSecurityQuestions"/>
+                <operation name="getPrimarySecurityQuestions"/>
+                <operation name="getChallengeQuestionsForUser"/>
+                <operation name="processPasswordRecovery"/>
+                <operation name="confirmUserRegistration"/>
+                <operation name="confirmUserAccount"/>
+                <operation name="verifyChallengeQuestion"/>
+                <operation name="recoverUserIdentityWithEmail"/>
+            </binding>
+            <binding name="UserIdentityManagementServiceHttpBinding">
+                <operation name="authenticateWithTemporaryCredentials"/>
+                <operation name="updateCredential"/>
+                <operation name="recoverUserIdentityWithSecurityQuestions"/>
+                <operation name="getPrimarySecurityQuestions"/>
+                <operation name="getChallengeQuestionsForUser"/>
+                <operation name="processPasswordRecovery"/>
+                <operation name="confirmUserRegistration"/>
+                <operation name="confirmUserAccount"/>
+                <operation name="verifyChallengeQuestion"/>
+                <operation name="recoverUserIdentityWithEmail"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <parameter name="adminService" locked="false">false</parameter>
+        <parameter name="ServiceClass" locked="false">
+            org.wso2.carbon.identity.mgt.services.UserIdentityManagementService
+        </parameter>
+        <parameter name="hiddenService" locked="false">false</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+    </service>
+</serviceGroup>

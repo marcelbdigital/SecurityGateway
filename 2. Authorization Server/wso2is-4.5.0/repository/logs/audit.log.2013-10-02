@@ -1,0 +1,11 @@
+[2013-10-02 09:14:06,503]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 09:14:06,502+0200] 
+[2013-10-02 09:14:38,054]  INFO -  Initiator : admin@carbon.super | Action : Add Role | Target : PRIMARY/testRole | Data : { Users :  Permissions : [Ljava.lang.String;@58b9012a } | Result : Success  
+[2013-10-02 09:15:07,969]  INFO -  Initiator : admin@carbon.super | Action : Add User | Target : PRIMARY/testuser | Data : { Roles :testRole, } | Result : Success  
+[2013-10-02 09:17:09,449]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 09:17:09,448+0200] 
+[2013-10-02 15:55:45,713]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 15:55:45,710+0200] 
+[2013-10-02 16:00:34,453]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 16:00:34,452+0200] 
+[2013-10-02 16:04:04,439]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 16:04:04,438+0200] 
+[2013-10-02 16:04:36,868]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 16:04:36,867+0200] 
+[2013-10-02 16:06:28,240]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 16:06:28,239+0200] 
+[2013-10-02 16:07:23,664]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 16:07:23,664+0200] 
+[2013-10-02 16:10:52,651]  INFO -  'admin@carbon.super [-1234]' logged in at [2013-10-02 16:10:52,650+0200] 

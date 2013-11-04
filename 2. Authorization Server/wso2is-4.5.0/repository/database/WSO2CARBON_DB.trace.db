@@ -1,0 +1,50 @@
+09-23 12:29:32 jdbc[2]: SQLException
+org.h2.jdbc.JdbcSQLException: Table "IDP_BASE_TABLE" not found; SQL statement:
+select * from IDP_BASE_TABLE [42102-140]
+09-23 12:29:54 jdbc[2]: SQLException
+org.h2.jdbc.JdbcSQLException: Table "IDN_BASE_TABLE" not found; SQL statement:
+select * from IDN_BASE_TABLE [42102-140]
+10-15 12:56:43 database: close
+org.h2.message.DbException: IO Exception: "java.io.IOException: No space left on device"; "/home/marcel/IS/wso2is-4.5.0/repository/database/WSO2CARBON_DB.h2.db" [90031-140]
+	at org.h2.message.DbException.get(DbException.java:156)
+	at org.h2.message.DbException.convertIOException(DbException.java:313)
+	at org.h2.store.FileStore.write(FileStore.java:338)
+	at org.h2.store.PageStore.writePage(PageStore.java:1141)
+	at org.h2.store.PageStreamTrunk.write(PageStreamTrunk.java:132)
+	at org.h2.store.PageOutputStream.initNextData(PageOutputStream.java:99)
+	at org.h2.store.PageOutputStream.reserve(PageOutputStream.java:77)
+	at org.h2.store.PageLog.openForWriting(PageLog.java:181)
+	at org.h2.store.PageStore.compact(PageStore.java:433)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1126)
+	at org.h2.engine.Database.close(Database.java:1077)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.wso2.carbon.h2.osgi.console.H2DatabaseManager.closeAllOpenDatabases(H2DatabaseManager.java:93)
+	at org.wso2.carbon.h2.osgi.console.H2DatabaseManager.terminate(H2DatabaseManager.java:59)
+	at org.wso2.carbon.h2.osgi.H2ConsoleServiceActivator.stop(H2ConsoleServiceActivator.java:37)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:771)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.stop(BundleContextImpl.java:764)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.stopWorker(BundleHost.java:510)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.suspend(AbstractBundle.java:566)
+	at org.eclipse.osgi.framework.internal.core.Framework.suspendBundle(Framework.java:1206)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.decFWSL(StartLevelManager.java:592)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:257)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.shutdown(StartLevelManager.java:215)
+	at org.eclipse.osgi.framework.internal.core.InternalSystemBundle.suspend(InternalSystemBundle.java:284)
+	at org.eclipse.osgi.framework.internal.core.Framework.shutdown(Framework.java:692)
+	at org.eclipse.osgi.framework.internal.core.Framework.close(Framework.java:600)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.shutdown(EclipseStarter.java:399)
+	at org.wso2.carbon.core.init.CarbonServerManager.shutdown(CarbonServerManager.java:849)
+	at org.wso2.carbon.core.init.CarbonServerManager.shutdownGracefully(CarbonServerManager.java:883)
+	at org.wso2.carbon.core.init.CarbonServerManager$4.run(CarbonServerManager.java:894)
+Caused by: org.h2.jdbc.JdbcSQLException: IO Exception: "java.io.IOException: No space left on device"; "/home/marcel/IS/wso2is-4.5.0/repository/database/WSO2CARBON_DB.h2.db" [90031-140]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	... 34 more
+Caused by: java.io.IOException: No space left on device
+	at java.io.RandomAccessFile.writeBytes(Native Method)
+	at java.io.RandomAccessFile.write(RandomAccessFile.java:499)
+	at org.h2.store.FileStore.write(FileStore.java:336)
+	... 31 more
