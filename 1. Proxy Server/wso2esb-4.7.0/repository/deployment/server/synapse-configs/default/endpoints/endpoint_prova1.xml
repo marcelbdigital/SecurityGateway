@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint xmlns="http://ws.apache.org/ns/synapse"
+          name="endpoint_prova1"
+          template="prova1"
+          uri="http://preferences.gpii.net/user/"/>

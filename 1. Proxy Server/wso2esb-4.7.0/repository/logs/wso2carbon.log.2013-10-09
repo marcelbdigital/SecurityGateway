@@ -1,0 +1,343 @@
+TID: [0] [ESB] [2013-10-09 09:33:03,878]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:e6b0ae0a-d2ca-44c8-a493-8d8e451b9349, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:03,882]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:e6b0ae0a-d2ca-44c8-a493-8d8e451b9349, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:04,156]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:e6b0ae0a-d2ca-44c8-a493-8d8e451b9349, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:04,157] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_4914bdb92b59bc8f3a60812f5833a3ce4737170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 09:33:04,157] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_4914bdb92b59bc8f3a60812f5833a3ce4737170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:33:04,157] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:33:04,157] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:33:12,323]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:73582d59-853b-4027-a593-41bf68207685, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:12,326]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:73582d59-853b-4027-a593-41bf68207685, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:12,356]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:73582d59-853b-4027-a593-41bf68207685, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:12,357] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_4914bdb92b59bc8f3a60812f5833a3ce4737170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 09:33:12,357] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_4914bdb92b59bc8f3a60812f5833a3ce4737170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:33:12,357] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:33:12,357] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:33:26,117]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:601d38d0-60f1-46fb-97c6-43344626a20b, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:26,118]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:601d38d0-60f1-46fb-97c6-43344626a20b, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:33:26,136]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:601d38d0-60f1-46fb-97c6-43344626a20b, Direction: request, REBUTJADA = REBUTJADA!!!! {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:34:11,009]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:cf1118c7-4afb-40cd-a781-13b9134c2bf0, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:34:11,010]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:cf1118c7-4afb-40cd-a781-13b9134c2bf0, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:34:11,033]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:cf1118c7-4afb-40cd-a781-13b9134c2bf0, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 09:34:11,034] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_4914bdb92b59bc8f3a60812f5833a3ce4737170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 09:34:11,034] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_4914bdb92b59bc8f3a60812f5833a3ce4737170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:34:11,034] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 09:34:11,034] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:23:13,086]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-09 16:23:13,085+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-09 16:23:15,065] ERROR {org.apache.tiles.jsp.context.JspTilesRequestContext} -  JSPException while including path '/hive-explorer/listscripts.jsp'.  {org.apache.tiles.jsp.context.JspTilesRequestContext}
+javax.servlet.jsp.JspException: IOException while including page.
+	at org.apache.tiles.jsp.context.JspUtil.doInclude(JspUtil.java:100)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:88)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:82)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:465)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:140)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:117)
+	at org.apache.tiles.jsp.taglib.RenderTagSupport.execute(RenderTagSupport.java:171)
+	at org.apache.tiles.jsp.taglib.RoleSecurityTagSupport.doEndTag(RoleSecurityTagSupport.java:75)
+	at org.apache.tiles.jsp.taglib.ContainerTagSupport.doEndTag(ContainerTagSupport.java:80)
+	at org.apache.jsp.admin.layout.template_jsp._jspx_meth_tiles_insertAttribute_7(org.apache.jsp.admin.layout.template_jsp:541)
+	at org.apache.jsp.admin.layout.template_jsp._jspService(org.apache.jsp.admin.layout.template_jsp:286)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.ui.JspServlet.service(JspServlet.java:155)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.eclipse.equinox.http.servlet.internal.RequestDispatcherAdaptor.forward(RequestDispatcherAdaptor.java:30)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor$RequestDispatcherAdaptor.forward(ContextPathServletAdaptor.java:362)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:198)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:185)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:419)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:370)
+	at org.wso2.carbon.ui.action.ActionHelper.render(ActionHelper.java:52)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:61)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:177)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:161)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:57)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1653)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.io.FileNotFoundException: /hive-explorer/listscripts.jsp
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:463)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.ui.JspServlet.service(JspServlet.java:155)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:605)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:544)
+	at org.eclipse.equinox.http.servlet.internal.RequestDispatcherAdaptor.include(RequestDispatcherAdaptor.java:37)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor$RequestDispatcherAdaptor.include(ContextPathServletAdaptor.java:369)
+	at org.apache.jasper.runtime.JspRuntimeLibrary.include(JspRuntimeLibrary.java:1015)
+	at org.apache.jasper.runtime.PageContextImpl.include(PageContextImpl.java:689)
+	at org.apache.tiles.jsp.context.JspUtil.doInclude(JspUtil.java:98)
+	... 68 more
+TID: [0] [ESB] [2013-10-09 16:23:15,107] ERROR {org.apache.tiles.jsp.taglib.RoleSecurityTagSupport} -  IO Error executing tag: JSPException while including path '/hive-explorer/listscripts.jsp'. IOException while including page. {org.apache.tiles.jsp.taglib.RoleSecurityTagSupport}
+java.io.IOException: JSPException while including path '/hive-explorer/listscripts.jsp'. IOException while including page.
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:91)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:82)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:465)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:140)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:117)
+	at org.apache.tiles.jsp.taglib.RenderTagSupport.execute(RenderTagSupport.java:171)
+	at org.apache.tiles.jsp.taglib.RoleSecurityTagSupport.doEndTag(RoleSecurityTagSupport.java:75)
+	at org.apache.tiles.jsp.taglib.ContainerTagSupport.doEndTag(ContainerTagSupport.java:80)
+	at org.apache.jsp.admin.layout.template_jsp._jspx_meth_tiles_insertAttribute_7(org.apache.jsp.admin.layout.template_jsp:541)
+	at org.apache.jsp.admin.layout.template_jsp._jspService(org.apache.jsp.admin.layout.template_jsp:286)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.ui.JspServlet.service(JspServlet.java:155)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.eclipse.equinox.http.servlet.internal.RequestDispatcherAdaptor.forward(RequestDispatcherAdaptor.java:30)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor$RequestDispatcherAdaptor.forward(ContextPathServletAdaptor.java:362)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:198)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:185)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:419)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:370)
+	at org.wso2.carbon.ui.action.ActionHelper.render(ActionHelper.java:52)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:61)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:177)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:161)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:57)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1653)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-09 16:23:15,112] ERROR {org.apache.tiles.jsp.taglib.RenderTagSupport} -  Error during rendering {org.apache.tiles.jsp.taglib.RenderTagSupport}
+javax.servlet.jsp.JspException: IO Error executing tag: JSPException while including path '/hive-explorer/listscripts.jsp'. IOException while including page.
+	at org.apache.tiles.jsp.taglib.RoleSecurityTagSupport.doEndTag(RoleSecurityTagSupport.java:84)
+	at org.apache.tiles.jsp.taglib.ContainerTagSupport.doEndTag(ContainerTagSupport.java:80)
+	at org.apache.jsp.admin.layout.template_jsp._jspx_meth_tiles_insertAttribute_7(org.apache.jsp.admin.layout.template_jsp:541)
+	at org.apache.jsp.admin.layout.template_jsp._jspService(org.apache.jsp.admin.layout.template_jsp:286)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.ui.JspServlet.service(JspServlet.java:155)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:749)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:487)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:412)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:339)
+	at org.eclipse.equinox.http.servlet.internal.RequestDispatcherAdaptor.forward(RequestDispatcherAdaptor.java:30)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor$RequestDispatcherAdaptor.forward(ContextPathServletAdaptor.java:362)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.forward(ServletTilesRequestContext.java:198)
+	at org.apache.tiles.servlet.context.ServletTilesRequestContext.dispatch(ServletTilesRequestContext.java:185)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:419)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:370)
+	at org.wso2.carbon.ui.action.ActionHelper.render(ActionHelper.java:52)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:61)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:177)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:161)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:57)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1653)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: java.io.IOException: JSPException while including path '/hive-explorer/listscripts.jsp'. IOException while including page.
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.include(JspTilesRequestContext.java:91)
+	at org.apache.tiles.jsp.context.JspTilesRequestContext.dispatch(JspTilesRequestContext.java:82)
+	at org.apache.tiles.impl.BasicTilesContainer.render(BasicTilesContainer.java:465)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:140)
+	at org.apache.tiles.jsp.taglib.InsertAttributeTag.render(InsertAttributeTag.java:117)
+	at org.apache.tiles.jsp.taglib.RenderTagSupport.execute(RenderTagSupport.java:171)
+	at org.apache.tiles.jsp.taglib.RoleSecurityTagSupport.doEndTag(RoleSecurityTagSupport.java:75)
+	... 61 more
+TID: [0] [ESB] [2013-10-09 16:25:52,064]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-09 16:25:52,064+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-09 16:32:17,534]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 16:32:17,551]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 16:32:17,562]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-09 16:32:17,666]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 16:33:48,255]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:1335a554-8931-4489-bc68-dfbd412c8969, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:33:48,257]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:1335a554-8931-4489-bc68-dfbd412c8969, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:33:48,568]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:1335a554-8931-4489-bc68-dfbd412c8969, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:33:48,569] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 16:33:48,569] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:33:48,569] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:33:48,570] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:26,190]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:f81b8dc3-292c-48c9-b618-5aa0a59b7645, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:26,191]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:f81b8dc3-292c-48c9-b618-5aa0a59b7645, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:26,205]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:f81b8dc3-292c-48c9-b618-5aa0a59b7645, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:26,205] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 16:34:26,205] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:26,205] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:26,205] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:31,566]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:03679d5c-8223-4a93-87f4-8115eb164245, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:31,568]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:03679d5c-8223-4a93-87f4-8115eb164245, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:31,612]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:03679d5c-8223-4a93-87f4-8115eb164245, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:31,612] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 16:34:31,612] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:31,613] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:31,613] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:41,390]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:5612833e-cc8b-444f-9bc2-106ddf9340ad, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:41,393]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:5612833e-cc8b-444f-9bc2-106ddf9340ad, Direction: request, token = easit2, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:41,421]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit2/settings/12345/net/172.20.100.127, MessageID: urn:uuid:5612833e-cc8b-444f-9bc2-106ddf9340ad, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:34:41,422] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 16:34:41,422] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_b984bdb92b59bc8fb1e1017f5833a3ceb327170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:41,422] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:34:41,422] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:36:58,617]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 16:36:58,618]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 16:36:58,629]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-09 16:36:58,721]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 16:59:41,006]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:ed7832b2-3bfe-4282-a161-7922919eab5c, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:59:41,008]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:ed7832b2-3bfe-4282-a161-7922919eab5c, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:59:41,257]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:ed7832b2-3bfe-4282-a161-7922919eab5c, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 16:59:41,291]  INFO {org.wso2.carbon.mediator.bam.Stream} -  Data Publisher Created. {org.wso2.carbon.mediator.bam.Stream}
+TID: [0] [ESB] [2013-10-09 16:59:41,344] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 16:59:41,344] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:59:41,345] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 16:59:41,345] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:17:26,997]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:1702a413-7672-433d-841f-799cb456b003, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:17:26,998]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:1702a413-7672-433d-841f-799cb456b003, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:17:27,151]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:1702a413-7672-433d-841f-799cb456b003, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:17:27,153] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 17:17:27,153] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:17:27,153] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:17:27,153] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:17:27,198]  INFO {org.wso2.carbon.databridge.agent.thrift.internal.publisher.client.EventPublisher} -  Session timed out for TCP,172.20.10.118:7714,TCP,172.20.10.118:7714,Thrift Session Expired Exception  {org.wso2.carbon.databridge.agent.thrift.internal.publisher.client.EventPublisher}
+TID: [0] [ESB] [2013-10-09 17:19:06,072]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71e09fe8-f27e-4e13-ab7d-82dd4da693df, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:19:06,075]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71e09fe8-f27e-4e13-ab7d-82dd4da693df, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:19:06,161]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71e09fe8-f27e-4e13-ab7d-82dd4da693df, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:19:06,164] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 17:19:06,164] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:19:06,165] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:19:06,165] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:20:52,430]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:63bd21c9-79c0-418c-86da-5166332d9411, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:20:52,432]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:63bd21c9-79c0-418c-86da-5166332d9411, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:20:52,506]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:63bd21c9-79c0-418c-86da-5166332d9411, Direction: request, Acceptada = ACCEPTADA!!, enviem_a: = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:20:52,510] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 17:20:52,510] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_7a84bdb92b59bc8f7a7b717f5833a3ced127170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:20:52,510] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:20:52,510] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:21:11,816]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-09 17:21:11,816+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-09 17:22:00,671]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 17:22:00,671]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 17:22:00,676]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-09 17:22:00,712]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-09 17:22:09,793]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:739e9a28-729e-4a4d-9d6d-089809d6131e, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:22:09,798]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:739e9a28-729e-4a4d-9d6d-089809d6131e, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:22:09,965]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:739e9a28-729e-4a4d-9d6d-089809d6131e, Direction: request, Acceptada = ACCEPTADA!!, al BAM: --> = easit1 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-09 17:22:09,966]  INFO {org.wso2.carbon.mediator.bam.Stream} -  Data Publisher Created. {org.wso2.carbon.mediator.bam.Stream}
+TID: [0] [ESB] [2013-10-09 17:22:10,012] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_7a84bdb92b59bc8f6adc717f5833a3ce7327170686fccba0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-09 17:22:10,012] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_7a84bdb92b59bc8f6adc717f5833a3ce7327170686fccba0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:22:10,012] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-09 17:22:10,013] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}

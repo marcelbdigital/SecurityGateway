@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://ws.apache.org/ns/synapse" name="prova1">
+   <axis2ns52:parameter xmlns:axis2ns52="http://ws.apache.org/ns/synapse" name="user"/>
+   <axis2ns53:parameter xmlns:axis2ns53="http://ws.apache.org/ns/synapse" name="name"/>
+   <axis2ns54:parameter xmlns:axis2ns54="http://ws.apache.org/ns/synapse" name="uri"/>
+   <endpoint name="$name">
+      <address uri="$uri">
+         <suspendOnFailure>
+            <progressionFactor>1.0</progressionFactor>
+         </suspendOnFailure>
+         <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+            <retryDelay>0</retryDelay>
+         </markForSuspension>
+      </address>
+   </endpoint>
+</template>

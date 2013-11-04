@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup name="AddPolicyProxy" successfullyAdded="true">
+   <service name="AddPolicyProxy"
+            exposedAllTransports="false"
+            serviceDeployedTime="1382454181393"
+            successfullyAdded="true">
+      <operation name="mediate">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <bindings>
+         <binding name="AddPolicyProxyHttpBinding">
+            <operation name="mediate"/>
+         </binding>
+         <binding name="AddPolicyProxySoap12Binding">
+            <operation name="mediate"/>
+         </binding>
+         <binding name="AddPolicyProxySoap11Binding">
+            <operation name="mediate"/>
+         </binding>
+      </bindings>
+      <policies/>
+      <module name="activation" version="2.1.2" type="engagedModules"/>
+      <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+      <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+      <module name="addressing" version="4.1.0" type="engagedModules"/>
+      <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      <parameter name="serviceType" type="1">proxy</parameter>
+      <association destinationPath="/repository/transports/https/listener"
+                   type="exposedTransports"/>
+      <association destinationPath="/repository/transports/http/listener"
+                   type="exposedTransports"/>
+   </service>
+</serviceGroup>

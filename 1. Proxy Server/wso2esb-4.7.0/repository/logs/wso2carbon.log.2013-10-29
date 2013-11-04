@@ -1,0 +1,121 @@
+TID: [0] [ESB] [2013-10-29 10:50:48,370]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:50:48,376]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy.AddPolicyProxyHttpSoap12Endpoint, WSAction: urn:mediate, SOAPAction: urn:mediate, MessageID: urn:uuid:a5f12faa-3a0a-4be9-9cbc-2713c0c744c8, Direction: request, STEP = 1, token: = , policy = , Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:50:48,427]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:50:48,427]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:50:48,427] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_5e5071fb6d22650bcf8345be496775e337e2b7e1ab408aa5 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-29 10:50:48,427] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_5e5071fb6d22650bcf8345be496775e337e2b7e1ab408aa5 resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-29 10:50:48,427] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: urn:mediate {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-29 10:50:48,427] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: urn:mediate {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-29 10:51:16,911]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:51:16,912]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy/user/easit1/policy/high, MessageID: urn:uuid:20caf8d1-a609-4d7a-a319-a8f45520af3f, Direction: request, STEP = 1, token: = easit1, policy = high, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:51:16,915]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:51:16,915]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:51:16,915] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_5e5071fb6d22650bcf8345be496775e337e2b7e1ab408aa5 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-29 10:51:16,916] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_5e5071fb6d22650bcf8345be496775e337e2b7e1ab408aa5 resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-29 10:51:16,916] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-29 10:51:16,916] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-29 10:51:19,657]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-29 10:51:19,681]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-29 10:51:19,682] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-29 10:51:19,662]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:4a3ffc92-5f56-4aee-acb3-9ca75fa65442, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:51:19,790]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:1dc84175-00e3-46ce-9a83-b3cc0ac66bc1, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-29 10:51:19,790]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-29 10:51:19,791]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-29 10:51:19,791] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-29 10:52:13,364]  WARN {org.wso2.carbon.server.admin.module.handler.AuthenticationHandler} -  Illegal access attempt at [2013-10-29 10:52:13,0364] from IP address null while trying to authenticate access to service ServiceAdmin {org.wso2.carbon.server.admin.module.handler.AuthenticationHandler}
+TID: [0] [ESB] [2013-10-29 10:52:13,364] ERROR {AUDIT_LOG} -  Illegal access attempt at [2013-10-29 10:52:13,0364] from IP address null while trying to authenticate access to service ServiceAdmin {AUDIT_LOG}
+TID: [0] [ESB] [2013-10-29 10:52:13,378] ERROR {org.wso2.carbon.service.mgt.ui.ServiceAdminClient} -  Cannot check Grouped Services. Backend service may be unavailable {org.wso2.carbon.service.mgt.ui.ServiceAdminClient}
+org.apache.axis2.AxisFault: The input stream for an incoming message is null.
+	at org.apache.axis2.transport.TransportUtils.createSOAPMessage(TransportUtils.java:93)
+	at org.apache.axis2.transport.TransportUtils.createSOAPMessage(TransportUtils.java:68)
+	at org.apache.axis2.description.OutInAxisOperationClient.handleResponse(OutInAxisOperation.java:346)
+	at org.apache.axis2.description.OutInAxisOperationClient.send(OutInAxisOperation.java:413)
+	at org.apache.axis2.description.OutInAxisOperationClient.executeImpl(OutInAxisOperation.java:224)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.wso2.carbon.service.mgt.stub.ServiceAdminStub.checkForGroupedServices(ServiceAdminStub.java:7568)
+	at org.wso2.carbon.service.mgt.ui.ServiceAdminClient.checkForGroupedServices(ServiceAdminClient.java:166)
+	at org.apache.jsp.service_002dmgt.checkForGroupedServices_005fajaxprocessor_jsp._jspService(org.apache.jsp.service_002dmgt.checkForGroupedServices_005fajaxprocessor_jsp:90)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:403)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:492)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:378)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.ui.JspServlet.service(JspServlet.java:155)
+	at org.wso2.carbon.ui.TilesJspServlet.service(TilesJspServlet.java:80)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.eclipse.equinox.http.helper.ContextPathServletAdaptor.service(ContextPathServletAdaptor.java:37)
+	at org.eclipse.equinox.http.servlet.internal.ServletRegistration.service(ServletRegistration.java:61)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.processAlias(ProxyServlet.java:128)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.service(ProxyServlet.java:68)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:848)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.service(DelegationServlet.java:68)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.wso2.carbon.tomcat.ext.filter.CharacterSetFilter.doFilter(CharacterSetFilter.java:61)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:472)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.wso2.carbon.tomcat.ext.valves.CompositeValve.invoke(CompositeValve.java:177)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonStuckThreadDetectionValve.invoke(CarbonStuckThreadDetectionValve.java:161)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:936)
+	at org.wso2.carbon.tomcat.ext.valves.CarbonContextCreatorValve.invoke(CarbonContextCreatorValve.java:57)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:407)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1004)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1653)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-29 10:52:20,969]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-29 10:52:20,969+0100] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-29 10:52:34,520]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Removing Axis2 Service: provaCloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-29 10:52:34,521]  INFO {org.wso2.carbon.proxyadmin.observer.ProxyObserver} -  Deleted the proxy service : provaCloud4all {org.wso2.carbon.proxyadmin.observer.ProxyObserver}
+TID: [0] [ESB] [2013-10-29 10:52:34,521]  INFO {org.wso2.carbon.service.mgt.ServiceAdmin} -  Undeploying Axis2 Service: provaCloud4all {org.wso2.carbon.service.mgt.ServiceAdmin}
+TID: [0] [ESB] [2013-10-29 10:52:34,601]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Removing Axis2 Service: prova_urlrewrite_condicional {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-29 10:52:34,601]  INFO {org.wso2.carbon.proxyadmin.observer.ProxyObserver} -  Deleted the proxy service : prova_urlrewrite_condicional {org.wso2.carbon.proxyadmin.observer.ProxyObserver}
+TID: [0] [ESB] [2013-10-29 10:52:34,601]  INFO {org.wso2.carbon.service.mgt.ServiceAdmin} -  Undeploying Axis2 Service: prova_urlrewrite_condicional {org.wso2.carbon.service.mgt.ServiceAdmin}
+TID: [0] [ESB] [2013-10-29 10:52:34,617]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Removing Axis2 Service: provasegonacloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-29 10:52:34,617]  INFO {org.wso2.carbon.proxyadmin.observer.ProxyObserver} -  Deleted the proxy service : provasegonacloud4all {org.wso2.carbon.proxyadmin.observer.ProxyObserver}
+TID: [0] [ESB] [2013-10-29 10:52:34,617]  INFO {org.wso2.carbon.service.mgt.ServiceAdmin} -  Undeploying Axis2 Service: provasegonacloud4all {org.wso2.carbon.service.mgt.ServiceAdmin}
+TID: [0] [ESB] [2013-10-29 10:52:34,668]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Removing Axis2 Service: prova_condicionals {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-29 10:52:34,668]  INFO {org.wso2.carbon.proxyadmin.observer.ProxyObserver} -  Deleted the proxy service : prova_condicionals {org.wso2.carbon.proxyadmin.observer.ProxyObserver}
+TID: [0] [ESB] [2013-10-29 10:52:34,668]  INFO {org.wso2.carbon.service.mgt.ServiceAdmin} -  Undeploying Axis2 Service: prova_condicionals {org.wso2.carbon.service.mgt.ServiceAdmin}
+TID: [0] [ESB] [2013-10-29 10:52:34,795]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Removing Axis2 Service: UserRegistrationProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-29 10:52:34,795]  INFO {org.wso2.carbon.proxyadmin.observer.ProxyObserver} -  Deleted the proxy service : UserRegistrationProxy {org.wso2.carbon.proxyadmin.observer.ProxyObserver}
+TID: [0] [ESB] [2013-10-29 10:52:34,795]  INFO {org.wso2.carbon.service.mgt.ServiceAdmin} -  Undeploying Axis2 Service: UserRegistrationProxy {org.wso2.carbon.service.mgt.ServiceAdmin}
+TID: [0] [ESB] [2013-10-29 11:14:04,711]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-29 11:14:04,711+0100] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-29 14:49:44,214]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-29 14:49:44,214+0100] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-29 14:51:29,504]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Removing Axis2 Service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-29 14:51:29,504]  INFO {org.wso2.carbon.proxyadmin.observer.ProxyObserver} -  Deleted the proxy service : GatewayToPreferences {org.wso2.carbon.proxyadmin.observer.ProxyObserver}
+TID: [0] [ESB] [2013-10-29 14:51:29,518]  INFO {org.wso2.carbon.service.mgt.ServiceAdmin} -  Undeploying Axis2 Service: GatewayToPreferences {org.wso2.carbon.service.mgt.ServiceAdmin}

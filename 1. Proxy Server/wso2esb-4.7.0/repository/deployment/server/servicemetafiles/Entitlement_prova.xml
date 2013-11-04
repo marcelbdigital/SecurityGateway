@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup name="Entitlement_prova" successfullyAdded="true">
+   <service name="Entitlement_prova"
+            exposedAllTransports="false"
+            serviceDeployedTime="1380716119338"
+            successfullyAdded="true">
+      <operation name="mediate">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <bindings>
+         <binding name="Entitlement_provaSoap12Binding">
+            <operation name="mediate"/>
+         </binding>
+         <binding name="Entitlement_provaHttpBinding">
+            <operation name="mediate"/>
+         </binding>
+         <binding name="Entitlement_provaSoap11Binding">
+            <operation name="mediate"/>
+         </binding>
+      </bindings>
+      <policies/>
+      <module name="activation" version="2.1.2" type="engagedModules"/>
+      <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+      <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+      <module name="addressing" version="4.1.0" type="engagedModules"/>
+      <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      <parameter name="serviceType" type="1">proxy</parameter>
+      <association destinationPath="/repository/transports/https/listener"
+                   type="exposedTransports"/>
+      <association destinationPath="/repository/transports/http/listener"
+                   type="exposedTransports"/>
+   </service>
+</serviceGroup>

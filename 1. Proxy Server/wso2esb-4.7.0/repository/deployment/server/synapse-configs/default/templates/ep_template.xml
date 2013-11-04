@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://ws.apache.org/ns/synapse" name="ep_template">
+   <axis2ns55:parameter xmlns:axis2ns55="http://ws.apache.org/ns/synapse" name="name"/>
+   <axis2ns56:parameter xmlns:axis2ns56="http://ws.apache.org/ns/synapse" name="uri"/>
+   <endpoint name="$name"/>
+</template>

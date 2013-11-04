@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="InSecuencesProva">
+   <entitlementService remoteServiceUrl="https://172.20.10.118:9445/services/"
+                       remoteServiceUserName="admin"
+                       remoteServicePassword="enc:kuv2MubUUveMyv6GeHrXr9il59ajJIqUI4eoYHcgGKf/BBFOWn96NTjJQI+wYbWjKW6r79S7L7ZzgYeWx7DlGbff5X3pBN2Gh9yV0BHP1E93QtFqR7uTWi141Tr7V7ZwScwNqJbiNoV+vyLbsqKJE7T3nP8Ih9Y6omygbcLcHzg=">
+      <onReject>
+         <makefault version="soap11">
+            <code xmlns:soap11Env="http://schemas.xmlsoap.org/soap/envelope/"
+                  value="soap11Env:VersionMismatch"/>
+            <reason value="DENY O NO APPLICABLE O EL QUE SIGUI"/>
+            <role/>
+         </makefault>
+      </onReject>
+      <onAccept>
+         <send/>
+      </onAccept>
+      <obligations/>
+      <advice/>
+   </entitlementService>
+   <header xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+           name="wsse:Security"
+           scope="default"
+           value=""/>
+</sequence>

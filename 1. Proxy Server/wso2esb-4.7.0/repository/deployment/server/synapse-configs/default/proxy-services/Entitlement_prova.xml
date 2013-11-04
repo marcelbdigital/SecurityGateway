@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="Entitlement_prova"
+       transports="https http"
+       startOnLoad="true"
+       trace="disable">
+   <description/>
+   <target>
+      <inSequence>
+         <log/>
+         <property name="device"
+                   expression="substring-after(get-property('To'),'device/')"
+                   scope="transport"
+                   type="STRING"/>
+         <property name="token"
+                   expression="substring-before(substring-after(get-property('To'),'Entitlement_prova/'),'/settings')"
+                   scope="default"
+                   type="STRING"/>
+         <property name="idapp"
+                   expression="substring-before(substring-after(get-property('To'),'settings/'),'/net')"
+                   scope="default"
+                   type="STRING"/>
+         <property name="IP"
+                   expression="substring-before(substring-after(get-property('To'),'net/'),'/device')"
+                   scope="default"
+                   type="STRING"/>
+         <log>
+            <property name="token" expression="get-property('token')"/>
+            <property name="idapp" expression="get-property('idapp')"/>
+            <property name="ip" expression="get-property('IP')"/>
+         </log>
+         <filter source="get-property('token')" regex="&lt;userToken&gt;">
+            <then>
+               <log>
+                  <property name="log:" value="ERROR: GET MALFORMED token missing"/>
+               </log>
+               <drop/>
+            </then>
+            <else/>
+         </filter>
+         <filter source="get-property('idapp')" regex="&lt;appToken&gt;">
+            <then>
+               <log>
+                  <property name="log:" value="ERROR: GET MALFORMED idapp missing"/>
+               </log>
+               <drop/>
+            </then>
+            <else/>
+         </filter>
+         <filter source="get-property('IP')" regex="&lt;localIp&gt;">
+            <then>
+               <log>
+                  <property name="log" value="ERROR: GET MALFORMED IP missing"/>
+               </log>
+               <drop/>
+            </then>
+            <else/>
+         </filter>
+         <property name="REST_URL_POSTFIX"
+                   expression="substring-before(substring-after(get-property('To'),'Entitlement_prova/'),'/settings')"
+                   scope="axis2"
+                   type="STRING"/>
+         <entitlementService remoteServiceUrl="https://172.20.10.118:9445/services"
+                             remoteServiceUserName="admin"
+                             remoteServicePassword="enc:kuv2MubUUveMyv6GeHrXr9il59ajJIqUI4eoYHcgGKf/BBFOWn96NTjJQI+wYbWjKW6r79S7L7ZzgYeWx7DlGbff5X3pBN2Gh9yV0BHP1E93QtFqR7uTWi141Tr7V7ZwScwNqJbiNoV+vyLbsqKJE7T3nP8Ih9Y6omygbcLcHzg=">
+            <onReject>
+               <log>
+                  <property name="REBUTJADA" value="REBUTJADA!!!!"/>
+                  <property name="al BAM (deny)--&gt;" expression="get-property('token')"/>
+               </log>
+               <bam>
+                  <serverProfile name="BAM_C4all_deny">
+                     <streamConfig name="C4all_stream_deny" version="1.0.0"/>
+                  </serverProfile>
+               </bam>
+               <drop/>
+            </onReject>
+            <onAccept>
+               <log>
+                  <property name="Acceptada" value="ACCEPTADA!!"/>
+                  <property name="al BAM: --&gt;" expression="get-property('token')"/>
+               </log>
+               <bam>
+                  <serverProfile name="BAM_C4all">
+                     <streamConfig name="C4all_stream" version="1.0.0"/>
+                  </serverProfile>
+               </bam>
+               <send>
+                  <endpoint>
+                     <address uri="http://preferences.gpii.net/user/"/>
+                  </endpoint>
+               </send>
+            </onAccept>
+            <obligations/>
+            <advice/>
+         </entitlementService>
+      </inSequence>
+      <outSequence>
+         <send/>
+      </outSequence>
+   </target>
+</proxy>

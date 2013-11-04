@@ -1,0 +1,1282 @@
+TID: [0] [ESB] [2013-10-01 13:21:49,067]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Starting WSO2 Carbon... {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,074]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Operating System : Linux 2.6.18-308.4.1.el5, amd64 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,075]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Home        : /home/marcel/jdk1.7.0_25/jre {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,075]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Version     : 1.7.0_25 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,076]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java VM          : Java HotSpot(TM) 64-Bit Server VM 23.25-b01,Oracle Corporation {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,076]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Carbon Home      : /home/marcel/ESB/wso2esb-4.7.0 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,076]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Temp Dir    : /home/marcel/ESB/wso2esb-4.7.0/tmp {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,077]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  User             : marcel, en-US, Europe/San_Marino {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 13:21:49,150]  WARN {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter} -  Open files limit :1024 of the system is below the recommended minimum count :4096 {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter}
+TID: [0] [ESB] [2013-10-01 13:21:49,177]  INFO {org.wso2.carbon.databridge.agent.thrift.AgentHolder} -  Agent created ! {org.wso2.carbon.databridge.agent.thrift.AgentHolder}
+TID: [0] [ESB] [2013-10-01 13:21:49,226]  INFO {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS} -  Successfully deployed Agent Client {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS}
+TID: [0] [ESB] [2013-10-01 13:21:51,655]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} -  Configured Registry in 53ms {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService}
+TID: [0] [ESB] [2013-10-01 13:21:51,948]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} -  Registry Mode    : READ-WRITE {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent}
+TID: [0] [ESB] [2013-10-01 13:22:04,462]  INFO {org.apache.axis2.deployment.ClusterBuilder} -  Clustering has been disabled {org.apache.axis2.deployment.ClusterBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:05,050]  INFO {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer} -  Deployed product landing page webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/home] {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer}
+TID: [0] [ESB] [2013-10-01 13:22:05,162]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-01 13:22:05,255]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:05,347]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:05,383]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Pass-through HTTPS Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-01 13:22:05,383]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-01 13:22:05,388]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Pass-through HTTP Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-01 13:22:05,551]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:05,638]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Version.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Version.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 13:22:05,667]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:05,807]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Echo.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Echo.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 13:22:06,071]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:06,187]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:06,247]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 13:22:06,258]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:06,262]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Subject DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:06,262]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Issuer DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:06,262]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:06,271]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 13:22:06,357]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: addressing-1.6.1-wso2v9 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/addressing-1.6.1-wso2v9.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-01 13:22:06,361]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: rampart-1.6.1-wso2v8 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/rampart-1.6.1-wso2v8.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-01 13:22:06,369]  INFO {org.apache.axis2.transport.tcp.TCPTransportSender} -  TCP Sender started {org.apache.axis2.transport.tcp.TCPTransportSender}
+TID: [0] [ESB] [2013-10-01 13:22:07,572]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.processor -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 13:22:07,588]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.store -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 13:22:08,962]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: wso2carbon-sts {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:09,015]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.sts -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 13:22:09,259]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.tryit -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 13:22:09,556]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Repository       : /home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/ {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 13:22:09,617]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} -  Permission cache updated for tenant -1234 {org.wso2.carbon.core.internal.permission.update.PermissionUpdater}
+TID: [0] [ESB] [2013-10-01 13:22:09,693]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Starting ESB... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-01 13:22:09,713]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Initializing Apache Synapse... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-01 13:22:09,718]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using Synapse home : /home/marcel/ESB/wso2esb-4.7.0/. {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 13:22:09,718]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using synapse.xml location : /home/marcel/ESB/wso2esb-4.7.0/././repository/deployment/server/synapse-configs/default {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 13:22:09,719]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using server name : localhost {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 13:22:09,723]  INFO {org.apache.synapse.SynapseControllerFactory} -  The timeout handler will run every : 15s {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 13:22:09,732]  INFO {org.apache.synapse.Axis2SynapseController} -  Initializing Synapse at : Tue Oct 01 13:22:09 CEST 2013 {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:09,736]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} -  Loading the mediation configuration from the file system {org.wso2.carbon.mediation.initializer.CarbonSynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:09,738]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} -  Building synapse configuration from the synapse artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:09,738]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} -  Generating the Synapse configuration model by parsing the XML configuration {org.apache.synapse.config.xml.XMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:10,228]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} -  Loaded Synapse configuration from the artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.SynapseConfigurationBuilder}
+TID: [0] [ESB] [2013-10-01 13:22:10,229]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying the Synapse service... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,230]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying Proxy services... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,230]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,232]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provasegonacloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,236]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provasegonacloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:10,371]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,372]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provasegonacloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,372]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,406]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,419]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:10,572]  INFO {org.apache.synapse.core.axis2.ProxyService} -  WS-Security is enabled for service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,573]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,574]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : GatewayToPreferences {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,574]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,575]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provaCloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,582]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provaCloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:10,684]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,685]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provaCloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,685]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,686]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service prova_urlrewrite_condicional to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,693]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: prova_urlrewrite_condicional {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 13:22:10,750]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 13:22:10,750]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : prova_urlrewrite_condicional {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,751]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying EventSources... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,751]  INFO {org.apache.synapse.Axis2SynapseController} -  Loading mediator extensions... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 13:22:10,765] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : jorjuAET {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-01 13:22:10,779] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : prova1 {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-01 13:22:10,791]  INFO {org.apache.synapse.ServerManager} -  Server ready for processing... {org.apache.synapse.ServerManager}
+TID: [0] [ESB] [2013-10-01 13:22:10,894]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Statistic Reporter is Disabled {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-01 13:22:10,894]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Can't register an observer for mediationStatisticsStore. If you have disabled StatisticsReporter, please enable it in the Carbon.xml {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-01 13:22:11,008]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} -  Successfully registered the Rule Config service {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS}
+TID: [0] [ESB] [2013-10-01 13:22:12,987]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Starting Pass-through HTTPS Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 13:22:13,127]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Pass-through HTTPS Listener started on 0.0.0.0:8243 {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 13:22:13,128]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Starting Pass-through HTTP Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 13:22:13,169]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Pass-through HTTP Listener started on 0.0.0.0:8280 {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 13:22:13,489]  INFO {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent} -  Successfully Initialized Eventing on Registry {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent}
+TID: [0] [ESB] [2013-10-01 13:22:14,562]  INFO {org.wso2.carbon.core.init.JMXServerManager} -  JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi {org.wso2.carbon.core.init.JMXServerManager}
+TID: [0] [ESB] [2013-10-01 13:22:14,563]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  Server           :  WSO2 Enterprise Service Bus-4.7.0 {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-01 13:22:14,564]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  WSO2 Carbon started in 36 sec {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-01 13:22:14,957]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} -  Mgt Console URL  : https://172.20.10.118:9443/carbon/ {org.wso2.carbon.ui.internal.CarbonUIServiceComponent}
+TID: [0] [ESB] [2013-10-01 13:22:29,738]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-01 13:22:29,737+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-01 15:35:05,425]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Shutdown hook triggered.... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:35:05,433]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Gracefully shutting down WSO2 Enterprise Service Bus... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:35:05,436]  INFO {org.wso2.carbon.core.ServerManagement} -  Starting to switch to maintenance mode... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,437]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Stopping Pass-through HTTPS Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,442]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  HTTPS Listener shutdown. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,443]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Stopping Pass-through HTTP Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,446]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  HTTP Listener shutdown. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,446]  INFO {org.wso2.carbon.core.ServerManagement} -  Stopped all transport listeners {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,447]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for request service completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,455]  INFO {org.wso2.carbon.core.ServerManagement} -  All requests have been served. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,455]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for deployment completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,460]  INFO {org.wso2.carbon.core.ServerManagement} -  All deployment tasks have been completed. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,460]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for server task completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,461]  INFO {org.wso2.carbon.core.ServerManagement} -  All server tasks have been completed. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-01 15:35:05,462]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Shutting down WSO2 Enterprise Service Bus... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:35:05,463]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Stopping Pass-through HTTPS Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,463]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Stopping Pass-through HTTP Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,465]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  HTTPS Sender shutdown {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-01 15:35:05,466]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  HTTP Sender shutdown {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-01 15:35:05,468]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Destroying PassThroughHttpListener {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,469]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Destroying PassThroughHttpListener {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:35:05,472]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Shutting down OSGi framework... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:35:05,812]  INFO {org.apache.synapse.task.SynapseTaskManager} -  Shutting down the task manager {org.apache.synapse.task.SynapseTaskManager}
+TID: [0] [ESB] [2013-10-01 15:35:08,209]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Stopping CarbonServerManager... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:35:08,503]  INFO {org.wso2.carbon.tomcat.ext.internal.CarbonTomcatServiceComponent} -  Stopping the carbon web-app registered under : / {org.wso2.carbon.tomcat.ext.internal.CarbonTomcatServiceComponent}
+TID: [0] [ESB] [2013-10-01 15:35:09,271]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Shutdown complete {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:35:09,271]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Halting JVM {org.wso2.carbon.core.init.CarbonServerManager}
+o2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+TID: [0] [ESB] [2013-10-01 15:34:20,544] ERROR {org.wso2.carbon.user.core.common.DefaultRealmService} -  Cannot initialize the realm. {org.wso2.carbon.user.core.common.DefaultRealmService}
+org.wso2.carbon.user.core.UserStoreException: Database Error - Database may be already in use: "Locked by another process". Possible solutions: close all other connection(s); use the server mode; SQL statement:
+null/14173c0b473bdd5baeb9d81413dc60fa208179da927 [90020-140]
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:169)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:309)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:109)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:223)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:103)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:116)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:67)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: org.h2.jdbc.JdbcSQLException: Database may be already in use: "Locked by another process". Possible solutions: close all other connection(s); use the server mode; SQL statement:
+null/14173c0b473bdd5baeb9d81413dc60fa208179da927 [90020-140]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:167)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.store.FileLock.getExceptionAlreadyInUse(FileLock.java:436)
+	at org.h2.store.FileLock.lockFile(FileLock.java:331)
+	at org.h2.store.FileLock.lock(FileLock.java:129)
+	at org.h2.engine.Database.open(Database.java:523)
+	at org.h2.engine.Database.openDatabase(Database.java:207)
+	at org.h2.engine.Database.<init>(Database.java:202)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:146)
+	at org.h2.engine.Engine.getSession(Engine.java:125)
+	at org.h2.engine.Session.createSession(Session.java:122)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:241)
+	at org.h2.engine.SessionRemote.createSession(SessionRemote.java:219)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:111)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:95)
+	at org.h2.Driver.connect(Driver.java:73)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:278)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:182)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:702)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:634)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:188)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:127)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:159)
+	... 22 more
+TID: [0] [ESB] [2013-10-01 15:34:20,549] ERROR {org.wso2.carbon.user.core.internal.Activator} -  Cannot start User Manager Core bundle {org.wso2.carbon.user.core.internal.Activator}
+org.wso2.carbon.user.core.UserStoreException: Cannot initialize the realm.
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:227)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:103)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.<init>(DefaultRealmService.java:116)
+	at org.wso2.carbon.user.core.internal.Activator.startDeploy(Activator.java:67)
+	at org.wso2.carbon.user.core.internal.BundleCheckActivator.start(BundleCheckActivator.java:61)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.resume(AbstractBundle.java:390)
+	at org.eclipse.osgi.framework.internal.core.Framework.resumeBundle(Framework.java:1176)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:559)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.resumeBundles(StartLevelManager.java:544)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.incFWSL(StartLevelManager.java:457)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.doSetStartLevel(StartLevelManager.java:243)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:438)
+	at org.eclipse.osgi.framework.internal.core.StartLevelManager.dispatchEvent(StartLevelManager.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+Caused by: org.wso2.carbon.user.core.UserStoreException: Database Error - Database may be already in use: "Locked by another process". Possible solutions: close all other connection(s); use the server mode; SQL statement:
+null/14173c0b473bdd5baeb9d81413dc60fa208179da927 [90020-140]
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:169)
+	at org.wso2.carbon.user.core.common.DefaultRealm.populateProfileAndClaimMaps(DefaultRealm.java:309)
+	at org.wso2.carbon.user.core.common.DefaultRealm.init(DefaultRealm.java:109)
+	at org.wso2.carbon.user.core.common.DefaultRealmService.initializeRealm(DefaultRealmService.java:223)
+	... 19 more
+Caused by: org.h2.jdbc.JdbcSQLException: Database may be already in use: "Locked by another process". Possible solutions: close all other connection(s); use the server mode; SQL statement:
+null/14173c0b473bdd5baeb9d81413dc60fa208179da927 [90020-140]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:167)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.store.FileLock.getExceptionAlreadyInUse(FileLock.java:436)
+	at org.h2.store.FileLock.lockFile(FileLock.java:331)
+	at org.h2.store.FileLock.lock(FileLock.java:129)
+	at org.h2.engine.Database.open(Database.java:523)
+	at org.h2.engine.Database.openDatabase(Database.java:207)
+	at org.h2.engine.Database.<init>(Database.java:202)
+	at org.h2.engine.Engine.openSession(Engine.java:56)
+	at org.h2.engine.Engine.openSession(Engine.java:146)
+	at org.h2.engine.Engine.getSession(Engine.java:125)
+	at org.h2.engine.Session.createSession(Session.java:122)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:241)
+	at org.h2.engine.SessionRemote.createSession(SessionRemote.java:219)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:111)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:95)
+	at org.h2.Driver.connect(Driver.java:73)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:278)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:182)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:702)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:634)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.getConnection(ConnectionPool.java:188)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:127)
+	at org.wso2.carbon.user.core.claim.dao.ClaimDAO.getDialectCount(ClaimDAO.java:159)
+	... 22 more
+TID: [0] [ESB] [2013-10-01 15:56:28,509]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Starting WSO2 Carbon... {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,523]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Operating System : Linux 2.6.18-308.4.1.el5, amd64 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,524]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Home        : /home/marcel/jdk1.7.0_25/jre {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,524]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Version     : 1.7.0_25 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,524]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java VM          : Java HotSpot(TM) 64-Bit Server VM 23.25-b01,Oracle Corporation {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,524]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Carbon Home      : /home/marcel/ESB/wso2esb-4.7.0 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,525]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Temp Dir    : /home/marcel/ESB/wso2esb-4.7.0/tmp {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,525]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  User             : marcel, en-US, Europe/San_Marino {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-01 15:56:28,594]  WARN {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter} -  Open files limit :1024 of the system is below the recommended minimum count :4096 {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter}
+TID: [0] [ESB] [2013-10-01 15:56:28,617]  INFO {org.wso2.carbon.databridge.agent.thrift.AgentHolder} -  Agent created ! {org.wso2.carbon.databridge.agent.thrift.AgentHolder}
+TID: [0] [ESB] [2013-10-01 15:56:28,664]  INFO {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS} -  Successfully deployed Agent Client {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS}
+TID: [0] [ESB] [2013-10-01 15:56:32,375]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} -  Configured Registry in 54ms {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService}
+TID: [0] [ESB] [2013-10-01 15:56:32,503]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} -  Registry Mode    : READ-WRITE {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent}
+TID: [0] [ESB] [2013-10-01 15:56:46,051]  INFO {org.apache.axis2.deployment.ClusterBuilder} -  Clustering has been disabled {org.apache.axis2.deployment.ClusterBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:46,918]  INFO {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer} -  Deployed product landing page webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/home] {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer}
+TID: [0] [ESB] [2013-10-01 15:56:47,022]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-01 15:56:47,072]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:47,145]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:47,253]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Pass-through HTTPS Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-01 15:56:47,253]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-01 15:56:47,263]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Pass-through HTTP Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-01 15:56:47,453]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:47,518]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Version.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Version.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 15:56:47,552]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:47,810]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Echo.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Echo.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 15:56:48,113]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:48,275]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:48,367]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:56:48,376]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:48,379]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Subject DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:48,379]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Issuer DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:48,380]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:48,389]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:56:48,521]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: addressing-1.6.1-wso2v9 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/addressing-1.6.1-wso2v9.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-01 15:56:48,526]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: rampart-1.6.1-wso2v8 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/rampart-1.6.1-wso2v8.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-01 15:56:48,534]  INFO {org.apache.axis2.transport.tcp.TCPTransportSender} -  TCP Sender started {org.apache.axis2.transport.tcp.TCPTransportSender}
+TID: [0] [ESB] [2013-10-01 15:56:50,264]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.processor -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 15:56:50,289]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.store -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 15:56:52,471]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: wso2carbon-sts {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:52,563]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.sts -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 15:56:52,780]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.tryit -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-01 15:56:53,021]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Repository       : /home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/ {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-01 15:56:53,089]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} -  Permission cache updated for tenant -1234 {org.wso2.carbon.core.internal.permission.update.PermissionUpdater}
+TID: [0] [ESB] [2013-10-01 15:56:53,150]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Starting ESB... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-01 15:56:53,173]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Initializing Apache Synapse... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-01 15:56:53,178]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using Synapse home : /home/marcel/ESB/wso2esb-4.7.0/. {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 15:56:53,178]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using synapse.xml location : /home/marcel/ESB/wso2esb-4.7.0/././repository/deployment/server/synapse-configs/default {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 15:56:53,179]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using server name : localhost {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 15:56:53,184]  INFO {org.apache.synapse.SynapseControllerFactory} -  The timeout handler will run every : 15s {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-01 15:56:53,193]  INFO {org.apache.synapse.Axis2SynapseController} -  Initializing Synapse at : Tue Oct 01 15:56:53 CEST 2013 {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:53,196]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} -  Loading the mediation configuration from the file system {org.wso2.carbon.mediation.initializer.CarbonSynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:53,198]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} -  Building synapse configuration from the synapse artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:53,199]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} -  Generating the Synapse configuration model by parsing the XML configuration {org.apache.synapse.config.xml.XMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:53,713]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} -  Loaded Synapse configuration from the artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.SynapseConfigurationBuilder}
+TID: [0] [ESB] [2013-10-01 15:56:53,714]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying the Synapse service... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:53,716]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying Proxy services... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:53,716]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,718]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provasegonacloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,722]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provasegonacloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:53,832]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,832]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provasegonacloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:53,833]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,870]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,882]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:53,973]  INFO {org.apache.synapse.core.axis2.ProxyService} -  WS-Security is enabled for service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,973]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,974]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : GatewayToPreferences {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:53,974]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,974]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provaCloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:53,982]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provaCloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:54,048]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:54,048]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provaCloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:54,048]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:54,049]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service prova_urlrewrite_condicional to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:54,056]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: prova_urlrewrite_condicional {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 15:56:54,141]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 15:56:54,142]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : prova_urlrewrite_condicional {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:54,142]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying EventSources... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:54,142]  INFO {org.apache.synapse.Axis2SynapseController} -  Loading mediator extensions... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-01 15:56:54,156] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : jorjuAET {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-01 15:56:54,171] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : prova1 {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-01 15:56:54,182]  INFO {org.apache.synapse.ServerManager} -  Server ready for processing... {org.apache.synapse.ServerManager}
+TID: [0] [ESB] [2013-10-01 15:56:54,289]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Statistic Reporter is Disabled {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-01 15:56:54,290]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Can't register an observer for mediationStatisticsStore. If you have disabled StatisticsReporter, please enable it in the Carbon.xml {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-01 15:56:54,393]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} -  Successfully registered the Rule Config service {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS}
+TID: [0] [ESB] [2013-10-01 15:56:56,427]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Starting Pass-through HTTPS Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:56:56,555]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Pass-through HTTPS Listener started on 0.0.0.0:8243 {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-01 15:56:56,555]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Starting Pass-through HTTP Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:56:56,605]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Pass-through HTTP Listener started on 0.0.0.0:8280 {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-01 15:56:57,328]  INFO {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent} -  Successfully Initialized Eventing on Registry {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent}
+TID: [0] [ESB] [2013-10-01 15:56:58,029]  INFO {org.wso2.carbon.core.init.JMXServerManager} -  JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi {org.wso2.carbon.core.init.JMXServerManager}
+TID: [0] [ESB] [2013-10-01 15:56:58,029]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  Server           :  WSO2 Enterprise Service Bus-4.7.0 {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-01 15:56:58,030]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  WSO2 Carbon started in 39 sec {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-01 15:56:58,624]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} -  Mgt Console URL  : https://172.20.10.118:9443/carbon/ {org.wso2.carbon.ui.internal.CarbonUIServiceComponent}
+TID: [0] [ESB] [2013-10-01 16:10:20,600]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-01 16:10:20,598+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-01 16:11:49,311]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:11:49,325]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:11:49,341]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:11:49,460]  INFO {org.apache.synapse.core.axis2.ProxyService} -  WS-Security is enabled for service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:11:49,460]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:23:13,357] ERROR {org.apache.axis2.engine.AxisEngine} -  Expected transport is "https" but incoming transport found : "http"  {org.apache.axis2.engine.AxisEngine}
+org.apache.axis2.AxisFault: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.handler.RampartReceiver.setFaultCodeAndThrowAxisFault(RampartReceiver.java:186)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:99)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:261)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:167)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.rampart.RampartException: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.util.RampartUtil.validateTransport(RampartUtil.java:1723)
+	at org.apache.rampart.RampartEngine.process(RampartEngine.java:94)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:92)
+	... 10 more
+TID: [0] [ESB] [2013-10-01 16:23:13,361] ERROR {org.apache.synapse.transport.passthru.ServerWorker} -  Error processing GET request for : /services/GatewayToPreferences/easit1/settings/12345 {org.apache.synapse.transport.passthru.ServerWorker}
+org.apache.axis2.AxisFault: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.handler.RampartReceiver.setFaultCodeAndThrowAxisFault(RampartReceiver.java:186)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:99)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:261)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:167)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.rampart.RampartException: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.util.RampartUtil.validateTransport(RampartUtil.java:1723)
+	at org.apache.rampart.RampartEngine.process(RampartEngine.java:94)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:92)
+	... 10 more
+TID: [0] [ESB] [2013-10-01 16:23:53,460]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:23:53,515]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:23:53,537]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:23:53,709]  INFO {org.apache.synapse.core.axis2.ProxyService} -  WS-Security is enabled for service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:23:53,710]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:23:59,156] ERROR {org.apache.axis2.engine.AxisEngine} -  Expected transport is "https" but incoming transport found : "http"  {org.apache.axis2.engine.AxisEngine}
+org.apache.axis2.AxisFault: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.handler.RampartReceiver.setFaultCodeAndThrowAxisFault(RampartReceiver.java:186)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:99)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:261)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:167)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.rampart.RampartException: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.util.RampartUtil.validateTransport(RampartUtil.java:1723)
+	at org.apache.rampart.RampartEngine.process(RampartEngine.java:94)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:92)
+	... 10 more
+TID: [0] [ESB] [2013-10-01 16:23:59,158] ERROR {org.apache.synapse.transport.passthru.ServerWorker} -  Error processing GET request for : /services/GatewayToPreferences/easit1/settings/12345 {org.apache.synapse.transport.passthru.ServerWorker}
+org.apache.axis2.AxisFault: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.handler.RampartReceiver.setFaultCodeAndThrowAxisFault(RampartReceiver.java:186)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:99)
+	at org.apache.axis2.engine.Phase.invokeHandler(Phase.java:340)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:313)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:261)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:167)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.rampart.RampartException: Expected transport is "https" but incoming transport found : "http" 
+	at org.apache.rampart.util.RampartUtil.validateTransport(RampartUtil.java:1723)
+	at org.apache.rampart.RampartEngine.process(RampartEngine.java:94)
+	at org.apache.rampart.handler.RampartReceiver.invoke(RampartReceiver.java:92)
+	... 10 more
+TID: [0] [ESB] [2013-10-01 16:26:00,737]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:26:00,738]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:26:00,746]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:26:00,810]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:26:07,885] ERROR {org.apache.axis2.engine.AxisEngine} -  The service cannot be found for the endpoint reference (EPR) /services/GatewayToPreferences/easit1/settings/12345 {org.apache.axis2.engine.AxisEngine}
+org.apache.axis2.AxisFault: The service cannot be found for the endpoint reference (EPR) /services/GatewayToPreferences/easit1/settings/12345
+	at org.apache.axis2.engine.DispatchPhase.validateTransport(DispatchPhase.java:251)
+	at org.apache.axis2.engine.DispatchPhase.checkPostConditions(DispatchPhase.java:109)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:329)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:261)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:167)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:26:07,888] ERROR {org.apache.synapse.transport.passthru.ServerWorker} -  Error processing GET request for : /services/GatewayToPreferences/easit1/settings/12345 {org.apache.synapse.transport.passthru.ServerWorker}
+org.apache.axis2.AxisFault: The service cannot be found for the endpoint reference (EPR) /services/GatewayToPreferences/easit1/settings/12345
+	at org.apache.axis2.engine.DispatchPhase.validateTransport(DispatchPhase.java:251)
+	at org.apache.axis2.engine.DispatchPhase.checkPostConditions(DispatchPhase.java:109)
+	at org.apache.axis2.engine.Phase.invoke(Phase.java:329)
+	at org.apache.axis2.engine.AxisEngine.invoke(AxisEngine.java:261)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:167)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:27:13,236]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:27:13,238]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:27:13,246]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:27:13,313]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:27:21,476]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:632810d9-7116-4311-8e95-c28b78d32606, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:27:21,486]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:632810d9-7116-4311-8e95-c28b78d32606, Direction: request, missatge = DESPRES D'ENVIAR EL SEND AL IS {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:27:21,487] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:27:21,489] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:632810d9-7116-4311-8e95-c28b78d32606, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:27:21,502]  INFO {org.apache.synapse.core.axis2.TimeoutHandler} -  This engine will expire all callbacks after : 120 seconds, irrespective of the timeout action, after the specified or optional timeout {org.apache.synapse.core.axis2.TimeoutHandler}
+TID: [0] [ESB] [2013-10-01 16:27:21,506] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:27:21,506] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:27:21,508] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:28:22,464]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-4 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:28:22,525]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:f7a416c3-e84f-4722-aaf7-22c0779e8af7, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:28:22,526]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:f7a416c3-e84f-4722-aaf7-22c0779e8af7, Direction: request, missatge = DESPRES D'ENVIAR EL SEND AL IS {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:28:22,527] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:28:22,528] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:f7a416c3-e84f-4722-aaf7-22c0779e8af7, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:28:22,529] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:28:22,529] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:28:22,531] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:29:22,527]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-5 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:29:43,425]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:29:43,426]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:29:43,432]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:29:43,503]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:29:59,152]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:d8e75680-5437-452f-b152-851305d11733, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:29:59,155]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:d8e75680-5437-452f-b152-851305d11733, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:29:59,156] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:29:59,157] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:d8e75680-5437-452f-b152-851305d11733, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:29:59,158] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:29:59,158] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:29:59,160] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:30:59,152]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-6 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:30:59,247]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:5941bba8-52fb-4645-97b3-833e374a4d80, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:30:59,250]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:5941bba8-52fb-4645-97b3-833e374a4d80, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:30:59,250] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:30:59,251] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:5941bba8-52fb-4645-97b3-833e374a4d80, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:30:59,252] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:30:59,252] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:30:59,254] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:31:59,248]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-7 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:32:51,707]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:32:51,708]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:32:51,714]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:32:51,786]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:33:03,186]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:9e29c0d9-3c2c-4b7c-bdb3-a2dd9e8feea6, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:33:03,189]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:9e29c0d9-3c2c-4b7c-bdb3-a2dd9e8feea6, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:33:03,189] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:33:03,190] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:9e29c0d9-3c2c-4b7c-bdb3-a2dd9e8feea6, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:33:03,191] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:33:03,192] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:33:03,193] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:34:03,190]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-8 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:34:03,241]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:d1f97875-8be7-4b0e-9950-8571851739d5, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:34:03,243]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:d1f97875-8be7-4b0e-9950-8571851739d5, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:34:03,244] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:34:03,245] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:d1f97875-8be7-4b0e-9950-8571851739d5, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:34:03,245] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:34:03,246] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:34:03,247] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:34:51,743]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:34:51,745]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:34:51,752]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:34:51,832]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:35:01,148]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:f0503226-bfdf-435a-bca5-84a4d7ed48a0, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:35:01,150]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:f0503226-bfdf-435a-bca5-84a4d7ed48a0, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:35:01,151] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:35:01,152] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:f0503226-bfdf-435a-bca5-84a4d7ed48a0, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:35:01,152] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:35:01,153] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:35:01,154] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:35:03,244]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-9 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:36:01,151]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-10 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:36:01,168]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:1472c1a1-45c9-484b-9d6e-39a323348e6a, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:36:01,171]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:1472c1a1-45c9-484b-9d6e-39a323348e6a, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:36:01,171] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:36:01,173] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:1472c1a1-45c9-484b-9d6e-39a323348e6a, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:36:01,173] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:36:01,174] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:36:01,175] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:37:01,169]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-11 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:53:06,316]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-01 16:53:06,316+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-01 16:53:46,863]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:53:46,864]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:53:46,870]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:53:46,931]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:54:10,411]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:54:10,413]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:54:10,420]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 16:54:10,478]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 16:54:24,598]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:3fbfdd93-b5b5-418a-a15e-f0bc314a52d2, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:54:24,600]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:3fbfdd93-b5b5-418a-a15e-f0bc314a52d2, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:54:24,600] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:54:24,601] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:3fbfdd93-b5b5-418a-a15e-f0bc314a52d2, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:54:24,602] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:54:24,602] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:54:24,603] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:55:24,599]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-12 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 16:55:24,608]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:b02b1385-43f7-46c0-a166-271f893d2d6c, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:55:24,610]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:b02b1385-43f7-46c0-a166-271f893d2d6c, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:55:24,611] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 16:55:24,612] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:b02b1385-43f7-46c0-a166-271f893d2d6c, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 16:55:24,613] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 16:55:24,613] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 16:55:24,615] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 16:56:24,611]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-13 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 17:00:09,667]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:00:09,668]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:00:09,674]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 17:00:09,747]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:00:29,278]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:00:29,280]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:00:29,287]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 17:00:29,348]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:00:35,777]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:74f10254-4951-4179-b1f3-a15062bb00de, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:00:35,779]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:74f10254-4951-4179-b1f3-a15062bb00de, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:00:35,780] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_7c3fd70ade8de720e1d8641f41aaf5d94c32a2d60f5e13f0 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-01 17:00:35,780] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_7c3fd70ade8de720e1d8641f41aaf5d94c32a2d60f5e13f0 resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-01 17:00:35,780] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-01 17:00:35,781] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-01 17:01:58,867]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:01:58,867]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:01:58,874]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 17:01:58,933]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:02:19,168]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:71c61df7-e95e-4076-99e7-3d8145b356bd, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:02:19,170]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:71c61df7-e95e-4076-99e7-3d8145b356bd, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:02:19,170] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 17:02:19,172] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:71c61df7-e95e-4076-99e7-3d8145b356bd, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:02:19,173] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 17:02:19,173] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 17:02:19,175] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 17:03:19,170]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-15 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 17:03:19,185]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:526ae0ea-51bf-451b-8ff9-5ba53df96b74, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:03:19,189]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:526ae0ea-51bf-451b-8ff9-5ba53df96b74, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:03:19,189] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 17:03:19,190] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:526ae0ea-51bf-451b-8ff9-5ba53df96b74, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:03:19,191] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 17:03:19,192] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 17:03:19,193] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 17:04:19,192]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-16 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 17:04:54,254]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:04:54,255]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:04:54,261]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 17:04:54,335]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:05:03,247]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:bec1e9aa-54f8-43cd-a145-e01acd680050, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:05:03,248]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:bec1e9aa-54f8-43cd-a145-e01acd680050, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:05:03,248] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 17:05:03,249] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:bec1e9aa-54f8-43cd-a145-e01acd680050, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:05:03,249] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 17:05:03,249] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 17:05:03,250] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 17:06:03,250]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-17 {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-01 17:06:03,260]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:6b97f282-1f47-4093-afc9-3a5c9eea4ff3, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:06:03,263]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:6b97f282-1f47-4093-afc9-3a5c9eea4ff3, Direction: request, token = easit1, settings = 12345 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:06:03,263] ERROR {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator} -  org.apache.synapse.SynapseException: User name not provided for the Entitlement mediator - can't proceed {org.wso2.carbon.identity.entitlement.mediator.EntitlementMediator}
+TID: [0] [ESB] [2013-10-01 17:06:03,265] FATAL {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/GatewayToPreferences/easit1/settings/12345, MessageID: urn:uuid:6b97f282-1f47-4093-afc9-3a5c9eea4ff3, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-01 17:06:03,265] ERROR {org.apache.axis2.description.ClientUtils} -  The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL. {org.apache.axis2.description.ClientUtils}
+TID: [0] [ESB] [2013-10-01 17:06:03,266] ERROR {org.apache.synapse.core.axis2.Axis2Sender} -  Unexpected error during sending message out {org.apache.synapse.core.axis2.Axis2Sender}
+org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-01 17:06:03,267] ERROR {org.apache.axis2.transport.base.threads.NativeWorkerPool} -  Uncaught exception {org.apache.axis2.transport.base.threads.NativeWorkerPool}
+java.lang.RuntimeException: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:110)
+	at org.apache.synapse.core.axis2.ProxyServiceMessageReceiver.receive(ProxyServiceMessageReceiver.java:191)
+	at org.apache.axis2.engine.AxisEngine.receive(AxisEngine.java:180)
+	at org.apache.synapse.transport.passthru.ServerWorker.processNonEntityEnclosingRESTHandler(ServerWorker.java:337)
+	at org.apache.synapse.transport.passthru.ServerWorker.run(ServerWorker.java:169)
+	at org.apache.axis2.transport.base.threads.NativeWorkerPool$1.run(NativeWorkerPool.java:172)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.synapse.SynapseException: Unexpected error during sending message out
+	at org.apache.synapse.core.axis2.Axis2Sender.handleException(Axis2Sender.java:170)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:69)
+	at org.apache.synapse.core.axis2.Axis2SynapseEnvironment.send(Axis2SynapseEnvironment.java:342)
+	at org.apache.synapse.mediators.builtin.SendMediator.mediate(SendMediator.java:92)
+	at org.apache.synapse.mediators.AbstractListMediator.mediate(AbstractListMediator.java:71)
+	at org.apache.synapse.mediators.base.SequenceMediator.mediate(SequenceMediator.java:114)
+	at org.apache.synapse.mediators.MediatorFaultHandler.onFault(MediatorFaultHandler.java:81)
+	at org.apache.synapse.FaultHandler.handleFault(FaultHandler.java:102)
+	... 8 more
+Caused by: org.apache.axis2.AxisFault: The system cannot infer the transport information from the /services/GatewayToPreferences/easit1/settings/12345 URL.
+	at org.apache.axis2.description.ClientUtils.inferOutTransport(ClientUtils.java:81)
+	at org.apache.synapse.core.axis2.DynamicAxisOperation$DynamicOperationClient.executeImpl(DynamicAxisOperation.java:115)
+	at org.apache.axis2.client.OperationClient.execute(OperationClient.java:149)
+	at org.apache.synapse.core.axis2.Axis2FlexibleMEPClient.send(Axis2FlexibleMEPClient.java:481)
+	at org.apache.synapse.core.axis2.Axis2Sender.sendOn(Axis2Sender.java:57)
+	... 14 more
+TID: [0] [ESB] [2013-10-01 17:06:21,458]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:06:21,460]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:06:21,465]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-01 17:06:21,528]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-01 17:07:03,263]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Connection time out after request is read: http-incoming-18 {org.apache.synapse.transport.passthru.SourceHandler}

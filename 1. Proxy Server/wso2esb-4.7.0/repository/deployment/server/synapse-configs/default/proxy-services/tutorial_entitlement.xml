@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="tutorial_entitlement"
+       transports="https"
+       startOnLoad="true"
+       trace="disable">
+   <description/>
+   <target inSequence="InSecuencesProva" outSequence="OutSecuenceProva"/>
+   <publishWSDL uri="http://172.20.10.118:8280/services/echo?wsdl&amp;#8221"/>
+   <policy key="conf:/repository/axis2/service-groups/tutorial_entitlement/services/tutorial_entitlement/policies/UTOverTransport"/>
+   <enableSec/>
+</proxy>

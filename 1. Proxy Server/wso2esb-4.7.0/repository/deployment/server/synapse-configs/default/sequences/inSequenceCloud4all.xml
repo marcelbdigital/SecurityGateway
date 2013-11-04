@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse"
+          name="inSequenceCloud4all"
+          trace="enable">
+   <log/>
+   <script language="js">var url = mc.getTo().toString();
+var newURL = url.replace("pepita","easit1");
+mc.setTo(newURL);</script>
+   <send buildmessage="true">
+      <endpoint>
+         <address uri="http://preferences.gpii.net/user/"/>
+      </endpoint>
+   </send>
+   <log level="full" category="ERROR"/>
+</sequence>

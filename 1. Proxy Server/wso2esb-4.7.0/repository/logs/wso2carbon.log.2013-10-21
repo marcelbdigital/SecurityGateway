@@ -1,0 +1,95 @@
+TID: [0] [ESB] [2013-10-21 14:41:33,008]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-21 14:41:33,008+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-21 14:45:21,645]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-21 14:45:21,646]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-21 14:45:21,650]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-21 14:45:21,745]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-21 14:49:29,515]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:8d8d9b6e-6068-4cd9-a04a-2408d4969508, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:49:29,547]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:8d8d9b6e-6068-4cd9-a04a-2408d4969508, Direction: request, DEVICE ---> = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:49:29,547]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:8d8d9b6e-6068-4cd9-a04a-2408d4969508, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:49:29,862]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:8d8d9b6e-6068-4cd9-a04a-2408d4969508, Direction: request, Acceptada = ACCEPTADA!!, al BAM: --> = easit1 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:49:29,863]  INFO {org.wso2.carbon.mediator.bam.Stream} -  Data Publisher Created. {org.wso2.carbon.mediator.bam.Stream}
+TID: [0] [ESB] [2013-10-21 14:49:29,871] ERROR {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher} -  Error while connection to event receiver {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher}
+org.wso2.carbon.databridge.agent.thrift.exception.AgentException: Cannot borrow client for TCP,172.20.10.118:7714,TCP,172.20.10.118:7714
+	at org.wso2.carbon.databridge.agent.thrift.internal.publisher.authenticator.AgentAuthenticator.connect(AgentAuthenticator.java:58)
+	at org.wso2.carbon.databridge.agent.thrift.DataPublisher.start(DataPublisher.java:263)
+	at org.wso2.carbon.databridge.agent.thrift.DataPublisher.<init>(DataPublisher.java:201)
+	at org.wso2.carbon.databridge.agent.thrift.DataPublisher.<init>(DataPublisher.java:112)
+	at org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher$ReceiverConnectionWorker.run(AsyncDataPublisher.java:797)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.thrift.transport.TTransportException: Could not connect to 172.20.10.118 on port 7714
+	at org.apache.thrift.transport.TSSLTransportFactory.createClient(TSSLTransportFactory.java:212)
+	at org.apache.thrift.transport.TSSLTransportFactory.getClientSocket(TSSLTransportFactory.java:166)
+	at org.wso2.carbon.databridge.agent.thrift.internal.pool.client.secure.SecureClientPoolFactory.makeObject(SecureClientPoolFactory.java:90)
+	at org.wso2.carbon.databridge.agent.thrift.internal.pool.client.secure.SecureClientPoolFactory.makeObject(SecureClientPoolFactory.java:48)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1212)
+	at org.wso2.carbon.databridge.agent.thrift.internal.publisher.authenticator.AgentAuthenticator.connect(AgentAuthenticator.java:50)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:407)
+	at sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:88)
+	at org.apache.thrift.transport.TSSLTransportFactory.createClient(TSSLTransportFactory.java:208)
+	... 15 more
+TID: [0] [ESB] [2013-10-21 14:49:29,898] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_755a453ae4ae762e1883f7186580ecf642e902ae7d293e4a currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-21 14:49:29,898] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_755a453ae4ae762e1883f7186580ecf642e902ae7d293e4a resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-21 14:49:29,899] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-21 14:49:29,899] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-21 14:49:29,932] ERROR {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher} -  Reconnection failed for for ssl://172.20.10.118:7714 {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher}
+TID: [0] [ESB] [2013-10-21 14:53:14,419]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-21 14:53:14,419]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-21 14:53:14,423]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-21 14:53:14,455]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-21 14:53:20,496]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71cae498-bc9e-43c6-a48a-95eca385745d, Direction: request {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:53:20,506]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71cae498-bc9e-43c6-a48a-95eca385745d, Direction: request, DEVICE ---> = null {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:53:20,507]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71cae498-bc9e-43c6-a48a-95eca385745d, Direction: request, token = easit1, idapp = 12345, ip = 172.20.100.127 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:53:20,656]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/Entitlement_prova/easit1/settings/12345/net/172.20.100.127, MessageID: urn:uuid:71cae498-bc9e-43c6-a48a-95eca385745d, Direction: request, Acceptada = ACCEPTADA!!, al BAM: --> = easit1 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-21 14:53:20,657]  INFO {org.wso2.carbon.mediator.bam.Stream} -  Data Publisher Created. {org.wso2.carbon.mediator.bam.Stream}
+TID: [0] [ESB] [2013-10-21 14:53:20,664] ERROR {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher} -  Error while connection to event receiver {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher}
+org.wso2.carbon.databridge.agent.thrift.exception.AgentException: Cannot borrow client for TCP,172.20.10.118:7714,TCP,172.20.10.118:7714
+	at org.wso2.carbon.databridge.agent.thrift.internal.publisher.authenticator.AgentAuthenticator.connect(AgentAuthenticator.java:58)
+	at org.wso2.carbon.databridge.agent.thrift.DataPublisher.start(DataPublisher.java:263)
+	at org.wso2.carbon.databridge.agent.thrift.DataPublisher.<init>(DataPublisher.java:201)
+	at org.wso2.carbon.databridge.agent.thrift.DataPublisher.<init>(DataPublisher.java:112)
+	at org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher$ReceiverConnectionWorker.run(AsyncDataPublisher.java:797)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.apache.thrift.transport.TTransportException: Could not connect to 172.20.10.118 on port 7714
+	at org.apache.thrift.transport.TSSLTransportFactory.createClient(TSSLTransportFactory.java:212)
+	at org.apache.thrift.transport.TSSLTransportFactory.getClientSocket(TSSLTransportFactory.java:166)
+	at org.wso2.carbon.databridge.agent.thrift.internal.pool.client.secure.SecureClientPoolFactory.makeObject(SecureClientPoolFactory.java:90)
+	at org.wso2.carbon.databridge.agent.thrift.internal.pool.client.secure.SecureClientPoolFactory.makeObject(SecureClientPoolFactory.java:48)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1212)
+	at org.wso2.carbon.databridge.agent.thrift.internal.publisher.authenticator.AgentAuthenticator.connect(AgentAuthenticator.java:50)
+	... 10 more
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:618)
+	at sun.security.ssl.SSLSocketImpl.<init>(SSLSocketImpl.java:407)
+	at sun.security.ssl.SSLSocketFactoryImpl.createSocket(SSLSocketFactoryImpl.java:88)
+	at org.apache.thrift.transport.TSSLTransportFactory.createClient(TSSLTransportFactory.java:208)
+	... 15 more
+TID: [0] [ESB] [2013-10-21 14:53:20,693] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_c14a453ae4ae762e53c697186580ecf67de902ae7d293e4a currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-21 14:53:20,693] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_c14a453ae4ae762e53c697186580ecf67de902ae7d293e4a resolving to address = http://preferences.gpii.net/user/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-21 14:53:20,693] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-21 14:53:20,693] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-21 14:53:20,699] ERROR {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher} -  Reconnection failed for for ssl://172.20.10.118:7714 {org.wso2.carbon.databridge.agent.thrift.AsyncDataPublisher}

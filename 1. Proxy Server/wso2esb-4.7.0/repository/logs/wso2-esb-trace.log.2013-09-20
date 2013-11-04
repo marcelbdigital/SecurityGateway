@@ -1,0 +1,24 @@
+13:25:03,023 [-] [PassThroughMessageProcessor-271]  INFO TRACE_LOGGER Sending message through endpoint : preferencesEndpoint resolving to address = http://preferences.gpii.net/user/$user
+13:25:03,024 [-] [PassThroughMessageProcessor-271]  INFO TRACE_LOGGER SOAPAction: null
+13:25:03,024 [-] [PassThroughMessageProcessor-271]  INFO TRACE_LOGGER WSA-Action: null
+13:40:31,484 [-] [PassThroughMessageProcessor-1]  INFO TRACE_LOGGER Sending message through endpoint : preferencesEndpoint resolving to address = http://preferences.gpii.net/user/$user
+13:40:31,485 [-] [PassThroughMessageProcessor-1]  INFO TRACE_LOGGER SOAPAction: null
+13:40:31,485 [-] [PassThroughMessageProcessor-1]  INFO TRACE_LOGGER WSA-Action: null
+13:58:25,206 [-] [PassThroughMessageProcessor-7]  INFO TRACE_LOGGER Sending message through endpoint : endpoint_8ef14ee899689bd48ae855deeb31a5ba8a4c72d549199fca resolving to address = http://preferences.gpii.net/user/
+13:58:25,207 [-] [PassThroughMessageProcessor-7]  INFO TRACE_LOGGER SOAPAction: null
+13:58:25,208 [-] [PassThroughMessageProcessor-7]  INFO TRACE_LOGGER WSA-Action: null
+14:10:11,051 [-] [PassThroughMessageProcessor-10]  INFO TRACE_LOGGER Sending message through endpoint : endpoint_54f14ee899689bd40ced75deeb31a5ba2b4c72d549199fca resolving to address = http://preferences.gpii.net/user/
+14:10:11,054 [-] [PassThroughMessageProcessor-10]  INFO TRACE_LOGGER SOAPAction: null
+14:10:11,054 [-] [PassThroughMessageProcessor-10]  INFO TRACE_LOGGER WSA-Action: null
+14:10:59,510 [-] [PassThroughMessageProcessor-13]  INFO TRACE_LOGGER Sending message through endpoint : endpoint_54f14ee899689bd40ced75deeb31a5ba2b4c72d549199fca resolving to address = http://preferences.gpii.net/user/
+14:10:59,511 [-] [PassThroughMessageProcessor-13]  INFO TRACE_LOGGER SOAPAction: null
+14:10:59,511 [-] [PassThroughMessageProcessor-13]  INFO TRACE_LOGGER WSA-Action: null
+14:11:11,576 [-] [PassThroughMessageProcessor-16]  INFO TRACE_LOGGER Sending message through endpoint : endpoint_54f14ee899689bd40ced75deeb31a5ba2b4c72d549199fca resolving to address = http://preferences.gpii.net/user/
+14:11:11,576 [-] [PassThroughMessageProcessor-16]  INFO TRACE_LOGGER SOAPAction: null
+14:11:11,576 [-] [PassThroughMessageProcessor-16]  INFO TRACE_LOGGER WSA-Action: null
+14:11:11,766 [-] [PassThroughMessageProcessor-19]  INFO TRACE_LOGGER Sending message through endpoint : endpoint_54f14ee899689bd40ced75deeb31a5ba2b4c72d549199fca resolving to address = http://preferences.gpii.net/user/
+14:11:11,766 [-] [PassThroughMessageProcessor-19]  INFO TRACE_LOGGER SOAPAction: null
+14:11:11,767 [-] [PassThroughMessageProcessor-19]  INFO TRACE_LOGGER WSA-Action: null
+14:20:58,260 [-] [PassThroughMessageProcessor-22]  INFO TRACE_LOGGER Sending message through endpoint : endpoint_54f14ee899689bd40ced75deeb31a5ba2b4c72d549199fca resolving to address = http://preferences.gpii.net/user/
+14:20:58,260 [-] [PassThroughMessageProcessor-22]  INFO TRACE_LOGGER SOAPAction: null
+14:20:58,261 [-] [PassThroughMessageProcessor-22]  INFO TRACE_LOGGER WSA-Action: null

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://ws.apache.org/ns/synapse" name="jorjuAET">
+   <axis2ns49:parameter xmlns:axis2ns49="http://ws.apache.org/ns/synapse" name="user"/>
+   <axis2ns50:parameter xmlns:axis2ns50="http://ws.apache.org/ns/synapse" name="name"/>
+   <axis2ns51:parameter xmlns:axis2ns51="http://ws.apache.org/ns/synapse" name="uri"/>
+   <endpoint name="$name">
+      <address uri="http://preferences.gpii.net/user/$user" trace="enable">
+         <suspendOnFailure>
+            <progressionFactor>1.0</progressionFactor>
+         </suspendOnFailure>
+         <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+            <retryDelay>0</retryDelay>
+         </markForSuspension>
+      </address>
+   </endpoint>
+</template>

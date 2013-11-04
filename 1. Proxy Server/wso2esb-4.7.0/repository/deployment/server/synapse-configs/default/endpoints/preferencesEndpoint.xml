@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint xmlns="http://ws.apache.org/ns/synapse"
+          name="preferencesEndpoint"
+          template="jorjuAET"
+          uri="">
+   <axis2ns60:parameter xmlns:axis2ns60="http://ws.apache.org/ns/synapse"
+                        name="user"
+                        value="get-property('token')"/>
+</endpoint>

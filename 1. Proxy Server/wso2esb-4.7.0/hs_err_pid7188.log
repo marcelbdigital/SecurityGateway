@@ -1,0 +1,1135 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0x00002aaaab114ae2, pid=7188, tid=1115380032
+#
+# JRE version: 7.0_25-b15
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (23.25-b01 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libzip.so+0x4ae2]  newEntry+0x62
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000568d000):  JavaThread "localhost-startStop-1" daemon [_thread_in_native, id=7237, stack(0x00000000426b5000,0x00000000427b6000)]
+
+siginfo:si_signo=SIGBUS: si_errno=0, si_code=2 (BUS_ADRERR), si_addr=0x00002aaab63b0b29
+
+Registers:
+RAX=0x00000000056c6ce0, RBX=0x0000000005d0f798, RCX=0x0000003740552a00, RDX=0x00000000056c6cd0
+RSP=0x00000000427b4350, RBP=0x00000000427b43a0, RSI=0x00000037405529f8, RDI=0x00000000056c6cd0
+R8 =0x0000000000000003, R9 =0x00000000f6464ab8, R10=0x00002b08a8bae0ea, R11=0x00000000f6465060
+R12=0x00002aaab63b0b0c, R13=0x00000000056c6ce0, R14=0x00000000427b4400, R15=0x0000000005d0aae0
+RIP=0x00002aaaab114ae2, EFLAGS=0x0000000000010206, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00000000427b4350)
+0x00000000427b4350:   0000000000000000 0000000000000001
+0x00000000427b4360:   0000000005d0ac30 00002b08a85cc27c
+0x00000000427b4370:   00000000056c6ce0 00000000000002e7
+0x00000000427b4380:   0000000005d0aae0 00002aaaab5d144c
+0x00000000427b4390:   00000000427b4400 000000000568d000
+0x00000000427b43a0:   00000000427b43c0 00002aaaab115137
+0x00000000427b43b0:   0000000000000318 0000000000000000
+0x00000000427b43c0:   00000000427b4410 00002aaaab56b3ed
+0x00000000427b43d0:   000000000568d000 00000000427b4468
+0x00000000427b43e0:   0000000000000001 0000000000000000
+0x00000000427b43f0:   00000000427b4458 00002aaaab331158
+0x00000000427b4400:   00000000c0bdbd70 00002aaaab331158
+0x00000000427b4410:   00000000f6465048 00002aaaab5c0a0c
+0x00000000427b4420:   00000000f6464ab8 00000000f6465060
+0x00000000427b4430:   00000000f6464ab8 0000000000000000
+0x00000000427b4440:   00000000f64646e0 0000000000000000
+0x00000000427b4450:   0000000000000001 00000000f86ea7c8
+0x00000000427b4460:   00000000f86ea7c8 00002aaaab5caef4
+0x00000000427b4470:   0000000000000000 00000000f86c4d10
+0x00000000427b4480:   00000000f86c1bb8 00000000f86c4d20
+0x00000000427b4490:   00000000f86c4e20 00000000f86c6ba8
+0x00000000427b44a0:   fda91030b08d2cc0 00000000f86ea7c8
+0x00000000427b44b0:   f86c6e983f400000 00000000fda91030
+0x00000000427b44c0:   00000000f86c6f90 00000000f64646e0
+0x00000000427b44d0:   00000001f86c6f40 00000000fccd5138
+0x00000000427b44e0:   00000000f64633f0 f6464ab800000000
+0x00000000427b44f0:   00000000f86c6e98 00000000f86c6f90
+0x00000000427b4500:   00000000f86c9b58 0000000af86c9ba0
+0x00000000427b4510:   00000000f86cbd20 00000000f86cbd38
+0x00000000427b4520:   00002aaa0000055e 0000000000000007
+0x00000000427b4530:   00000000f6463f50 00000000f6463f40
+0x00000000427b4540:   0000000000000001 00000000b0218cf9 
+
+Instructions: (pc=0x00002aaaab114ae2)
+0x00002aaaab114ac2:   00 48 c7 40 28 00 00 00 00 41 80 7f 30 00 0f 84
+0x00002aaaab114ad2:   8a 02 00 00 4c 8b 63 08 4d 2b 67 28 4d 03 67 18
+0x00002aaaab114ae2:   41 0f b6 5c 24 1d 41 0f b6 44 24 1c c1 e3 08 09
+0x00002aaaab114af2:   c3 41 0f b6 44 24 1e 88 45 bd 41 0f b6 54 24 20 
+
+Register to memory mapping:
+
+RAX=0x00000000056c6ce0 is an unknown value
+RBX=0x0000000005d0f798 is an unknown value
+RCX=0x0000003740552a00: <offset 0x352a00> in /lib64/libc.so.6 at 0x0000003740200000
+RDX=0x00000000056c6cd0 is an unknown value
+RSP=0x00000000427b4350 is pointing into the stack for thread: 0x000000000568d000
+RBP=0x00000000427b43a0 is pointing into the stack for thread: 0x000000000568d000
+RSI=0x00000037405529f8: <offset 0x3529f8> in /lib64/libc.so.6 at 0x0000003740200000
+RDI=0x00000000056c6cd0 is an unknown value
+R8 =0x0000000000000003 is an unknown value
+R9 =0x00000000f6464ab8 is an oop
+sun.net.www.protocol.jar.URLJarFile 
+ - klass: 'sun/net/www/protocol/jar/URLJarFile'
+R10=0x00002b08a8bae0ea: <offset 0xcec0ea> in /home/marcel/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so at 0x00002b08a7ec2000
+R11=0x00000000f6465060 is an oop
+java.util.jar.JarFile$1 
+ - klass: 'java/util/jar/JarFile$1'
+R12=0x00002aaab63b0b0c is an unknown value
+R13=0x00000000056c6ce0 is an unknown value
+R14=0x00000000427b4400 is pointing into the stack for thread: 0x000000000568d000
+R15=0x0000000005d0aae0 is an unknown value
+
+
+Stack: [0x00000000426b5000,0x00000000427b6000],  sp=0x00000000427b4350,  free space=1020k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libzip.so+0x4ae2]  newEntry+0x62
+C  [libzip.so+0x5137]  ZIP_GetNextEntry+0x57
+J  java.util.zip.ZipFile.getNextEntry(JI)J
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J  java.util.zip.ZipFile.getNextEntry(JI)J
+J  org.apache.tomcat.util.scan.FileUrlJar.nextEntry()V
+J  org.apache.catalina.startup.ContextConfig.processAnnotationsJar(Ljava/net/URL;Lorg/apache/catalina/deploy/WebXml;Z)V
+j  org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(Ljava/net/URL;Lorg/apache/catalina/deploy/WebXml;Z)V+22
+j  org.apache.catalina.startup.ContextConfig.processAnnotations(Ljava/util/Set;Z)V+71
+j  org.apache.catalina.startup.ContextConfig.webConfig()V+334
+j  org.apache.catalina.startup.ContextConfig.configureStart()V+101
+j  org.apache.catalina.startup.ContextConfig.lifecycleEvent(Lorg/apache/catalina/LifecycleEvent;)V+57
+j  org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(Ljava/lang/String;Ljava/lang/Object;)V+37
+j  org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(Ljava/lang/String;Ljava/lang/Object;)V+6
+j  org.apache.catalina.core.StandardContext.startInternal()V+586
+j  org.apache.catalina.util.LifecycleBase.start()V+210
+j  org.apache.catalina.core.ContainerBase$StartChild.call()Ljava/lang/Void;+4
+j  org.apache.catalina.core.ContainerBase$StartChild.call()Ljava/lang/Object;+1
+j  java.util.concurrent.FutureTask$Sync.innerRun()V+29
+j  java.util.concurrent.FutureTask.run()V+4
+j  java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V+95
+j  java.util.concurrent.ThreadPoolExecutor$Worker.run()V+5
+j  java.lang.Thread.run()V+11
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00002aaab8653000 JavaThread "DestroyJavaVM" [_thread_blocked, id=7189, stack(0x000000004075d000,0x000000004085e000)]
+  0x0000000005571800 JavaThread "[ThreadPool Manager] - Idle Thread" daemon [_thread_blocked, id=7277, stack(0x0000000042bba000,0x0000000042cbb000)]
+  0x000000000556d000 JavaThread "pool-4-thread-1" [_thread_blocked, id=7276, stack(0x0000000042ab9000,0x0000000042bba000)]
+  0x0000000005612000 JavaThread "Timer-2" daemon [_thread_blocked, id=7246, stack(0x00000000420af000,0x00000000421b0000)]
+  0x00000000053be800 JavaThread "Thread-11" daemon [_thread_blocked, id=7245, stack(0x00000000429b8000,0x0000000042ab9000)]
+  0x0000000005d10800 JavaThread "H2 Log Writer WSO2CARBON_DB" daemon [_thread_blocked, id=7244, stack(0x00000000428b7000,0x00000000429b8000)]
+  0x0000000005d52800 JavaThread "H2 File Lock Watchdog /home/marcel/ESB/wso2esb-4.7.0/repository/database/WSO2CARBON_DB.lock.db" daemon [_thread_blocked, id=7243, stack(0x00000000427b6000,0x00000000428b7000)]
+=>0x000000000568d000 JavaThread "localhost-startStop-1" daemon [_thread_in_native, id=7237, stack(0x00000000426b5000,0x00000000427b6000)]
+  0x00002aaab8ad2000 JavaThread "Catalina-startStop-1" daemon [_thread_blocked, id=7236, stack(0x00000000425b4000,0x00000000426b5000)]
+  0x000000000562d800 JavaThread "PoolCleaner[480447740:1381244308791]" daemon [_thread_blocked, id=7235, stack(0x00000000424b3000,0x00000000425b4000)]
+  0x0000000005653800 JavaThread "Thread-6" daemon [_thread_blocked, id=7234, stack(0x00000000423b2000,0x00000000424b3000)]
+  0x0000000005a08000 JavaThread "Timer-0" daemon [_thread_blocked, id=7228, stack(0x00000000422b1000,0x00000000423b2000)]
+  0x0000000005542800 JavaThread "[Timer] - Main Queue Handler" daemon [_thread_blocked, id=7223, stack(0x00000000421b0000,0x00000000422b1000)]
+  0x00002aaab886c800 JavaThread "Worker-JM" [_thread_blocked, id=7221, stack(0x0000000041ab8000,0x0000000041bb9000)]
+  0x00002aaab863e800 JavaThread "Bundle File Closer" daemon [_thread_blocked, id=7218, stack(0x00000000419b7000,0x0000000041ab8000)]
+  0x00002aaab82ac000 JavaThread "Start Level Event Dispatcher" daemon [_thread_blocked, id=7212, stack(0x0000000041fae000,0x00000000420af000)]
+  0x00002aaab82ab000 JavaThread "Framework Event Dispatcher" daemon [_thread_blocked, id=7211, stack(0x0000000041ead000,0x0000000041fae000)]
+  0x00002aaab82aa000 JavaThread "State Saver" [_thread_blocked, id=7210, stack(0x0000000040be3000,0x0000000040ce4000)]
+  0x00002aaab8384000 JavaThread "Framework Active Thread" [_thread_blocked, id=7205, stack(0x000000004002a000,0x000000004012b000)]
+  0x00002aaab822f800 JavaThread "process reaper" daemon [_thread_blocked, id=7204, stack(0x0000000041e85000,0x0000000041ead000)]
+  0x00002aaab817c800 JavaThread "RMI TCP Accept-0" daemon [_thread_in_native, id=7201, stack(0x00000000417b5000,0x00000000418b6000)]
+  0x000000000530e800 JavaThread "Service Thread" daemon [_thread_blocked, id=7198, stack(0x00000000416b4000,0x00000000417b5000)]
+  0x000000000530c000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=7197, stack(0x00000000415b3000,0x00000000416b4000)]
+  0x0000000005300800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=7196, stack(0x00000000414b2000,0x00000000415b3000)]
+  0x00000000052fe000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=7195, stack(0x00000000413b1000,0x00000000414b2000)]
+  0x00000000052aa800 JavaThread "Finalizer" daemon [_thread_blocked, id=7194, stack(0x00000000412b0000,0x00000000413b1000)]
+  0x00000000052a8000 JavaThread "Reference Handler" daemon [_thread_blocked, id=7193, stack(0x00000000411af000,0x00000000412b0000)]
+
+Other Threads:
+  0x00000000052a0800 VMThread [stack: 0x00000000410ae000,0x00000000411af000] [id=7192]
+  0x00002aaab819e800 WatcherThread [stack: 0x00000000418b6000,0x00000000419b7000] [id=7202]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 285056K, used 258648K [0x00000000eaab0000, 0x00000000ffa70000, 0x0000000100000000)
+  eden space 253376K, 89% used [0x00000000eaab0000,0x00000000f8857828,0x00000000fa220000)
+  from space 31680K, 99% used [0x00000000fc9e0000,0x00000000fe8ce8b8,0x00000000fe8d0000)
+  to   space 40704K, 0% used [0x00000000fa220000,0x00000000fa220000,0x00000000fc9e0000)
+ ParOldGen       total 174784K, used 29722K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 17% used [0x00000000c0000000,0x00000000c1d069a0,0x00000000caab0000)
+ PSPermGen       total 37184K, used 36992K [0x00000000b0000000, 0x00000000b2450000, 0x00000000c0000000)
+  object space 37184K, 99% used [0x00000000b0000000,0x00000000b2420148,0x00000000b2450000)
+
+Card table byte_map: [0x00002aaaae3eb000,0x00002aaaae66c000] byte_map_base: 0x00002aaaade6b000
+
+Polling page: 0x00002aaaaaef4000
+
+Code Cache  [0x00002aaaab32b000, 0x00002aaaab5eb000, 0x00002aaaae32b000)
+ total_blobs=1131 nmethods=717 adapters=366 free_code_cache=46470Kb largest_free_block=47511360
+
+Compilation events (10 events):
+Event: 13.808 Thread 0x000000000530c000  764             org.apache.tomcat.util.scan.FileUrlJar::getEntryName (17 bytes)
+Event: 13.808 Thread 0x000000000530c000 nmethod 764 0x00002aaaab5a1dd0 code [0x00002aaaab5a1f00, 0x00002aaaab5a1f58]
+Event: 13.815 Thread 0x0000000005300800  766   !         org.apache.catalina.startup.ContextConfig::processAnnotationsJar (299 bytes)
+Event: 14.063 Thread 0x0000000005300800 nmethod 766 0x00002aaaab5c9e10 code [0x00002aaaab5ca8c0, 0x00002aaaab5d1c70]
+Event: 14.203 Thread 0x000000000530c000  767             java.io.BufferedInputStream::getInIfOpen (21 bytes)
+Event: 14.203 Thread 0x000000000530c000 nmethod 767 0x00002aaaab577bd0 code [0x00002aaaab577d00, 0x00002aaaab577d78]
+Event: 14.211 Thread 0x000000000530c000  768             java.io.BufferedInputStream::fill (194 bytes)
+Event: 14.219 Thread 0x000000000530c000 nmethod 768 0x00002aaaab56a650 code [0x00002aaaab56a7e0, 0x00002aaaab56ad70]
+Event: 14.244 Thread 0x0000000005300800  770   !         sun.misc.CharacterDecoder::decodeBuffer (152 bytes)
+Event: 14.248 Thread 0x0000000005300800 nmethod 770 0x00002aaaab578ed0 code [0x00002aaaab579060, 0x00002aaaab579328]
+
+GC Heap History (10 events):
+Event: 4.493 GC heap before
+{Heap before GC invocations=4 (full 0):
+ PSYoungGen      total 76480K, used 76454K [0x00000000eaab0000, 0x00000000f0000000, 0x0000000100000000)
+  eden space 65600K, 100% used [0x00000000eaab0000,0x00000000eeac0000,0x00000000eeac0000)
+  from space 10880K, 99% used [0x00000000eeac0000,0x00000000ef559a30,0x00000000ef560000)
+  to   space 10880K, 0% used [0x00000000ef560000,0x00000000ef560000,0x00000000f0000000)
+ ParOldGen       total 174784K, used 758K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 0% used [0x00000000c0000000,0x00000000c00bd910,0x00000000caab0000)
+ PSPermGen       total 21248K, used 12274K [0x00000000b0000000, 0x00000000b14c0000, 0x00000000c0000000)
+  object space 21248K, 57% used [0x00000000b0000000,0x00000000b0bfcab8,0x00000000b14c0000)
+Event: 4.514 GC heap after
+Heap after GC invocations=4 (full 0):
+ PSYoungGen      total 76480K, used 10878K [0x00000000eaab0000, 0x00000000f4010000, 0x0000000100000000)
+  eden space 65600K, 0% used [0x00000000eaab0000,0x00000000eaab0000,0x00000000eeac0000)
+  from space 10880K, 99% used [0x00000000ef560000,0x00000000effffae0,0x00000000f0000000)
+  to   space 10880K, 0% used [0x00000000eeac0000,0x00000000eeac0000,0x00000000ef560000)
+ ParOldGen       total 174784K, used 5889K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 3% used [0x00000000c0000000,0x00000000c05c0428,0x00000000caab0000)
+ PSPermGen       total 21248K, used 12274K [0x00000000b0000000, 0x00000000b14c0000, 0x00000000c0000000)
+  object space 21248K, 57% used [0x00000000b0000000,0x00000000b0bfcab8,0x00000000b14c0000)
+}
+Event: 5.084 GC heap before
+{Heap before GC invocations=5 (full 0):
+ PSYoungGen      total 76480K, used 76478K [0x00000000eaab0000, 0x00000000f4010000, 0x0000000100000000)
+  eden space 65600K, 100% used [0x00000000eaab0000,0x00000000eeac0000,0x00000000eeac0000)
+  from space 10880K, 99% used [0x00000000ef560000,0x00000000effffae0,0x00000000f0000000)
+  to   space 10880K, 0% used [0x00000000eeac0000,0x00000000eeac0000,0x00000000ef560000)
+ ParOldGen       total 174784K, used 5889K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 3% used [0x00000000c0000000,0x00000000c05c0428,0x00000000caab0000)
+ PSPermGen       total 21248K, used 12360K [0x00000000b0000000, 0x00000000b14c0000, 0x00000000c0000000)
+  object space 21248K, 58% used [0x00000000b0000000,0x00000000b0c12358,0x00000000b14c0000)
+Event: 5.124 GC heap after
+Heap after GC invocations=5 (full 0):
+ PSYoungGen      total 76480K, used 10850K [0x00000000eaab0000, 0x00000000f58b0000, 0x0000000100000000)
+  eden space 65600K, 0% used [0x00000000eaab0000,0x00000000eaab0000,0x00000000eeac0000)
+  from space 10880K, 99% used [0x00000000eeac0000,0x00000000ef558998,0x00000000ef560000)
+  to   space 23488K, 0% used [0x00000000f41c0000,0x00000000f41c0000,0x00000000f58b0000)
+ ParOldGen       total 174784K, used 13280K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 7% used [0x00000000c0000000,0x00000000c0cf81b8,0x00000000caab0000)
+ PSPermGen       total 21248K, used 12360K [0x00000000b0000000, 0x00000000b14c0000, 0x00000000c0000000)
+  object space 21248K, 58% used [0x00000000b0000000,0x00000000b0c12358,0x00000000b14c0000)
+}
+Event: 6.632 GC heap before
+{Heap before GC invocations=6 (full 0):
+ PSYoungGen      total 76480K, used 76450K [0x00000000eaab0000, 0x00000000f58b0000, 0x0000000100000000)
+  eden space 65600K, 100% used [0x00000000eaab0000,0x00000000eeac0000,0x00000000eeac0000)
+  from space 10880K, 99% used [0x00000000eeac0000,0x00000000ef558998,0x00000000ef560000)
+  to   space 23488K, 0% used [0x00000000f41c0000,0x00000000f41c0000,0x00000000f58b0000)
+ ParOldGen       total 174784K, used 13280K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 7% used [0x00000000c0000000,0x00000000c0cf81b8,0x00000000caab0000)
+ PSPermGen       total 21248K, used 12379K [0x00000000b0000000, 0x00000000b14c0000, 0x00000000c0000000)
+  object space 21248K, 58% used [0x00000000b0000000,0x00000000b0c16f38,0x00000000b14c0000)
+Event: 6.653 GC heap after
+Heap after GC invocations=6 (full 0):
+ PSYoungGen      total 153792K, used 13477K [0x00000000eaab0000, 0x00000000f57d0000, 0x0000000100000000)
+  eden space 131200K, 0% used [0x00000000eaab0000,0x00000000eaab0000,0x00000000f2ad0000)
+  from space 22592K, 59% used [0x00000000f41c0000,0x00000000f4ee96b0,0x00000000f57d0000)
+  to   space 23040K, 0% used [0x00000000f2ad0000,0x00000000f2ad0000,0x00000000f4150000)
+ ParOldGen       total 174784K, used 13280K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 7% used [0x00000000c0000000,0x00000000c0cf81b8,0x00000000caab0000)
+ PSPermGen       total 21248K, used 12379K [0x00000000b0000000, 0x00000000b14c0000, 0x00000000c0000000)
+  object space 21248K, 58% used [0x00000000b0000000,0x00000000b0c16f38,0x00000000b14c0000)
+}
+Event: 11.295 GC heap before
+{Heap before GC invocations=7 (full 0):
+ PSYoungGen      total 153792K, used 144677K [0x00000000eaab0000, 0x00000000f57d0000, 0x0000000100000000)
+  eden space 131200K, 100% used [0x00000000eaab0000,0x00000000f2ad0000,0x00000000f2ad0000)
+  from space 22592K, 59% used [0x00000000f41c0000,0x00000000f4ee96b0,0x00000000f57d0000)
+  to   space 23040K, 0% used [0x00000000f2ad0000,0x00000000f2ad0000,0x00000000f4150000)
+ ParOldGen       total 174784K, used 13280K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 7% used [0x00000000c0000000,0x00000000c0cf81b8,0x00000000caab0000)
+ PSPermGen       total 32576K, used 32477K [0x00000000b0000000, 0x00000000b1fd0000, 0x00000000c0000000)
+  object space 32576K, 99% used [0x00000000b0000000,0x00000000b1fb7458,0x00000000b1fd0000)
+Event: 11.343 GC heap after
+Heap after GC invocations=7 (full 0):
+ PSYoungGen      total 154240K, used 23021K [0x00000000eaab0000, 0x00000000fe8d0000, 0x0000000100000000)
+  eden space 131200K, 0% used [0x00000000eaab0000,0x00000000eaab0000,0x00000000f2ad0000)
+  from space 23040K, 99% used [0x00000000f2ad0000,0x00000000f414b4c0,0x00000000f4150000)
+  to   space 31680K, 0% used [0x00000000fc9e0000,0x00000000fc9e0000,0x00000000fe8d0000)
+ ParOldGen       total 174784K, used 21915K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 12% used [0x00000000c0000000,0x00000000c1566fe0,0x00000000caab0000)
+ PSPermGen       total 32576K, used 32477K [0x00000000b0000000, 0x00000000b1fd0000, 0x00000000c0000000)
+  object space 32576K, 99% used [0x00000000b0000000,0x00000000b1fb7458,0x00000000b1fd0000)
+}
+Event: 12.746 GC heap before
+{Heap before GC invocations=8 (full 0):
+ PSYoungGen      total 154240K, used 154221K [0x00000000eaab0000, 0x00000000fe8d0000, 0x0000000100000000)
+  eden space 131200K, 100% used [0x00000000eaab0000,0x00000000f2ad0000,0x00000000f2ad0000)
+  from space 23040K, 99% used [0x00000000f2ad0000,0x00000000f414b4c0,0x00000000f4150000)
+  to   space 31680K, 0% used [0x00000000fc9e0000,0x00000000fc9e0000,0x00000000fe8d0000)
+ ParOldGen       total 174784K, used 21915K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 12% used [0x00000000c0000000,0x00000000c1566fe0,0x00000000caab0000)
+ PSPermGen       total 36800K, used 36623K [0x00000000b0000000, 0x00000000b23f0000, 0x00000000c0000000)
+  object space 36800K, 99% used [0x00000000b0000000,0x00000000b23c3e48,0x00000000b23f0000)
+Event: 12.802 GC heap after
+Heap after GC invocations=8 (full 0):
+ PSYoungGen      total 285056K, used 31674K [0x00000000eaab0000, 0x00000000ffa70000, 0x0000000100000000)
+  eden space 253376K, 0% used [0x00000000eaab0000,0x00000000eaab0000,0x00000000fa220000)
+  from space 31680K, 99% used [0x00000000fc9e0000,0x00000000fe8ce8b8,0x00000000fe8d0000)
+  to   space 40704K, 0% used [0x00000000fa220000,0x00000000fa220000,0x00000000fc9e0000)
+ ParOldGen       total 174784K, used 29722K [0x00000000c0000000, 0x00000000caab0000, 0x00000000eaab0000)
+  object space 174784K, 17% used [0x00000000c0000000,0x00000000c1d069a0,0x00000000caab0000)
+ PSPermGen       total 36800K, used 36623K [0x00000000b0000000, 0x00000000b23f0000, 0x00000000c0000000)
+  object space 36800K, 99% used [0x00000000b0000000,0x00000000b23c3e48,0x00000000b23f0000)
+}
+
+Deoptimization events (10 events):
+Event: 13.207 Thread 0x00002aaab82ac000 Uncommon trap -42 fr.pc 0x00002aaaab5ae1f0
+Event: 13.208 Thread 0x00002aaab82ac000 Uncommon trap -34 fr.pc 0x00002aaaab513298
+Event: 13.209 Thread 0x00002aaab82ac000 Uncommon trap -122 fr.pc 0x00002aaaab429a20
+Event: 13.212 Thread 0x00002aaab82ac000 Uncommon trap -34 fr.pc 0x00002aaaab503740
+Event: 13.268 Thread 0x000000000568d000 Uncommon trap 45 fr.pc 0x00002aaaab5864b8
+Event: 13.268 Thread 0x000000000568d000 Uncommon trap -34 fr.pc 0x00002aaaab551f14
+Event: 13.268 Thread 0x000000000568d000 Uncommon trap -34 fr.pc 0x00002aaaab551f14
+Event: 13.268 Thread 0x000000000568d000 Uncommon trap -34 fr.pc 0x00002aaaab551f14
+Event: 13.268 Thread 0x000000000568d000 Uncommon trap -34 fr.pc 0x00002aaaab551f14
+Event: 13.398 Thread 0x000000000568d000 Uncommon trap 17 fr.pc 0x00002aaaab57ffd8
+
+Internal exceptions (10 events):
+Event: 12.566 Thread 0x00002aaab82ac000 Threw 0x00000000f1f75820 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 12.567 Thread 0x00002aaab82ac000 Threw 0x00000000f1f7cb10 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 12.567 Thread 0x00002aaab82ac000 Threw 0x00000000f1f7d978 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 12.567 Thread 0x00002aaab82ac000 Threw 0x00000000f1f7e708 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 12.567 Thread 0x00002aaab82ac000 Threw 0x00000000f1f7f4f0 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 12.568 Thread 0x00002aaab82ac000 Threw 0x00000000f1f80148 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 12.578 Thread 0x00002aaab82ac000 Threw 0x00000000f1fb3388 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jni.cpp:1631
+Event: 13.105 Thread 0x00002aaab82ac000 Threw 0x00000000ec9a1398 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 13.108 Thread 0x00002aaab82ac000 Threw 0x00000000ec9b6968 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jvm.cpp:1235
+Event: 14.300 Thread 0x000000000568d000 Threw 0x00000000f86ea7c8 at /HUDSON/workspace/jdk7u25-2-build-linux-amd64-product/jdk7u25/hotspot/src/share/vm/prims/jni.cpp:716
+
+Events (10 events):
+Event: 13.268 Thread 0x000000000568d000 DEOPT PACKING pc=0x00002aaaab551f14 sp=0x00000000427b43b0
+Event: 13.268 Thread 0x000000000568d000 DEOPT UNPACKING pc=0x00002aaaab36414d sp=0x00000000427b4388 mode 2
+Event: 13.268 Thread 0x000000000568d000 DEOPT PACKING pc=0x00002aaaab551f14 sp=0x00000000427b43b0
+Event: 13.268 Thread 0x000000000568d000 DEOPT UNPACKING pc=0x00002aaaab36414d sp=0x00000000427b4388 mode 2
+Event: 13.268 Thread 0x000000000568d000 DEOPT PACKING pc=0x00002aaaab551f14 sp=0x00000000427b43b0
+Event: 13.268 Thread 0x000000000568d000 DEOPT UNPACKING pc=0x00002aaaab36414d sp=0x00000000427b4388 mode 2
+Event: 13.398 Thread 0x000000000568d000 DEOPT PACKING pc=0x00002aaaab57ffd8 sp=0x00000000427b42a0
+Event: 13.398 Thread 0x000000000568d000 DEOPT UNPACKING pc=0x00002aaaab36414d sp=0x00000000427b4270 mode 2
+Event: 14.300 loading class 0x0000000005323c00
+Event: 14.300 loading class 0x0000000005323c00 done
+
+
+Dynamic libraries:
+00400000-00401000 r-xp 00000000 fd:00 458005                             /home/marcel/jdk1.7.0_25/bin/java
+00600000-00601000 rw-p 00000000 fd:00 458005                             /home/marcel/jdk1.7.0_25/bin/java
+051f7000-06353000 rw-p 051f7000 00:00 0                                  [heap]
+4002a000-4002d000 ---p 4002a000 00:00 0 
+4002d000-4012b000 rw-p 4002d000 00:00 0 
+4075d000-40760000 ---p 4075d000 00:00 0 
+40760000-4085e000 rw-p 40760000 00:00 0 
+40be3000-40be6000 ---p 40be3000 00:00 0 
+40be6000-40ce4000 rw-p 40be6000 00:00 0 
+410ae000-410af000 ---p 410ae000 00:00 0 
+410af000-411af000 rw-p 410af000 00:00 0 
+411af000-411b2000 ---p 411af000 00:00 0 
+411b2000-412b0000 rw-p 411b2000 00:00 0 
+412b0000-412b3000 ---p 412b0000 00:00 0 
+412b3000-413b1000 rw-p 412b3000 00:00 0 
+413b1000-413b4000 ---p 413b1000 00:00 0 
+413b4000-414b2000 rw-p 413b4000 00:00 0 
+414b2000-414b5000 ---p 414b2000 00:00 0 
+414b5000-415b3000 rw-p 414b5000 00:00 0 
+415b3000-415b6000 ---p 415b3000 00:00 0 
+415b6000-416b4000 rw-p 415b6000 00:00 0 
+416b4000-416b7000 ---p 416b4000 00:00 0 
+416b7000-417b5000 rw-p 416b7000 00:00 0 
+417b5000-417b8000 ---p 417b5000 00:00 0 
+417b8000-418b6000 rw-p 417b8000 00:00 0 
+418b6000-418b7000 ---p 418b6000 00:00 0 
+418b7000-419b7000 rw-p 418b7000 00:00 0 
+419b7000-419ba000 ---p 419b7000 00:00 0 
+419ba000-41ab8000 rw-p 419ba000 00:00 0 
+41ab8000-41abb000 ---p 41ab8000 00:00 0 
+41abb000-41bb9000 rw-p 41abb000 00:00 0 
+41c83000-41c84000 ---p 41c83000 00:00 0 
+41c84000-41d84000 rw-p 41c84000 00:00 0 
+41d84000-41d85000 ---p 41d84000 00:00 0 
+41d85000-41e85000 rw-p 41d85000 00:00 0 
+41e85000-41e88000 ---p 41e85000 00:00 0 
+41e88000-41ead000 rw-p 41e88000 00:00 0 
+41ead000-41eb0000 ---p 41ead000 00:00 0 
+41eb0000-41fae000 rw-p 41eb0000 00:00 0 
+41fae000-41fb1000 ---p 41fae000 00:00 0 
+41fb1000-420af000 rw-p 41fb1000 00:00 0 
+420af000-420b2000 ---p 420af000 00:00 0 
+420b2000-421b0000 rw-p 420b2000 00:00 0 
+421b0000-421b3000 ---p 421b0000 00:00 0 
+421b3000-422b1000 rw-p 421b3000 00:00 0 
+422b1000-422b4000 ---p 422b1000 00:00 0 
+422b4000-423b2000 rw-p 422b4000 00:00 0 
+423b2000-423b5000 ---p 423b2000 00:00 0 
+423b5000-424b3000 rw-p 423b5000 00:00 0 
+424b3000-424b6000 ---p 424b3000 00:00 0 
+424b6000-425b4000 rw-p 424b6000 00:00 0 
+425b4000-425b7000 ---p 425b4000 00:00 0 
+425b7000-426b5000 rw-p 425b7000 00:00 0 
+426b5000-426b8000 ---p 426b5000 00:00 0 
+426b8000-427b6000 rw-p 426b8000 00:00 0 
+427b6000-427b9000 ---p 427b6000 00:00 0 
+427b9000-428b7000 rw-p 427b9000 00:00 0 
+428b7000-428ba000 ---p 428b7000 00:00 0 
+428ba000-429b8000 rw-p 428ba000 00:00 0 
+429b8000-429bb000 ---p 429b8000 00:00 0 
+429bb000-42ab9000 rw-p 429bb000 00:00 0 
+42ab9000-42abc000 ---p 42ab9000 00:00 0 
+42abc000-42bba000 rw-p 42abc000 00:00 0 
+42bba000-42bbd000 ---p 42bba000 00:00 0 
+42bbd000-42cbb000 rw-p 42bbd000 00:00 0 
+b0000000-b2450000 rw-p b0000000 00:00 0 
+b2450000-c0000000 rw-p b2450000 00:00 0 
+c0000000-caab0000 rw-p c0000000 00:00 0 
+caab0000-eaab0000 rw-p caab0000 00:00 0 
+eaab0000-ffa70000 rw-p eaab0000 00:00 0 
+ffa70000-100000000 rw-p ffa70000 00:00 0 
+373fe00000-373fe1c000 r-xp 00000000 fd:00 4742082                        /lib64/ld-2.5.so
+374001c000-374001d000 r--p 0001c000 fd:00 4742082                        /lib64/ld-2.5.so
+374001d000-374001e000 rw-p 0001d000 fd:00 4742082                        /lib64/ld-2.5.so
+3740200000-374034d000 r-xp 00000000 fd:00 4742084                        /lib64/libc-2.5.so
+374034d000-374054d000 ---p 0014d000 fd:00 4742084                        /lib64/libc-2.5.so
+374054d000-3740551000 r--p 0014d000 fd:00 4742084                        /lib64/libc-2.5.so
+3740551000-3740552000 rw-p 00151000 fd:00 4742084                        /lib64/libc-2.5.so
+3740552000-3740557000 rw-p 3740552000 00:00 0 
+3740600000-3740682000 r-xp 00000000 fd:00 4742117                        /lib64/libm-2.5.so
+3740682000-3740881000 ---p 00082000 fd:00 4742117                        /lib64/libm-2.5.so
+3740881000-3740882000 r--p 00081000 fd:00 4742117                        /lib64/libm-2.5.so
+3740882000-3740883000 rw-p 00082000 fd:00 4742117                        /lib64/libm-2.5.so
+3740e00000-3740e02000 r-xp 00000000 fd:00 4742115                        /lib64/libdl-2.5.so
+3740e02000-3741002000 ---p 00002000 fd:00 4742115                        /lib64/libdl-2.5.so
+3741002000-3741003000 r--p 00002000 fd:00 4742115                        /lib64/libdl-2.5.so
+3741003000-3741004000 rw-p 00003000 fd:00 4742115                        /lib64/libdl-2.5.so
+3741200000-3741216000 r-xp 00000000 fd:00 4742097                        /lib64/libpthread-2.5.so
+3741216000-3741415000 ---p 00016000 fd:00 4742097                        /lib64/libpthread-2.5.so
+3741415000-3741416000 r--p 00015000 fd:00 4742097                        /lib64/libpthread-2.5.so
+3741416000-3741417000 rw-p 00016000 fd:00 4742097                        /lib64/libpthread-2.5.so
+3741417000-374141b000 rw-p 3741417000 00:00 0 
+3741600000-3741607000 r-xp 00000000 fd:00 4742099                        /lib64/librt-2.5.so
+3741607000-3741807000 ---p 00007000 fd:00 4742099                        /lib64/librt-2.5.so
+3741807000-3741808000 r--p 00007000 fd:00 4742099                        /lib64/librt-2.5.so
+3741808000-3741809000 rw-p 00008000 fd:00 4742099                        /lib64/librt-2.5.so
+2aaaaaaab000-2aaaaaaac000 r--s 0000b000 fd:00 1798726                    /home/marcel/ESB/wso2esb-4.7.0/lib/org.wso2.carbon.server-4.1.0.jar
+2aaaaaaac000-2aaaaaab4000 r--s 0005e000 fd:00 1798725                    /home/marcel/ESB/wso2esb-4.7.0/lib/org.wso2.carbon.logging-4.1.0.jar
+2aaaaaab4000-2aaaaaab5000 r--s 00004000 fd:00 1798727                    /home/marcel/ESB/wso2esb-4.7.0/lib/org.wso2.ciphertool-1.0.0-wso2v2.jar
+2aaaaaab5000-2aaaaaab7000 r--s 00000000 fd:00 2420368                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.framework.exporter_4.1.0.jar
+2aaaaaab7000-2aaaaaaba000 r--s 00018000 fd:00 2420228                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/javax.servlet.jsp_2.2.0.v201112011158.jar
+2aaaaaabb000-2aaaaaac8000 r-xp 00000000 fd:00 3924514                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libverify.so
+2aaaaaac8000-2aaaaacc7000 ---p 0000d000 fd:00 3924514                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libverify.so
+2aaaaacc7000-2aaaaacc9000 rw-p 0000c000 fd:00 3924514                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libverify.so
+2aaaaacc9000-2aaaaacf2000 r-xp 00000000 fd:00 3924525                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libjava.so
+2aaaaacf2000-2aaaaaef2000 ---p 00029000 fd:00 3924525                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libjava.so
+2aaaaaef2000-2aaaaaef4000 rw-p 00029000 fd:00 3924525                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libjava.so
+2aaaaaef4000-2aaaaaef5000 r--p 2aaaaaef4000 00:00 0 
+2aaaaaef5000-2aaaaaef6000 rw-p 2aaaaaef5000 00:00 0 
+2aaaaaef6000-2aaaaaefe000 rw-s 00000000 fd:00 4581368                    /tmp/hsperfdata_marcel/7188
+2aaaaaefe000-2aaaaaf00000 r--s 00012000 fd:00 2420382                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.jasper.patch_4.1.0.jar
+2aaaaaf00000-2aaaaaf03000 r--s 00011000 fd:00 2420303                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.util_1.0.400.v20120522-2049.jar
+2aaaaaf03000-2aaaaaf05000 r--s 0000c000 fd:00 2420697                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.user.mgt_4.1.0.jar
+2aaaaaf05000-2aaaaaf0f000 r-xp 00000000 fd:00 4742106                    /lib64/libnss_files-2.5.so
+2aaaaaf0f000-2aaaab10e000 ---p 0000a000 fd:00 4742106                    /lib64/libnss_files-2.5.so
+2aaaab10e000-2aaaab10f000 r--p 00009000 fd:00 4742106                    /lib64/libnss_files-2.5.so
+2aaaab10f000-2aaaab110000 rw-p 0000a000 fd:00 4742106                    /lib64/libnss_files-2.5.so
+2aaaab110000-2aaaab12b000 r-xp 00000000 fd:00 3924531                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libzip.so
+2aaaab12b000-2aaaab32a000 ---p 0001b000 fd:00 3924531                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libzip.so
+2aaaab32a000-2aaaab32b000 rw-p 0001a000 fd:00 3924531                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libzip.so
+2aaaab32b000-2aaaab5eb000 rwxp 2aaaab32b000 00:00 0 
+2aaaab5eb000-2aaaae32b000 rw-p 2aaaab5eb000 00:00 0 
+2aaaae32b000-2aaaae336000 rw-p 2aaaae32b000 00:00 0 
+2aaaae336000-2aaaae3eb000 rw-p 2aaaae336000 00:00 0 
+2aaaae3eb000-2aaaae3fe000 rw-p 2aaaae3eb000 00:00 0 
+2aaaae3fe000-2aaaae46b000 rw-p 2aaaae3fe000 00:00 0 
+2aaaae46b000-2aaaae4c1000 rw-p 2aaaae46b000 00:00 0 
+2aaaae4c1000-2aaaae5c0000 rw-p 2aaaae4c1000 00:00 0 
+2aaaae5c0000-2aaaae669000 rw-p 2aaaae5c0000 00:00 0 
+2aaaae669000-2aaaae66b000 rw-p 2aaaae669000 00:00 0 
+2aaaae66b000-2aaaae6c2000 rw-p 2aaaae66b000 00:00 0 
+2aaaae6c2000-2aaaae7c2000 rw-p 2aaaae6c2000 00:00 0 
+2aaaae7c2000-2aaaae7d5000 rw-p 2aaaae7c2000 00:00 0 
+2aaaae7d5000-2aaaae842000 rw-p 2aaaae7d5000 00:00 0 
+2aaaae842000-2aaab1a6a000 rw-p 2aaaae842000 00:00 0 
+2aaab1a6a000-2aaab1a91000 r--s 00911000 fd:00 1929542                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/saxon9he.jar
+2aaab1a91000-2aaab1a9b000 r--s 0009e000 fd:00 1929539                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/geronimo-stax-api_1.0_spec-1.0.1.wso2v2.jar
+2aaab1a9b000-2aaab1a9e000 r--s 00021000 fd:00 1929544                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/xml-apis-1.3.04.wso2v2.jar
+2aaab1a9e000-2aaab1aa1000 r--s 0000c000 fd:00 1929537                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/geronimo-jaxws_2.2_spec-1.1.jar
+2aaab1aa1000-2aaab1aa4000 r--s 00005000 fd:00 1929538                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/geronimo-jms_1.1_spec-1.1.0.wso2v1.jar
+2aaab1aa4000-2aaab1aa5000 r--s 00002000 fd:00 1929541                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/jboss-transaction-api_1.1_spec-1.0.0.Final.jar
+2aaab1aa5000-2aaab1aa9000 r--s 00015000 fd:00 1929540                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/jaxb-api-2.2.6.jar
+2aaab1aa9000-2aaab1abf000 r--s 00111000 fd:00 1929543                    /home/marcel/ESB/wso2esb-4.7.0/lib/endorsed/xercesImpl-2.8.1.wso2v2.jar
+2aaab1abf000-2aaab1c7c000 r--s 039f9000 fd:00 458114                     /home/marcel/jdk1.7.0_25/jre/lib/rt.jar
+2aaab1c7c000-2aaab2658000 rw-p 2aaab1c7c000 00:00 0 
+2aaab2658000-2aaab5c27000 r--p 00000000 fd:00 4434197                    /usr/lib/locale/locale-archive
+2aaab5c27000-2aaab5c92000 r--s 00e18000 fd:00 5952143                    /home/marcel/jdk1.7.0_25/lib/tools.jar
+2aaab5c92000-2aaab5c93000 r--s 00001000 fd:00 1700619                    /home/marcel/ESB/wso2esb-4.7.0/bin/org.wso2.carbon.bootstrap-4.1.0.jar
+2aaab5c93000-2aaab5c94000 r--s 0000c000 fd:00 1700620                    /home/marcel/ESB/wso2esb-4.7.0/bin/tcpmon-1.0.jar
+2aaab5c94000-2aaab5c96000 r--s 00008000 fd:00 1700623                    /home/marcel/ESB/wso2esb-4.7.0/bin/tomcat-juli-7.0.34.jar
+2aaab5c96000-2aaab5c9b000 r--s 00040000 fd:00 1798724                    /home/marcel/ESB/wso2esb-4.7.0/lib/commons-lang-2.6.0.wso2v1.jar
+2aaab5c9b000-2aaab5cb0000 r-xp 00000000 fd:00 3924509                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libnet.so
+2aaab5cb0000-2aaab5eb0000 ---p 00015000 fd:00 3924509                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libnet.so
+2aaab5eb0000-2aaab5eb1000 rw-p 00015000 fd:00 3924509                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libnet.so
+2aaab5eb1000-2aaab5eb9000 r-xp 00000000 fd:00 3924511                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libmanagement.so
+2aaab5eb9000-2aaab60b8000 ---p 00008000 fd:00 3924511                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libmanagement.so
+2aaab60b8000-2aaab60b9000 rw-p 00007000 fd:00 3924511                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libmanagement.so
+2aaab60b9000-2aaab60c9000 r-xp 00000000 fd:00 3924554                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libnio.so
+2aaab60c9000-2aaab62c9000 ---p 00010000 fd:00 3924554                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libnio.so
+2aaab62c9000-2aaab62ca000 rw-p 00010000 fd:00 3924554                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/libnio.so
+2aaab62ca000-2aaab62ce000 r--s 0008a000 fd:00 458163                     /home/marcel/jdk1.7.0_25/jre/lib/jsse.jar
+2aaab62ce000-2aaab632c000 r--s 007fc000 fd:00 2420187                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/axis2_1.6.1.wso2v9.jar
+2aaab632c000-2aaab632f000 r--s 00023000 fd:00 2420200                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-io_2.0.0.wso2v2.jar
+2aaab632f000-2aaab6332000 r--s 00023000 fd:00 2420234                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jdbc-pool_7.0.34.wso2v1.jar
+2aaab6332000-2aaab6333000 r--s 00009000 fd:00 2420302                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.simpleconfigurator_1.0.301.v20120828-033635.jar
+2aaab6335000-2aaab6349000 r--s 00141000 fd:00 2420305                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.osgi_3.8.1.v20120830-144521.jar
+2aaab6349000-2aaab634d000 r--s 0002e000 fd:00 2420229                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/javax.servlet_3.0.0.v201112011016.jar
+2aaab634d000-2aaab634e000 rw-p 2aaab634d000 00:00 0 
+2aaab6372000-2aaab6377000 r--s 00039000 fd:00 2420209                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/ehcache_1.5.0.wso2v3.jar
+2aaab6377000-2aaab637f000 r--s 0004b000 fd:00 2420188                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/backport-util-concurrent_3.1.0.wso2v1.jar
+2aaab637f000-2aaab6381000 r--s 00001000 fd:00 2420241                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jsr107cache_1.1.0.wso2v3.jar
+2aaab6381000-2aaab639d000 r--s 00172000 fd:00 2420114                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/axiom_1.2.11.wso2v4.jar
+2aaab639d000-2aaab63b2000 r--s 00231000 fd:00 2420257                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.apache.jasper.glassfish_2.2.2.v201205150955.jar
+2aaab63b2000-2aaab63b5000 r--s 0001e000 fd:00 2420717                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/rampart-trust_1.6.1.wso2v8.jar
+2aaab63b5000-2aaab63b7000 r--s 0000a000 fd:00 2420586                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.stratos.common_2.1.0.jar
+2aaab63b7000-2aaab63b9000 r--s 00008000 fd:00 2420410                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.registry_4.1.2.jar
+2aaab63b9000-2aaab63bb000 r--s 00005000 fd:00 2420425                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.bam.config_4.1.0.jar
+2aaab63bb000-2aaab63bd000 r--s 00001000 fd:00 2420514                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.redirector.servlet_2.1.0.jar
+2aaab63bd000-2aaab63c0000 r--s 00024000 fd:00 2420370                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.governance.registry.extensions_4.1.0.jar
+2aaab63c0000-2aaab63c4000 r--s 00039000 fd:00 2420523                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.extensions_4.1.0.jar
+2aaab63c5000-2aaab63c7000 r--s 00003000 fd:00 2420308                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.activation_2.1.2.jar
+2aaab63c7000-2aaab63c9000 r--s 0000f000 fd:00 2420313                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.deployer_4.1.0.jar
+2aaab63c9000-2aaab63cb000 r--s 00003000 fd:00 2420319                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.mgt_4.1.0.jar
+2aaab63cb000-2aaab63cd000 r--s 00006000 fd:00 2420342                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.datasource_4.1.0.jar
+2aaab63cd000-2aaab63d0000 r--s 00010000 fd:00 2420375                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.authenticator.saml2.sso_4.1.3.jar
+2aaab63d0000-2aaab63d3000 r--s 0000c000 fd:00 2420337                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.core.services_4.1.0.jar
+2aaab63d3000-2aaab63d7000 r--s 0001f000 fd:00 2420103                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/XmlSchema_1.4.7.wso2v2.jar
+2aaab63d7000-2aaab63e4000 r--s 00102000 fd:00 2420104                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/abdera_1.0.0.wso2v3.jar
+2aaab63e4000-2aaab63e6000 r--s 00005000 fd:00 2420718                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/slf4j.api_1.6.1.jar
+2aaab63e6000-2aaab63f0000 r--s 0006d000 fd:00 2420112                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/atomikos_3.8.0.wso2v1.jar
+2aaab63f0000-2aaab63f5000 r--s 00065000 fd:00 2420105                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/ajaxtags_1.3.0.beta-rc7-wso2v1.jar
+2aaab63f8000-2aaab63f9000 r--s 00000000 fd:00 5461622                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/dropins/org.wso2.carbon.logging.propfile_1.0.0.jar
+2aaab63f9000-2aaab6405000 r--s 00286000 fd:00 2420213                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/h2-database-engine_1.2.140.wso2v3.jar
+2aaab6405000-2aaab6412000 r--s 00140000 fd:00 2485725                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/configuration/org.eclipse.osgi/bundles/43/1/.cp/h2-1.2.140-wso2v3.jar
+2aaab6412000-2aaab6415000 r--s 00009000 fd:00 2420328                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.caching.core_4.1.0.jar
+2aaab6415000-2aaab641e000 r--s 000ae000 fd:00 2420519                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.core_4.1.0.jar
+2aaab6421000-2aaab6422000 r--s 00002000 fd:00 2420516                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.api_4.1.0.jar
+2aaab6422000-2aaab647e000 r--s 00501000 fd:00 2420253                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/opensaml2_2.4.1.wso2v1.jar
+2aaab647e000-2aaab6485000 r--s 001b0000 fd:00 2420338                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.core_4.1.0.jar
+2aaab6485000-2aaab6486000 r--s 000e2000 fd:00 2420385                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.keystore.mgt_2.1.0.jar
+2aaab6486000-2aaab648b000 r--s 00052000 fd:00 2420524                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.info.stub_4.1.0.jar
+2aaab648b000-2aaab648d000 r--s 0000e000 fd:00 2420525                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.info.ui_4.1.0.jar
+2aaab648d000-2aaab6490000 r--s 0001a000 fd:00 2420527                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.properties.stub_4.1.0.jar
+2aaab6490000-2aaab6492000 r--s 00005000 fd:00 2420528                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.properties.ui_4.1.0.jar
+2aaab6492000-2aaab6495000 r--s 00016000 fd:00 2420530                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.relations.stub_4.1.0.jar
+2aaab6495000-2aaab6497000 r--s 00006000 fd:00 2420531                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.relations.ui_4.1.0.jar
+2aaab6497000-2aaab649a000 r--s 00014000 fd:00 2420535                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.resource_4.1.0.jar
+2aaab649a000-2aaab64a4000 r--s 000ca000 fd:00 2420533                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.resource.stub_4.1.0.jar
+2aaab64a4000-2aaab64aa000 r--s 000d3000 fd:00 2420534                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.resource.ui_4.1.0.jar
+2aaab64aa000-2aaab64ac000 r--s 0000b000 fd:00 2420538                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.search_4.1.0.jar
+2aaab64ac000-2aaab64af000 r--s 00026000 fd:00 2420536                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.search.stub_4.1.0.jar
+2aaab64af000-2aaab64b1000 r--s 0003f000 fd:00 2420537                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.search.ui_4.1.0.jar
+2aaab64b1000-2aaab64b2000 r--s 00001000 fd:00 2420540                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.servlet_4.1.0.jar
+2aaab64b2000-2aaab64b3000 r--s 00003000 fd:00 2420543                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.relay_4.1.1.jar
+2aaab64b3000-2aaab64b4000 r--s 00003000 fd:00 2420542                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.relay.module_4.1.1.jar
+2aaab64b4000-2aaab64b8000 r--s 00041000 fd:00 2420546                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.reporting.stub_4.1.0.jar
+2aaab64b8000-2aaab64bd000 r--s 00044000 fd:00 2420547                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.reporting.ui_4.1.0.jar
+2aaab64bd000-2aaab64bf000 r--s 00004000 fd:00 2420548                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.reporting.util_4.1.0.jar
+2aaab64bf000-2aaab64c3000 r--s 0003c000 fd:00 2420551                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rest.api_4.1.2.jar
+2aaab64c3000-2aaab64c7000 r--s 00044000 fd:00 2420549                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rest.api.stub_4.1.2.jar
+2aaab64c8000-2aaab64ca000 r--s 00007000 fd:00 2420526                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.info_4.1.0.jar
+2aaab64ca000-2aaab64cd000 r--s 00003000 fd:00 2420515                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.admin.api_4.1.0.jar
+2aaab64cd000-2aaab64cf000 r--s 0000e000 fd:00 2420520                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.eventing_4.1.0.jar
+2aaab64cf000-2aaab64d1000 r--s 0000a000 fd:00 2420518                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.common_4.1.0.jar
+2aaab64d1000-2aaab64d3000 r--s 00003000 fd:00 2420529                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.properties_4.1.0.jar
+2aaab64d4000-2aaab64de000 r--s 00254000 fd:00 458144                     /home/marcel/jdk1.7.0_25/jre/lib/resources.jar
+2aaab64de000-2aaab64e0000 r--s 00004000 fd:00 2420532                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.relations_4.1.0.jar
+2aaab64e0000-2aaab64e1000 r--s 00002000 fd:00 2420539                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.server_4.1.0.jar
+2aaab64e1000-2aaab64e3000 r--s 00007000 fd:00 2420545                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.reporting.core_4.1.0.jar
+2aaab64e3000-2aaab64e5000 r--s 00000000 fd:00 2420544                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.reporting.api_4.1.0.jar
+2aaab64e5000-2aaab64ec000 r--s 00038000 fd:00 2420106                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/annogen_0.1.0.wso2v1.jar
+2aaab64ec000-2aaab64ff000 r--s 0012c000 fd:00 2420107                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/ant_1.7.0.wso2v1.jar
+2aaab64ff000-2aaab6505000 r--s 00068000 fd:00 2420110                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/antlr_3.2.0.wso2v1.jar
+2aaab6505000-2aaab650b000 r--s 00068000 fd:00 2420109                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/antlr_2.7.7.wso2v1.jar
+2aaab650b000-2aaab650f000 r--s 00022000 fd:00 2420108                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/antlr-runtime_3.2.0.wso2v1.jar
+2aaab650f000-2aaab6511000 r--s 00014000 fd:00 2420116                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/axis2-transport-jms_1.1.0.wso2v7.jar
+2aaab6511000-2aaab6513000 r--s 0003d000 fd:00 2420550                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rest.api.ui_4.1.3.jar
+2aaab6517000-2aaab6554000 r--s 00309000 fd:00 2420225                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jasperreports_4.5.0.wso2v1.jar
+2aaab6554000-2aaab6556000 r--s 00005000 fd:00 2420558                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rule.backend_4.1.0.jar
+2aaab6556000-2aaab6559000 r--s 00022000 fd:00 2420565                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.security.mgt_4.1.0.jar
+2aaab6559000-2aaab655b000 r--s 00004000 fd:00 2420590                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sts_4.1.0.jar
+2aaab655b000-2aaab655d000 r--s 00009000 fd:00 2420493                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ndatasource.core_4.1.0.jar
+2aaab655d000-2aaab655e000 r--s 00003000 fd:00 2420596                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tenant.mgt.core_2.1.0.jar
+2aaab655e000-2aaab6585000 r--s 002e5000 fd:00 2420111                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/apache-cassandra_1.1.3.wso2v2.jar
+2aaab6585000-2aaab6586000 r--s 00002000 fd:00 2420113                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/authenticator_0.7.0.wso2v1.jar
+2aaab6586000-2aaab6588000 r--s 00005000 fd:00 2420115                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/axis2-json_1.6.1.wso2v9.jar
+2aaab6588000-2aaab6595000 r--s 001b9000 fd:00 2420189                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/bsf-all_3.0.0.wso2v2.jar
+2aaab6595000-2aaab6599000 r--s 00028000 fd:00 2420190                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/com.google.gson_2.1.0.jar
+2aaab6599000-2aaab659c000 r--s 0001a000 fd:00 2420191                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/com.jayway.jsonpath_0.8.1.wso2v1.jar
+2aaab659c000-2aaab65a0000 r--s 00067000 fd:00 2420192                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-beanutils_1.8.0.wso2v1.jar
+2aaab65a0000-2aaab65a2000 r--s 0000b000 fd:00 2420193                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-codec_1.4.0.wso2v1.jar
+2aaab65a2000-2aaab65af000 r--s 00080000 fd:00 2420194                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-collections_3.2.0.wso2v1.jar
+2aaab65af000-2aaab65b5000 r--s 00042000 fd:00 2420195                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-configuration_1.6.0.wso2v1.jar
+2aaab65b5000-2aaab65b8000 r--s 00023000 fd:00 2420196                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-dbcp_1.4.0.wso2v1.jar
+2aaab65b8000-2aaab65bc000 r--s 0003f000 fd:00 2420197                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-digester_1.8.1.wso2v1.jar
+2aaab65bc000-2aaab65bf000 r--s 0000b000 fd:00 2420198                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-fileupload_1.2.2.wso2v1.jar
+2aaab65bf000-2aaab65c8000 r--s 00082000 fd:00 2420199                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-httpclient_3.1.0.wso2v2.jar
+2aaab65c8000-2aaab65cd000 r--s 00040000 fd:00 2420201                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-lang_2.6.0.wso2v1.jar
+2aaab65cd000-2aaab65d2000 r--s 0002b000 fd:00 2420202                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-net_2.0.0.wso2v1.jar
+2aaab65d2000-2aaab65d5000 r--s 00015000 fd:00 2420203                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-pool_1.5.6.wso2v1.jar
+2aaab65d5000-2aaab65e0000 r--s 0009f000 fd:00 2420204                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-scxml_0.9.0.wso2v1.jar
+2aaab65e0000-2aaab65e9000 r--s 00065000 fd:00 2420205                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/commons-vfs2_2.0.0.wso2v7.jar
+2aaab65e9000-2aaab6629000 r--s 00534000 fd:00 2420206                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/compass_2.0.1.wso2v2.jar
+2aaab6629000-2aaab6630000 r--s 00060000 fd:00 2420207                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/dnsjava_2.1.1.wso2v1.jar
+2aaab6630000-2aaab666b000 r--s 002ee000 fd:00 2420208                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/drools_5.2.1.wso2v1.jar
+2aaab666b000-2aaab666d000 r--s 00019000 fd:00 2420210                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/el-impl_2.2.0.wso2v1.jar
+2aaab666d000-2aaab666f000 r--s 00005000 fd:00 2420211                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/geronimo-saaj_1.3_spec_1.0.0.wso2v3.jar
+2aaab666f000-2aaab6675000 r--s 00066000 fd:00 2420554                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rm_4.1.0.jar
+2aaab6675000-2aaab6678000 r--s 00018000 fd:00 2420552                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rm.stub_4.1.0.jar
+2aaab6678000-2aaab667b000 r--s 0002e000 fd:00 2420553                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rm.ui_4.1.0.jar
+2aaab667b000-2aaab667c000 r--s 00002000 fd:00 2420557                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.roles.mgt_4.1.0.jar
+2aaab667c000-2aaab667e000 r--s 00013000 fd:00 2420555                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.roles.mgt.stub_4.1.0.jar
+2aaab667e000-2aaab6680000 r--s 00023000 fd:00 2420556                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.roles.mgt.ui_4.1.0.jar
+2aaab6680000-2aaab6681000 r--s 00006000 fd:00 2420559                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rule.common_4.1.0.jar
+2aaab6681000-2aaab6683000 r--s 00005000 fd:00 2420560                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.rule.kernel_4.1.0.jar
+2aaab6683000-2aaab6684000 r--s 00003000 fd:00 2420562                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.securevault_4.1.0.jar
+2aaab6684000-2aaab6685000 r--s 00002000 fd:00 2420312                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.deployer.synapse_4.1.3.jar
+2aaab6685000-2aaab66a7000 r--s 0019a000 fd:00 2420212                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/guava_12.0.0.wso2v1.jar
+2aaab66a7000-2aaab66d6000 r--s 00326000 fd:00 2420214                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/hadoop-core_0.20.203.wso2v2.jar
+2aaab66d6000-2aaab66d8000 r--s 00005000 fd:00 2420215                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/handy-uri-templates_1.1.7.wso2v1.jar
+2aaab66d8000-2aaab66e4000 r--s 00079000 fd:00 2420216                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/hector-core_1.1.0.wso2v1.jar
+2aaab66e4000-2aaab66e6000 r--s 00016000 fd:00 2420217                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/high-scale-lib_1.1.2.wso2v1.jar
+2aaab66e6000-2aaab66f4000 r--s 00092000 fd:00 2420218                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/httpclient_4.2.3.wso2v1.jar
+2aaab66f4000-2aaab66fa000 r--s 00031000 fd:00 2420220                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/httpcore_4.2.3.wso2v1.jar
+2aaab66fa000-2aaab6700000 r--s 00040000 fd:00 2420219                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/httpcore-nio_4.2.3.wso2v2.jar
+2aaab6700000-2aaab6729000 r--s 00250000 fd:00 2420221                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/infinispan-core_5.1.2.wso2v1.jar
+2aaab6729000-2aaab6736000 r--s 0020e000 fd:00 2420222                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/itext_2.1.7.wso2v1.jar
+2aaab6736000-2aaab6741000 r--s 00061000 fd:00 2420223                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/janino_2.5.15.wso2v1.jar
+2aaab6741000-2aaab674d000 r--s 0014b000 fd:00 2420224                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jasper-jdt_6.0.18.wso2v1.jar
+2aaab674d000-2aaab674e000 r--s 00015000 fd:00 2420226                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/javasysmon_0.3.3.wso2v1.jar
+2aaab674e000-2aaab674f000 r--s 0000c000 fd:00 2420227                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/javax.el_2.2.0.v201108011116.jar
+2aaab674f000-2aaab6787000 r--s 002d1000 fd:00 2420230                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jaxb_2.2.5.wso2v1.jar
+2aaab6787000-2aaab6789000 r--s 0000b000 fd:00 2420231                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jboss-logging_3.1.0.wso2v1.jar
+2aaab6789000-2aaab678d000 r--s 0003d000 fd:00 2420232                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jcifs_0.8.3.wso2v1.jar
+2aaab678d000-2aaab6792000 r--s 0008e000 fd:00 2420233                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jcommon_1.0.15.wso2v1.jar
+2aaab6792000-2aaab6794000 r--s 0000e000 fd:00 2420235                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jettison_1.1.0.wso2v1.jar
+2aaab6794000-2aaab67a4000 r--s 00299000 fd:00 2420236                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jfreechart_1.0.13.wso2v1.jar
+2aaab67a4000-2aaab67b7000 r--s 00197000 fd:00 2420237                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jgroups_3.0.6.wso2v1.jar
+2aaab67b7000-2aaab67c6000 r--s 00077000 fd:00 2420238                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/joda-time_1.6.0.wso2v1.jar
+2aaab67c6000-2aaab67c9000 r--s 00031000 fd:00 2420239                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jsch_0.1.41.wso2v1.jar
+2aaab67c9000-2aaab67ca000 r--s 0000b000 fd:00 2420240                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/json_2.0.0.wso2v1.jar
+2aaab67ca000-2aaab67cc000 r--s 00003000 fd:00 2420242                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jsr94_1.1.0.wso2v1.jar
+2aaab67cc000-2aaab67d5000 r--s 00062000 fd:00 2420243                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jstl_1.2.1.wso2v1.jar
+2aaab67d5000-2aaab67e1000 r--s 000a6000 fd:00 2420244                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/jxl_2.6.8.wso2v1.jar
+2aaab67e1000-2aaab67e8000 r--s 00065000 fd:00 2420245                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/kaptcha_2.3.0.wso2v1.jar
+2aaab67e8000-2aaab67ec000 r--s 00026000 fd:00 2420246                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/libthrift_0.7.0.wso2v2.jar
+2aaab67ec000-2aaab67f1000 r--s 0002b000 fd:00 2420247                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/libthrift_0.8.0.wso2v1.jar
+2aaab67f1000-2aaab67f8000 r--s 00045000 fd:00 2420248                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/marshalling_1.3.6.wso2v1.jar
+2aaab67f8000-2aaab6824000 r--s 001db000 fd:00 2420249                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/maven-scm_1.7.0.wso2v2.jar
+2aaab6824000-2aaab6830000 r--s 000a5000 fd:00 2420250                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/mvel2_2.1.0.wso2v1.jar
+2aaab6830000-2aaab6831000 r--s 00006000 fd:00 2420251                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/neethi_2.0.4.wso2v4.jar
+2aaab6831000-2aaab6833000 r--s 00005000 fd:00 2420252                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/opencsv_1.8.0.wso2v1.jar
+2aaab6833000-2aaab6835000 r--s 0000d000 fd:00 2420254                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.apache.felix.gogo.command_0.8.0.v201108120515.jar
+2aaab6835000-2aaab6837000 r--s 00012000 fd:00 2420255                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.apache.felix.gogo.runtime_0.8.0.v201108120515.jar
+2aaab6837000-2aaab6838000 r--s 0000e000 fd:00 2420256                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.apache.felix.gogo.shell_0.8.0.v201110170705.jar
+2aaab6838000-2aaab683a000 r--s 00015000 fd:00 2420258                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.core.contenttype_3.4.200.v20120523-2004.jar
+2aaab683a000-2aaab683d000 r--s 00013000 fd:00 2420259                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.core.expressions_3.4.401.v20120627-124442.jar
+2aaab683d000-2aaab683f000 r--s 00015000 fd:00 2420260                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.core.jobs_3.5.300.v20120622-204750.jar
+2aaab683f000-2aaab6841000 r--s 00011000 fd:00 2420261                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.core.runtime_3.8.0.v20120521-2346.jar
+2aaab6841000-2aaab6844000 r--s 00014000 fd:00 2420266                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.ecf_3.1.300.v20110531-2218.jar
+2aaab6844000-2aaab6847000 r--s 0000a000 fd:00 2420262                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.ecf.filetransfer_5.0.0.v20110531-2218.jar
+2aaab6847000-2aaab6849000 r--s 0000b000 fd:00 2420263                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.ecf.identity_3.1.100.v20110531-2218.jar
+2aaab6849000-2aaab684c000 r--s 0001c000 fd:00 2420265                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.ecf.provider.filetransfer_3.2.0.v20110531-2218.jar
+2aaab684c000-2aaab684e000 r--s 00010000 fd:00 2420264                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.ecf.provider.filetransfer.httpclient_4.0.200.v20120319-0616.jar
+2aaab684e000-2aaab6851000 r--s 00013000 fd:00 2420267                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.app_1.3.100.v20120522-1841.jar
+2aaab6851000-2aaab6854000 r--s 00018000 fd:00 2420268                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.common_3.6.100.v20120522-1841.jar
+2aaab6854000-2aaab6856000 r--s 00004000 fd:00 2420269                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.concurrent_1.0.300.v20120522-2049.jar
+2aaab6856000-2aaab6859000 r--s 00019000 fd:00 2420270                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.console_1.0.0.v20120522-1841.jar
+2aaab6859000-2aaab685c000 r--s 0002d000 fd:00 2420271                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.ds_1.4.0.v20120522-1841.jar
+2aaab685c000-2aaab685d000 r--s 00008000 fd:00 2420273                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.frameworkadmin_2.0.100.v20120606-175127.jar
+2aaab685d000-2aaab685f000 r--s 0000e000 fd:00 2420272                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.frameworkadmin.equinox_1.0.400.v20120428-0117.jar
+2aaab685f000-2aaab6860000 r--s 00005000 fd:00 2420274                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.http.helper_1.1.0.wso2v1.jar
+2aaab6860000-2aaab6862000 r--s 0000a000 fd:00 2420275                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.http.servlet_1.1.300.v20120522-1841.jar
+2aaab6862000-2aaab6863000 r--s 00006000 fd:00 2420276                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.jsp.jasper_1.0.400.v20120522-2049.jar
+2aaab6863000-2aaab6865000 r--s 0000b000 fd:00 2420277                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar
+2aaab6865000-2aaab6868000 r--s 0001e000 fd:00 2420278                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.artifact.repository_1.1.100.v20110519.jar
+2aaab6868000-2aaab6869000 r--s 00006000 fd:00 2420279                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.console_1.0.300.v20110502-1955.jar
+2aaab6869000-2aaab686c000 r--s 0000f000 fd:00 2420280                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.core_2.1.0.v20110502-1955.jar
+2aaab686c000-2aaab686f000 r--s 00015000 fd:00 2420282                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.director_2.1.0.v20110504-1715.jar
+2aaab686f000-2aaab6871000 r--s 0000a000 fd:00 2420281                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.director.app_1.0.300.v20110505.jar
+2aaab6871000-2aaab6872000 r--s 00007000 fd:00 2420283                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.directorywatcher_1.0.300.v20110502-1955.jar
+2aaab6872000-2aaab6876000 r--s 0002a000 fd:00 2420284                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.engine_2.1.0.v20110511.jar
+2aaab6876000-2aaab6878000 r--s 00007000 fd:00 2420285                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.extensionlocation_1.2.100.v20110510.jar
+2aaab6878000-2aaab687a000 r--s 00005000 fd:00 2420286                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.garbagecollector_1.0.200.v20110510.jar
+2aaab687a000-2aaab687c000 r--s 0000f000 fd:00 2420287                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.jarprocessor_1.0.200.v20110502-1955.jar
+2aaab687c000-2aaab6883000 r--s 0004c000 fd:00 2420289                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.metadata_2.1.0.v20110510.jar
+2aaab6883000-2aaab6886000 r--s 0001a000 fd:00 2420288                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.metadata.repository_1.2.0.v20110511-1359.jar
+2aaab6886000-2aaab6888000 r--s 00017000 fd:00 2420290                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.publisher_1.2.0.v20110511.jar
+2aaab6888000-2aaab688c000 r--s 0001c000 fd:00 2420292                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.repository_2.1.0.v20110601.jar
+2aaab688c000-2aaab6890000 r--s 00035000 fd:00 2420291                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.repository.tools_2.0.100.v20110512-1320.jar
+2aaab6890000-2aaab6893000 r--s 0001b000 fd:00 2420293                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.touchpoint.eclipse_2.1.0.v20110511-wso2v1.jar
+2aaab6893000-2aaab6895000 r--s 0000b000 fd:00 2420294                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.touchpoint.natives_1.0.300.v20110502-1955.jar
+2aaab6895000-2aaab6897000 r--s 00008000 fd:00 2420295                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.transport.ecf_1.0.100.v20110902-0807.jar
+2aaab6897000-2aaab6899000 r--s 00003000 fd:00 2420296                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.updatechecker_1.1.200.v20110502-1955.jar
+2aaab6899000-2aaab689b000 r--s 00013000 fd:00 2420297                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.p2.updatesite_1.0.300.v20110510.jar
+2aaab689b000-2aaab689e000 r--s 0001c000 fd:00 2420298                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.preferences_3.5.0.v20120522-1841.jar
+2aaab689e000-2aaab68a1000 r--s 0002a000 fd:00 2420299                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.registry_3.5.200.v20120522-1841.jar
+2aaab68a1000-2aaab68a4000 r--s 00018000 fd:00 2420300                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.security_1.1.100.v20120522-1841.jar
+2aaab68a4000-2aaab68a5000 r--s 00005000 fd:00 2420301                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.0.0.v20110808-1657.jar
+2aaab68a5000-2aaab68a8000 r--s 00012000 fd:00 2420304                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.eclipse.osgi.services_3.3.100.v20120522-1822.jar
+2aaab68a8000-2aaab68ad000 r--s 0002f000 fd:00 2420306                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.sat4j.core_2.3.0.v20110329.jar
+2aaab68ad000-2aaab68b1000 r--s 0001f000 fd:00 2420307                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.sat4j.pb_2.3.0.v20110329.jar
+2aaab68b1000-2aaab68b4000 r--s 00039000 fd:00 2420309                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.adc.mgt.stub_4.1.1.jar
+2aaab68b4000-2aaab68b6000 r--s 00007000 fd:00 2420310                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.addressing_4.1.0.jar
+2aaab68b6000-2aaab68b9000 r--s 00027000 fd:00 2420314                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.mgt.stub_4.1.0.jar
+2aaab68b9000-2aaab68bb000 r--s 00002000 fd:00 2420317                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.mgt.synapse_4.1.3.jar
+2aaab68bb000-2aaab68be000 r--s 00016000 fd:00 2420315                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.mgt.synapse.stub_4.1.0.jar
+2aaab68be000-2aaab68bf000 r--s 00004000 fd:00 2420316                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.mgt.synapse.ui_4.1.0.jar
+2aaab68bf000-2aaab68c1000 r--s 00016000 fd:00 2420318                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.mgt.ui_4.1.0.jar
+2aaab68c1000-2aaab68c2000 r--s 00001000 fd:00 2420320                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.application.upload_4.1.0.jar
+2aaab68c2000-2aaab68c3000 r--s 00001000 fd:00 2420321                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.authenticator.proxy_4.1.0.jar
+2aaab68c3000-2aaab68c6000 r--s 0001f000 fd:00 2420322                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.authenticator.stub_4.1.0.jar
+2aaab68c6000-2aaab68c7000 r--s 00002000 fd:00 2420323                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.bam.data.publisher.util_4.1.0.jar
+2aaab68c7000-2aaab68c9000 r--s 00008000 fd:00 2420326                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.bam.mediationstats.data.publisher_4.1.3.jar
+2aaab68c9000-2aaab68cb000 r--s 00011000 fd:00 2420324                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.bam.mediationstats.data.publisher.stub_4.1.3.jar
+2aaab68cb000-2aaab68cc000 r--s 00006000 fd:00 2420327                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.base_4.1.0.jar
+2aaab68cc000-2aaab68d0000 r--s 00028000 fd:00 2420331                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.caching_4.1.0.jar
+2aaab68d0000-2aaab68d3000 r--s 00026000 fd:00 2420329                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.caching.stub_4.1.0.jar
+2aaab68d3000-2aaab68d5000 r--s 00007000 fd:00 2420330                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.caching.ui_4.1.0.jar
+2aaab68d5000-2aaab68d7000 r--s 00002000 fd:00 2420332                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.captcha.mgt_4.1.0.jar
+2aaab68d7000-2aaab68d9000 r--s 00002000 fd:00 2420333                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.cluster.mgt.core_4.1.0.jar
+2aaab68d9000-2aaab68db000 r--s 00004000 fd:00 2420334                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.core.bootup.validator_4.1.0.jar
+2aaab68db000-2aaab68dc000 r--s 00001000 fd:00 2420335                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.core.common_4.1.0.jar
+2aaab68dc000-2aaab68df000 r--s 00023000 fd:00 2420336                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.core.commons.stub_4.1.0.jar
+2aaab68df000-2aaab68e2000 r--s 00012000 fd:00 2420339                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.databridge.agent.thrift_4.1.0.jar
+2aaab68e2000-2aaab68e4000 r--s 00004000 fd:00 2420341                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.databridge.commons_4.1.0.jar
+2aaab68e4000-2aaab68ea000 r--s 00045000 fd:00 2420340                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.databridge.commons.thrift_4.1.0.jar
+2aaab68ea000-2aaab68ec000 r--s 0000a000 fd:00 2420344                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.deployment.synchronizer_4.1.4.jar
+2aaab68ec000-2aaab68ee000 r--s 00004000 fd:00 2420343                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.deployment.synchronizer.subversion_4.1.2.jar
+2aaab68ee000-2aaab68f1000 r--s 0000e000 fd:00 2420345                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.discovery.core_4.1.0.jar
+2aaab68f1000-2aaab68f4000 r--s 00022000 fd:00 2420346                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.discovery.stub_4.1.0.jar
+2aaab68f4000-2aaab68f5000 r--s 00036000 fd:00 2420347                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.discovery.ui_4.1.0.jar
+2aaab68f5000-2aaab68f7000 r--s 00009000 fd:00 2420348                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ec2-client_4.1.0.jar
+2aaab68f7000-2aaab6902000 r--s 000d4000 fd:00 2420349                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ec2.client.stub_4.1.0.jar
+2aaab6902000-2aaab6903000 r--s 00004000 fd:00 2420352                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.email.verification_4.1.0.jar
+2aaab6903000-2aaab6905000 r--s 0000a000 fd:00 2420350                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.email.verification.stub_4.1.0.jar
+2aaab6905000-2aaab6906000 r--s 00002000 fd:00 2420351                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.email.verification.ui_4.1.0.jar
+2aaab6906000-2aaab6908000 r--s 00005000 fd:00 2420355                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.endpoint_4.1.3.jar
+2aaab6908000-2aaab690d000 r--s 00044000 fd:00 2420353                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.endpoint.stub_4.1.3.jar
+2aaab690d000-2aaab6912000 r--s 00033000 fd:00 2420354                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.endpoint.ui_4.1.3.jar
+2aaab6912000-2aaab6914000 r--s 00002000 fd:00 2420356                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.admin_4.1.2.jar
+2aaab6914000-2aaab691b000 r--s 00077000 fd:00 2420358                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.client_4.1.0.jar
+2aaab691b000-2aaab6922000 r--s 00076000 fd:00 2420357                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.client.stub_4.1.0.jar
+2aaab6922000-2aaab6923000 r--s 00002000 fd:00 2420359                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.common_4.1.0.jar
+2aaab6923000-2aaab6926000 r--s 00012000 fd:00 2420360                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.core_4.1.2.jar
+2aaab6926000-2aaab6929000 r--s 0003b000 fd:00 2420361                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.stub_4.1.0.jar
+2aaab6929000-2aaab692c000 r--s 00047000 fd:00 2420362                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.ui_4.1.0.jar
+2aaab692c000-2aaab692e000 r--s 0000b000 fd:00 2420363                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.event.ws_4.1.0.jar
+2aaab692e000-2aaab6930000 r--s 00009000 fd:00 2420364                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.feature.mgt.core_4.1.0.jar
+2aaab6930000-2aaab6932000 r--s 00007000 fd:00 2420365                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.feature.mgt.services_4.1.0.jar
+2aaab6932000-2aaab6937000 r--s 00044000 fd:00 2420366                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.feature.mgt.stub_4.1.0.jar
+2aaab6937000-2aaab693b000 r--s 000b1000 fd:00 2420367                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.feature.mgt.ui_4.1.0.jar
+2aaab693b000-2aaab693c000 r--s 00008000 fd:00 2420369                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.google.analytics.ui_2.1.0.jar
+2aaab693c000-2aaab693e000 r--s 00000000 fd:00 2420371                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.i18n_4.1.0.jar
+2aaab693e000-2aaab6941000 r--s 0000c000 fd:00 2420372                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.authenticator.saml2.sso.common_4.1.3.jar
+2aaab6941000-2aaab6948000 r--s 00098000 fd:00 2420373                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.authenticator.saml2.sso.stub_4.1.2.jar
+2aaab6948000-2aaab694a000 r--s 00007000 fd:00 2420374                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.authenticator.saml2.sso.ui_4.1.0.jar
+2aaab694a000-2aaab694d000 r--s 00019000 fd:00 2420377                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.entitlement.proxy_4.1.0.jar
+2aaab694d000-2aaab6955000 r--s 00098000 fd:00 2420378                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.entitlement.stub_4.1.0.jar
+2aaab6955000-2aaab695b000 r--s 0006f000 fd:00 2420380                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.oauth.stub_4.1.0.jar
+2aaab695b000-2aaab695f000 r--s 00031000 fd:00 2420381                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.identity.sso.saml.stub_4.1.0.jar
+2aaab695f000-2aaab6961000 r--s 00001000 fd:00 2420384                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.java2wsdl_4.1.0.jar
+2aaab6961000-2aaab6962000 r--s 00017000 fd:00 2420383                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.java2wsdl.ui_4.1.0.jar
+2aaab6962000-2aaab6964000 r--s 00000000 fd:00 2420387                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.load.balance.agent_2.1.0.jar
+2aaab6964000-2aaab6966000 r--s 00004000 fd:00 2420386                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.load.balance.agent.stub_4.1.0.jar
+2aaab6966000-2aaab6968000 r--s 00005000 fd:00 2420390                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.localentry_4.1.0.jar
+2aaab6968000-2aaab696b000 r--s 00027000 fd:00 2420388                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.localentry.stub_4.1.0.jar
+2aaab696b000-2aaab696d000 r--s 0003e000 fd:00 2420389                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.localentry.ui_4.1.0.jar
+2aaab696d000-2aaab6975000 r--s 0005e000 fd:00 2420396                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.logging_4.1.0.jar
+2aaab6975000-2aaab6978000 r--s 0002f000 fd:00 2420391                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.logging.admin.stub_4.1.0.jar
+2aaab6978000-2aaab697a000 r--s 00032000 fd:00 2420392                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.logging.admin.ui_4.1.0.jar
+2aaab697a000-2aaab697c000 r--s 0001d000 fd:00 2420393                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.logging.service_4.1.1.jar
+2aaab697c000-2aaab6981000 r--s 00052000 fd:00 2420394                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.logging.view.stub_4.1.0.jar
+2aaab6981000-2aaab6983000 r--s 00034000 fd:00 2420395                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.logging.view.ui_4.1.2.jar
+2aaab6983000-2aaab6985000 r--s 00001000 fd:00 2420399                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.artifactuploader_4.1.0.jar
+2aaab6985000-2aaab6987000 r--s 0000c000 fd:00 2420397                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.artifactuploader.stub_4.1.0.jar
+2aaab6987000-2aaab6989000 r--s 0000c000 fd:00 2420398                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.artifactuploader.ui_4.1.0.jar
+2aaab6989000-2aaab698b000 r--s 00006000 fd:00 2420402                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.configadmin_4.1.0.jar
+2aaab698b000-2aaab698e000 r--s 00024000 fd:00 2420400                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.configadmin.stub_4.1.0.jar
+2aaab698e000-2aaab6990000 r--s 00027000 fd:00 2420401                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.configadmin.ui_4.1.3.jar
+2aaab6990000-2aaab6992000 r--s 00009000 fd:00 2420403                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.dependency.mgt_4.1.1.jar
+2aaab6992000-2aaab6996000 r--s 00022000 fd:00 2420405                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.initializer_4.1.1.jar
+2aaab6996000-2aaab6997000 r--s 00001000 fd:00 2420404                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.initializer.ui_4.1.0.jar
+2aaab6997000-2aaab6998000 r--s 00006000 fd:00 2420409                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.library_4.1.0.jar
+2aaab6998000-2aaab6999000 r--s 00003000 fd:00 2420406                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.library.connectors.core_4.1.0.jar
+2aaab6999000-2aaab699c000 r--s 00021000 fd:00 2420407                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.library.stub_4.1.0.jar
+2aaab699c000-2aaab699e000 r--s 00014000 fd:00 2420408                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.library.ui_4.1.0.jar
+2aaab699e000-2aaab69a1000 r--s 0000c000 fd:00 2420413                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.statistics_4.1.0.jar
+2aaab69a1000-2aaab69a4000 r--s 00027000 fd:00 2420411                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.statistics.stub_4.1.0.jar
+2aaab69a4000-2aaab69a7000 r--s 00044000 fd:00 2420412                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.statistics.ui_4.1.0.jar
+2aaab69a7000-2aaab69a9000 r--s 00006000 fd:00 2420418                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.templates_4.1.3.jar
+2aaab69a9000-2aaab69aa000 r--s 00002000 fd:00 2420414                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.templates.common_4.1.0.jar
+2aaab69aa000-2aaab69ac000 r--s 00001000 fd:00 2420415                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.templates.service_4.1.0.jar
+2aaab69ac000-2aaab69b1000 r--s 00052000 fd:00 2420416                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.templates.stub_4.1.3.jar
+2aaab69b1000-2aaab69b4000 r--s 0005a000 fd:00 2420417                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.templates.ui_4.1.3.jar
+2aaab69b4000-2aaab69b5000 r--s 00001000 fd:00 2420421                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.tracer_4.1.0.jar
+2aaab69b5000-2aaab69b7000 r--s 00011000 fd:00 2420419                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.tracer.stub_4.1.0.jar
+2aaab69b7000-2aaab69b8000 r--s 00017000 fd:00 2420420                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediation.tracer.ui_4.1.0.jar
+2aaab69b8000-2aaab69ba000 r--s 00014000 fd:00 2420422                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.aggregate.ui_4.1.3.jar
+2aaab69ba000-2aaab69bd000 r--s 0002a000 fd:00 2420423                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.bam.config.stub_4.1.0.jar
+2aaab69bd000-2aaab69bf000 r--s 00028000 fd:00 2420424                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.bam.config.ui_4.1.0.jar
+2aaab69bf000-2aaab69c1000 r--s 0000a000 fd:00 2420426                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.bam.ui_4.1.0.jar
+2aaab69c1000-2aaab69c3000 r--s 00007000 fd:00 2420428                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.bean.ui_4.1.0.jar
+2aaab69c3000-2aaab69c4000 r--s 0000b000 fd:00 2420429                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.cache.ui_4.1.3.jar
+2aaab69c4000-2aaab69c5000 r--s 00030000 fd:00 2420430                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.callout.ui_4.1.3.jar
+2aaab69c5000-2aaab69c6000 r--s 00007000 fd:00 2420431                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.calltemplate.ui_4.1.3.jar
+2aaab69c6000-2aaab69c7000 r--s 00001000 fd:00 2420432                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.clazz.services_4.1.3.jar
+2aaab69c7000-2aaab69c9000 r--s 00015000 fd:00 2420433                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.clazz.ui_4.1.0.jar
+2aaab69c9000-2aaab69cb000 r--s 00017000 fd:00 2420434                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.clone.ui_4.1.0.jar
+2aaab69cb000-2aaab69cc000 r--s 00001000 fd:00 2420435                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.command.services_4.1.0.jar
+2aaab69cc000-2aaab69ce000 r--s 0001a000 fd:00 2420436                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.command.ui_4.1.0.jar
+2aaab69ce000-2aaab69d0000 r--s 0000c000 fd:00 2420437                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.conditionalrouter.ui_4.1.0.jar
+2aaab69d0000-2aaab69d2000 r--s 00044000 fd:00 2420438                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.dblookup.ui_4.1.0.jar
+2aaab69d2000-2aaab69d4000 r--s 00046000 fd:00 2420439                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.dbreport.ui_4.1.3.jar
+2aaab69d4000-2aaab69d6000 r--s 00001000 fd:00 2420440                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.drop.ui_4.1.0.jar
+2aaab69d6000-2aaab69d8000 r--s 0000a000 fd:00 2420441                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.ejb.ui_4.1.0.jar
+2aaab69d8000-2aaab69da000 r--s 00005000 fd:00 2420442                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.enqueue.ui_4.1.0.jar
+2aaab69da000-2aaab69db000 r--s 0000d000 fd:00 2420443                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.enrich.ui_4.1.3.jar
+2aaab69db000-2aaab69dd000 r--s 0000e000 fd:00 2420444                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.entitlement.ui_4.1.0.jar
+2aaab69dd000-2aaab69df000 r--s 00009000 fd:00 2420445                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.event.ui_4.1.3.jar
+2aaab69df000-2aaab69e1000 r--s 0001c000 fd:00 2420447                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.fastXSLT.ui_4.1.3.jar
+2aaab69e1000-2aaab69e3000 r--s 00010000 fd:00 2420449                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.fault.ui_4.1.3.jar
+2aaab69e3000-2aaab69e5000 r--s 00007000 fd:00 2420450                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.filter.ui_4.1.0.jar
+2aaab69e5000-2aaab69e7000 r--s 00006000 fd:00 2420451                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.header.ui_4.1.2.jar
+2aaab69e7000-2aaab69e8000 r--s 00002000 fd:00 2420452                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.in.ui_4.1.0.jar
+2aaab69e8000-2aaab69ea000 r--s 0000a000 fd:00 2420453                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.iterate.ui_4.1.0.jar
+2aaab69ea000-2aaab69eb000 r--s 00010000 fd:00 2420454                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.log.ui_4.1.3.jar
+2aaab69eb000-2aaab69ed000 r--s 0000a000 fd:00 2420455                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.oauth.ui_4.1.0.jar
+2aaab69ed000-2aaab69ee000 r--s 00002000 fd:00 2420456                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.out.ui_4.1.0.jar
+2aaab69ee000-2aaab69f0000 r--s 0000e000 fd:00 2420457                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.payloadfactory.ui_4.1.3.jar
+2aaab69f0000-2aaab69f2000 r--s 0000a000 fd:00 2420458                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.property.ui_4.1.3.jar
+2aaab69f2000-2aaab69f3000 r--s 0000b000 fd:00 2420459                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.rmsequence.ui_4.1.0.jar
+2aaab69f3000-2aaab69f5000 r--s 00015000 fd:00 2420461                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.rule.ui_4.1.0.jar
+2aaab69f5000-2aaab69f7000 r--s 00007000 fd:00 2420462                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.script.ui_4.1.0.jar
+2aaab69f7000-2aaab69f9000 r--s 0000d000 fd:00 2420463                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.send.ui_4.1.3.jar
+2aaab69f9000-2aaab69fa000 r--s 00004000 fd:00 2420464                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.sequence.ui_4.1.0.jar
+2aaab69fa000-2aaab69fc000 r--s 00004000 fd:00 2420465                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.service_4.1.0.jar
+2aaab69fc000-2aaab69fe000 r--s 00006000 fd:00 2420466                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.smooks.ui_4.1.0.jar
+2aaab69fe000-2aaab6a00000 r--s 00004000 fd:00 2420468                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.spring.ui_4.1.0.jar
+2aaab6a00000-2aaab6a01000 r--s 00008000 fd:00 2420469                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.store.ui_4.1.0.jar
+2aaab6a01000-2aaab6a04000 r--s 0000a000 fd:00 2420470                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.switch.ui_4.1.0.jar
+2aaab6a04000-2aaab6a06000 r--s 00009000 fd:00 2420471                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.target.ui_4.1.0.jar
+2aaab6a06000-2aaab6a08000 r--s 0000a000 fd:00 2420472                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.throttle.ui_4.1.0.jar
+2aaab6a08000-2aaab6a09000 r--s 00006000 fd:00 2420473                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.transaction.ui_4.1.0.jar
+2aaab6a09000-2aaab6a0a000 r--s 00001000 fd:00 2420474                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.uiless.ui_4.1.0.jar
+2aaab6a0a000-2aaab6a0c000 r--s 00015000 fd:00 2420475                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.urlrewrite.ui_4.1.0.jar
+2aaab6a0c000-2aaab6a0e000 r--s 0000b000 fd:00 2420476                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.validate.ui_4.1.0.jar
+2aaab6a0e000-2aaab6a10000 r--s 0000e000 fd:00 2420477                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.xquery.ui_4.1.0.jar
+2aaab6a10000-2aaab6a12000 r--s 0001a000 fd:00 2420478                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediator.xslt.ui_4.1.3.jar
+2aaab6a12000-2aaab6a13000 r--s 00006000 fd:00 2420479                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediators.clazz.admin.stub_4.1.0.jar
+2aaab6a13000-2aaab6a14000 r--s 00006000 fd:00 2420480                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediators.command.admin.stub_4.1.0.jar
+2aaab6a14000-2aaab6a16000 r--s 0000e000 fd:00 2420481                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mediators.event.admin.stub_4.1.0.jar
+2aaab6a16000-2aaab6a17000 r--s 00004000 fd:00 2420484                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.message.processor_4.1.4.jar
+2aaab6a17000-2aaab6a1a000 r--s 0002a000 fd:00 2420482                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.message.processor.stub_4.1.0.jar
+2aaab6a1a000-2aaab6a1d000 r--s 0007f000 fd:00 2420483                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.message.processor.ui_4.1.3.jar
+2aaab6a1d000-2aaab6a1f000 r--s 0000e000 fd:00 2420487                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.message.store_4.1.4.jar
+2aaab6a1f000-2aaab6a22000 r--s 00027000 fd:00 2420485                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.message.store.stub_4.1.3.jar
+2aaab6a22000-2aaab6a24000 r--s 00071000 fd:00 2420486                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.message.store.ui_4.1.4.jar
+2aaab6a24000-2aaab6a26000 r--s 00006000 fd:00 2420488                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.mex_4.1.0.jar
+2aaab6a26000-2aaab6a27000 r--s 00005000 fd:00 2420491                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.module.mgt_4.1.0.jar
+2aaab6a27000-2aaab6a2c000 r--s 0004d000 fd:00 2420489                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.module.mgt.stub_4.1.0.jar
+2aaab6a2c000-2aaab6a2e000 r--s 0004e000 fd:00 2420490                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.module.mgt.ui_4.1.0.jar
+2aaab6a2e000-2aaab6a2f000 r--s 00001000 fd:00 2420492                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ndatasource.common_4.1.0.jar
+2aaab6a2f000-2aaab6a31000 r--s 00004000 fd:00 2420494                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ndatasource.rdbms_4.1.0.jar
+2aaab6a31000-2aaab6a35000 r--s 0002d000 fd:00 2420495                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ndatasource.stub_4.1.0.jar
+2aaab6a35000-2aaab6a39000 r--s 0008b000 fd:00 2420496                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ndatasource.ui_4.1.0.jar
+2aaab6a39000-2aaab6a3b000 r--s 00002000 fd:00 2420499                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.operation.mgt_4.1.0.jar
+2aaab6a3b000-2aaab6a3e000 r--s 0002b000 fd:00 2420497                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.operation.mgt.stub_4.1.0.jar
+2aaab6a3e000-2aaab6a3f000 r--s 00013000 fd:00 2420498                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.operation.mgt.ui_4.1.0.jar
+2aaab6a3f000-2aaab6a40000 r--s 00001000 fd:00 2420500                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.osgi.security_4.1.0.jar
+2aaab6a40000-2aaab6a42000 r--s 00004000 fd:00 2420502                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.policyeditor_4.1.0.jar
+2aaab6a42000-2aaab6a45000 r--s 00057000 fd:00 2420501                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.policyeditor.ui_4.1.3.jar
+2aaab6a45000-2aaab6a46000 r--s 00003000 fd:00 2420505                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.priority.executors_4.1.0.jar
+2aaab6a46000-2aaab6a48000 r--s 0000c000 fd:00 2420503                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.priority.executors.stub_4.1.0.jar
+2aaab6a48000-2aaab6a4a000 r--s 0001b000 fd:00 2420504                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.priority.executors.ui_4.1.0.jar
+2aaab6a4a000-2aaab6a4b000 r--s 0000a000 fd:00 2420509                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.proxyadmin_4.1.3.jar
+2aaab6a4b000-2aaab6a4c000 r--s 00002000 fd:00 2420506                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.proxyadmin.common_4.1.0.jar
+2aaab6a4c000-2aaab6a50000 r--s 00047000 fd:00 2420507                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.proxyadmin.stub_4.1.0.jar
+2aaab6a50000-2aaab6a53000 r--s 00075000 fd:00 2420508                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.proxyadmin.ui_4.1.3.jar
+2aaab6a53000-2aaab6a55000 r--s 00015000 fd:00 2420510                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.qpid.stub_4.1.0.jar
+2aaab6a55000-2aaab6a56000 r--s 00001000 fd:00 2420511                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.queuing_4.1.0.jar
+2aaab6a56000-2aaab6a58000 r--s 00008000 fd:00 2420512                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.redirector.servlet.stub_4.1.0.jar
+2aaab6a58000-2aaab6a59000 r--s 00003000 fd:00 2420513                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.redirector.servlet.ui_2.1.0.jar
+2aaab6a59000-2aaab6a5b000 r--s 00006000 fd:00 2420517                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.common.ui_4.1.0.jar
+2aaab6a5b000-2aaab6a62000 r--s 00091000 fd:00 2420521                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.extensions.stub_4.1.0.jar
+2aaab6a62000-2aaab6a64000 r--s 0000e000 fd:00 2420522                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.registry.extensions.ui_4.1.0.jar
+2aaab6a64000-2aaab6a67000 r--s 00034000 fd:00 2420563                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.security.mgt.stub_4.1.0.jar
+2aaab6a67000-2aaab6a6a000 r--s 001ca000 fd:00 2420564                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.security.mgt.ui_4.1.0.jar
+2aaab6a6a000-2aaab6a6c000 r--s 00005000 fd:00 2420569                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sequences_4.1.3.jar
+2aaab6a6c000-2aaab6a6d000 r--s 00001000 fd:00 2420566                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sequences.common_4.1.0.jar
+2aaab6a6d000-2aaab6a70000 r--s 00039000 fd:00 2420567                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sequences.stub_4.1.0.jar
+2aaab6a70000-2aaab6a73000 r--s 00019000 fd:00 2420568                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sequences.ui_4.1.3.jar
+2aaab6a73000-2aaab6a75000 r--s 0000c000 fd:00 2420573                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.server.admin_4.1.0.jar
+2aaab6a75000-2aaab6a76000 r--s 00001000 fd:00 2420570                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.server.admin.common_4.1.0.jar
+2aaab6a76000-2aaab6a79000 r--s 00029000 fd:00 2420571                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.server.admin.stub_4.1.0.jar
+2aaab6a79000-2aaab6a7a000 r--s 0000a000 fd:00 2420572                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.server.admin.ui_4.1.0.jar
+2aaab6a7a000-2aaab6a7c000 r--s 00012000 fd:00 2420576                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.service.mgt_4.1.3.jar
+2aaab6a7c000-2aaab6a85000 r--s 000ba000 fd:00 2420574                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.service.mgt.stub_4.1.0.jar
+2aaab6a85000-2aaab6a89000 r--s 000e3000 fd:00 2420575                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.service.mgt.ui_4.1.3.jar
+2aaab6a89000-2aaab6a8b000 r--s 00034000 fd:00 2420577                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sso.redirector.ui_2.1.0.jar
+2aaab6a8b000-2aaab6a8d000 r--s 00003000 fd:00 2420578                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.startup_4.1.1.jar
+2aaab6a8d000-2aaab6a8e000 r--s 0000a000 fd:00 2420584                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.statistics_4.1.2.jar
+2aaab6a8e000-2aaab6a95000 r--s 0007f000 fd:00 2420579                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.statistics.stub_4.1.0.jar
+2aaab6a95000-2aaab6a96000 r--s 00006000 fd:00 2420582                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.statistics.transport_4.1.0.jar
+2aaab6a96000-2aaab6a9b000 r--s 0005d000 fd:00 2420580                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.statistics.transport.stub_4.1.0.jar
+2aaab6a9b000-2aaab6a9d000 r--s 00051000 fd:00 2420581                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.statistics.transport.ui_4.1.0.jar
+2aaab6a9d000-2aaab6a9f000 r--s 00029000 fd:00 2420583                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.statistics.ui_4.1.0.jar
+2aaab6a9f000-2aaab6aa1000 r--s 0000a000 fd:00 2420585                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.stratos.common.stub_4.1.0.jar
+2aaab6aa1000-2aaab6aa3000 r--s 00001000 fd:00 2420587                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.stratos.landing.page.deployer_2.1.0.jar
+2aaab6aa3000-2aaab6aa5000 r--s 00013000 fd:00 2420588                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sts.stub_4.1.0.jar
+2aaab6aa5000-2aaab6aa7000 r--s 00002000 fd:00 2420589                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.sts.ui_4.1.0.jar
+2aaab6aa7000-2aaab6aa9000 r--s 00005000 fd:00 2420594                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.task_4.1.0.jar
+2aaab6aa9000-2aaab6aab000 r--s 00001000 fd:00 2420591                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.task.services_4.1.0.jar
+2aaab6aab000-2aaab6aad000 r--s 0001a000 fd:00 2420592                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.task.stub_4.1.0.jar
+2aaab6aad000-2aaab6aaf000 r--s 00024000 fd:00 2420593                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.task.ui_4.1.0.jar
+2aaab6aaf000-2aaab6ab1000 r--s 00001000 fd:00 2420595                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tenant.dispatcher_2.1.0.jar
+2aaab6ab1000-2aaab6ab3000 r--s 00009000 fd:00 2420599                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tenant.mgt_2.1.0.jar
+2aaab6ab3000-2aaab6ab6000 r--s 00024000 fd:00 2420597                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tenant.mgt.stub_4.1.0.jar
+2aaab6ab6000-2aaab6ab8000 r--s 0001b000 fd:00 2420598                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tenant.mgt.ui_2.1.0.jar
+2aaab6ab8000-2aaab6ab9000 r--s 00004000 fd:00 2420600                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.theme.mgt_2.1.0.jar
+2aaab6ab9000-2aaab6abb000 r--s 00026000 fd:00 2420601                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.throttle.stub_4.1.0.jar
+2aaab6abb000-2aaab6abd000 r--s 0001b000 fd:00 2420602                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.throttle.ui_4.1.3.jar
+2aaab6abd000-2aaab6ac0000 r--s 0000e000 fd:00 2420605                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.throttling.agent_2.1.0.jar
+2aaab6ac0000-2aaab6ac2000 r--s 00006000 fd:00 2420604                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.throttling.agent.stub_4.1.0.jar
+2aaab6ac2000-2aaab6ac6000 r--s 00009000 fd:00 2420611                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tools.wsdlvalidator_4.1.0.jar
+2aaab6ac6000-2aaab6ac8000 r--s 00008000 fd:00 2420610                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tools.wsdlvalidator.ui_4.1.0.jar
+2aaab6ac8000-2aaab6ac9000 r--s 00006000 fd:00 2420614                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tracer_4.1.3.jar
+2aaab6ac9000-2aaab6acb000 r--s 00013000 fd:00 2420612                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tracer.stub_4.1.0.jar
+2aaab6acb000-2aaab6acc000 r--s 00021000 fd:00 2420613                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tracer.ui_4.1.0.jar
+2aaab6acc000-2aaab6ace000 r--s 00001000 fd:00 2420616                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.fix_4.1.0.jar
+2aaab6ace000-2aaab6acf000 r--s 00001000 fd:00 2420672                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.http_4.1.0.jar
+2aaab6acf000-2aaab6ad0000 r--s 00001000 fd:00 2420673                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.https_4.1.0.jar
+2aaab6ad0000-2aaab6ad2000 r--s 00002000 fd:00 2420674                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.jms_4.1.0.jar
+2aaab6ad2000-2aaab6ad3000 r--s 00001000 fd:00 2420675                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.local_4.1.0.jar
+2aaab6ad3000-2aaab6ad5000 r--s 00001000 fd:00 2420676                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.mail_4.1.0.jar
+2aaab6ad5000-2aaab6ad7000 r--s 00003000 fd:00 2420679                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.mgt_4.1.0.jar
+2aaab6ad7000-2aaab6adb000 r--s 0003a000 fd:00 2420677                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.mgt.stub_4.1.0.jar
+2aaab6adb000-2aaab6add000 r--s 0002f000 fd:00 2420678                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.mgt.ui_4.1.0.jar
+2aaab6add000-2aaab6adf000 r--s 00001000 fd:00 2420681                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transport.vfs_4.1.0.jar
+2aaab6adf000-2aaab6ae1000 r--s 00008000 fd:00 2420682                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transports.sap_1.0.0.jar
+2aaab6ae1000-2aaab6ae3000 r--s 00011000 fd:00 2420683                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tryit.ui_4.1.0.jar
+2aaab6ae3000-2aaab6ae5000 r--s 00000000 fd:00 2420685                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ui.menu.general_4.1.0.jar
+2aaab6ae5000-2aaab6ae6000 r--s 00000000 fd:00 2420686                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ui.menu.registry_4.1.0.jar
+2aaab6ae6000-2aaab6ae8000 r--s 00000000 fd:00 2420688                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ui.menu.tools_4.1.0.jar
+2aaab6aea000-2aaab6aed000 r--s 00017000 fd:00 2420603                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.throttle_4.1.0.jar
+2aaab6af6000-2aaab6af8000 r--s 00004000 fd:00 2420609                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tomcat_4.1.0.jar
+2aaab6af8000-2aaab6afa000 r--s 0000c000 fd:00 2420606                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tomcat.ext_4.1.0.jar
+2aaab6afa000-2aaab6afb000 r--s 00000000 fd:00 2420607                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tomcat.fragment.dummy_4.1.0.jar
+2aaab6afb000-2aaab6aff000 r--s 0002e000 fd:00 2420608                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tomcat.patch_4.1.0.jar
+2aaab6aff000-2aaab6b09000 r--s 000ea000 fd:00 2420690                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.um.ws.api.stub_4.1.0.jar
+2aaab6b09000-2aaab6b0a000 r--s 00002000 fd:00 2420615                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.transaction.manager_4.1.0.jar
+2aaab6b0a000-2aaab6b0c000 r--s 00001000 fd:00 2420694                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.user.mgt.common_4.1.0.jar
+2aaab6b0c000-2aaab6b13000 r--s 00075000 fd:00 2420695                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.user.mgt.stub_4.1.0.jar
+2aaab6b13000-2aaab6b16000 r--s 00073000 fd:00 2420696                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.user.mgt.ui_4.1.0.jar
+2aaab6b16000-2aaab6b17000 r--s 00002000 fd:00 2420701                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.viewflows_4.1.0.jar
+2aaab6b17000-2aaab6b19000 r--s 00013000 fd:00 2420699                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.viewflows.stub_4.1.0.jar
+2aaab6b19000-2aaab6b1b000 r--s 00028000 fd:00 2420700                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.viewflows.ui_4.1.0.jar
+2aaab6b1b000-2aaab6b1c000 r--s 00005000 fd:00 2420704                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.wsdl2code_4.1.0.jar
+2aaab6b1c000-2aaab6b1d000 r--s 0000b000 fd:00 2420702                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.wsdl2code.stub_4.1.0.jar
+2aaab6b1d000-2aaab6b1f000 r--s 00017000 fd:00 2420703                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.wsdl2code.ui_4.1.3.jar
+2aaab6b1f000-2aaab6b20000 r--s 00003000 fd:00 2420705                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.xfer_4.1.0.jar
+2aaab6b21000-2aaab6b22000 r--s 00329000 fd:00 2420684                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.tryit_4.1.0.jar
+2aaab6b22000-2aaab6b24000 r--s 00017000 fd:00 2420706                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.esb.samples_4.7.0.jar
+2aaab6b3a000-2aaab6b3d000 r--s 00016000 fd:00 2420709                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/perf4j_0.9.12.wso2v1.jar
+2aaab6b3d000-2aaab6b3e000 r--s 00002000 fd:00 2420687                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.ui.menu.stratos_2.0.0.jar
+2aaab6b4a000-2aaab6b4c000 r--s 0000c000 fd:00 2420691                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.usage.agent_2.1.0.jar
+2aaab6b4c000-2aaab6b4d000 r--s 00003000 fd:00 2420692                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.user.api_4.1.0.jar
+2aaab6b4d000-2aaab6b52000 r--s 0003f000 fd:00 2420693                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.user.core_4.1.0.jar
+2aaab6b60000-2aaab6b65000 r--s 00036000 fd:00 2420698                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.carbon.utils_4.1.0.jar
+2aaab6b74000-2aaab6b77000 r--s 00011000 fd:00 2420708                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/org.wso2.securevault_1.0.0.wso2v2.jar
+2aaab6b77000-2aaab6b93000 r--s 00157000 fd:00 2420712                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/poi_3.5.0.wso2v1.jar
+2aaab6b93000-2aaab6b9c000 r--s 00080000 fd:00 2420713                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/quartz_2.1.1.wso2v1.jar
+2aaab6b9c000-2aaab6c0e000 r--s 008d0000 fd:00 2420714                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/quickfixj_1.5.3.wso2v1.jar
+2aaab6c0e000-2aaab6c11000 r--s 00028000 fd:00 2420715                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/rampart-core_1.6.1.wso2v8.jar
+2aaab6c11000-2aaab6c14000 r--s 00026000 fd:00 2420716                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/rampart-policy_1.6.1.wso2v8.jar
+2aaab6c14000-2aaab6c4b000 r--s 00345000 fd:00 2420720                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/smooks_1.4.0.wso2v1.jar
+2aaab6c4b000-2aaab6c8d000 r--s 002a7000 fd:00 2420721                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/spring.framework_3.1.0.wso2v1.jar
+2aaab6c8d000-2aaab6c92000 r--s 00032000 fd:00 2420722                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/svn-client-adapter_1.6.18.wso2v2.jar
+2aaab6c92000-2aaab6ca5000 r--s 0012b000 fd:00 2420724                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-core_2.1.1.wso2v7.jar
+2aaab6ca5000-2aaab6ca7000 r--s 0000d000 fd:00 2420726                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-fix-transport_2.1.1.wso2v7.jar
+2aaab6ca7000-2aaab6caf000 r--s 001f4000 fd:00 2420727                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-nhttp-transport_2.1.1.wso2v7.jar
+2aaab6caf000-2aaab6cb1000 r--s 00012000 fd:00 2420728                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-samples_2.1.1.wso2v7.jar
+2aaab6cb1000-2aaab6cb3000 r--s 00007000 fd:00 2420729                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-tasks_2.1.1.wso2v7.jar
+2aaab6cb3000-2aaab6cb4000 r--s 00009000 fd:00 2420730                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-vfs-transport_2.1.1.wso2v7.jar
+2aaab6cb4000-2aaab6cb9000 r--s 0006d000 fd:00 2420731                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/tiles-jsp_2.0.5.wso2v1.jar
+2aaab6cb9000-2aaab6cbc000 r--s 0001e000 fd:00 2420732                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/tomcat-ha_7.0.34.wso2v1.jar
+2aaab6cbc000-2aaab6cc2000 r--s 00041000 fd:00 2420734                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/tribes_7.0.28.wso2v1.jar
+2aaab6cc2000-2aaab6cca000 r--s 00050000 fd:00 2420736                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/woden_1.0.0.M8-wso2v1.jar
+2aaab6cdd000-2aaab6ce2000 r--s 00027000 fd:00 2420723                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/synapse-commons_2.1.1.wso2v7.jar
+2aaab6d0b000-2aaab6d2e000 r--s 00278000 fd:00 2420733                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/tomcat_7.0.34.wso2v1.jar
+2aaab6d2e000-2aaab6d6b000 r--s 006dd000 fd:00 2420737                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/wsdl-validator_1.2.0.wso2v1.jar
+2aaab6d6b000-2aaab6d70000 r--s 0002b000 fd:00 2420738                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/wsdl4j_1.6.2.wso2v4.jar
+2aaab6d70000-2aaab6d72000 r--s 00003000 fd:00 2420739                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/wso2-uri-templates_1.6.2.jar
+2aaab6d72000-2aaab6d81000 r--s 0019f000 fd:00 2420740                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/wss4j_1.5.11.wso2v5.jar
+2aaab6d81000-2aaab6d84000 r--s 00110000 fd:00 2420741                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/xkms_2.4.0.wso2v1.jar
+2aaab6d84000-2aaab6dc1000 r--s 00257000 fd:00 2420742                    /home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins/xmlbeans_2.3.0.wso2v1.jar
+2aaab8000000-2aaab9ad4000 rw-p 2aaab8000000 00:00 0 
+2aaab9ad4000-2aaabc000000 ---p 2aaab9ad4000 00:00 0 
+2b08a7c97000-2b08a7c99000 rw-p 2b08a7c97000 00:00 0 
+2b08a7ca8000-2b08a7cbe000 r-xp 00000000 fd:00 4938610                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/jli/libjli.so
+2b08a7cbe000-2b08a7ebe000 ---p 00016000 fd:00 4938610                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/jli/libjli.so
+2b08a7ebe000-2b08a7ebf000 rw-p 00016000 fd:00 4938610                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/jli/libjli.so
+2b08a7ebf000-2b08a7ec2000 rw-p 2b08a7ebf000 00:00 0 
+2b08a7ec2000-2b08a8903000 r-xp 00000000 fd:00 3924529                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so
+2b08a8903000-2b08a8b03000 ---p 00a41000 fd:00 3924529                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so
+2b08a8b03000-2b08a8ba6000 rw-p 00a41000 fd:00 3924529                    /home/marcel/jdk1.7.0_25/jre/lib/amd64/server/libjvm.so
+2b08a8ba6000-2b08a8be2000 rw-p 2b08a8ba6000 00:00 0 
+7fff60151000-7fff60166000 rw-p 7ffffffe9000 00:00 0                      [stack]
+7fff601fd000-7fff60200000 r-xp 7fff601fd000 00:00 0                      [vdso]
+ffffffffff600000-ffffffffffe00000 ---p 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xbootclasspath/a: -Xms256m -Xmx1024m -XX:MaxPermSize=256m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/home/marcel/ESB/wso2esb-4.7.0/repository/logs/heap-dump.hprof -Dcom.sun.management.jmxremote -Djava.endorsed.dirs=/home/marcel/ESB/wso2esb-4.7.0/lib/endorsed:/home/marcel/jdk1.7.0_25/jre/lib/endorsed:/home/marcel/jdk1.7.0_25/lib/endorsed -Djava.io.tmpdir=/home/marcel/ESB/wso2esb-4.7.0/tmp -Dcatalina.base=/home/marcel/ESB/wso2esb-4.7.0/lib/tomcat -Dwso2.server.standalone=true -Dcarbon.registry.root=/ -Djava.command=/home/marcel/jdk1.7.0_25/bin/java -Dcarbon.home=/home/marcel/ESB/wso2esb-4.7.0 -Djava.util.logging.config.file=/home/marcel/ESB/wso2esb-4.7.0/repository/conf/log4j.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Dcarbon.config.dir.path=/home/marcel/ESB/wso2esb-4.7.0/repository/conf -Dcomponents.repo=/home/marcel/ESB/wso2esb-4.7.0/repository/components/plugins -Dconf.location=/home/marcel/ESB/wso2esb-4.7.0/repository/conf -Dcom.atomikos.icatch.file=/home/marcel/ESB/wso2esb-4.7.0/lib/transactions.properties -Dcom.atomikos.icatch.hide_init_file_path=true -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dcom.sun.jndi.ldap.connect.pool.authentication=simple -Dcom.sun.jndi.ldap.connect.pool.timeout=3000 -Dorg.terracotta.quartz.skipUpdateCheck=true -DapplyPatches -Djava.security.egd=file:/dev/./urandom -Dfile.encoding=UTF8 
+java_command: org.wso2.carbon.bootstrap.Bootstrap
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/home/marcel/jdk1.7.0_25
+PATH=/usr/kerberos/bin:/usr/local/bin:/bin:/usr/bin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x8a26a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x8a26a0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x73f3d0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x73ed20], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGTERM: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x7410b0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Red Hat Enterprise Linux Server release 5.8 (Tikanga)
+
+uname:Linux 2.6.18-308.4.1.el5 #1 SMP Wed Mar 28 01:54:56 EDT 2012 x86_64
+libc:glibc 2.5 NPTL 2.5 
+rlimit: STACK 10240k, CORE 0k, NPROC 40960, NOFILE 1024, AS infinity
+load average:0.66 0.34 0.14
+
+/proc/meminfo:
+MemTotal:      4043732 kB
+MemFree:        435164 kB
+Buffers:         66848 kB
+Cached:         853884 kB
+SwapCached:     172004 kB
+Active:        1774676 kB
+Inactive:      1712460 kB
+HighTotal:           0 kB
+HighFree:            0 kB
+LowTotal:      4043732 kB
+LowFree:        435164 kB
+SwapTotal:     6094840 kB
+SwapFree:      4986628 kB
+Dirty:          192236 kB
+Writeback:           4 kB
+AnonPages:     2477936 kB
+Mapped:         154052 kB
+Slab:            60656 kB
+PageTables:      29996 kB
+NFS_Unstable:        0 kB
+Bounce:              0 kB
+CommitLimit:   8116704 kB
+Committed_AS:  5782616 kB
+VmallocTotal: 34359738367 kB
+VmallocUsed:    266164 kB
+VmallocChunk: 34359471575 kB
+HugePages_Total:     0
+HugePages_Free:      0
+HugePages_Rsvd:      0
+Hugepagesize:     2048 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 45 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, tsc, tscinvbit, tscinv
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 45
+model name	:        Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+stepping	: 7
+cpu MHz		: 2000.000
+cache size	: 20480 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc ida nonstop_tsc arat pni ssse3 cx16 sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 4000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 45
+model name	:        Intel(R) Xeon(R) CPU E5-2650 0 @ 2.00GHz
+stepping	: 7
+cpu MHz		: 2000.000
+cache size	: 20480 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc ida nonstop_tsc arat pni ssse3 cx16 sse4_1 sse4_2 popcnt lahf_lm
+bogomips	: 4000.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management: [8]
+
+
+
+Memory: 4k page, physical 4043732k(435164k free), swap 6094840k(4986628k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (23.25-b01) for linux-amd64 JRE (1.7.0_25-b15), built on Jun  5 2013 20:48:36 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Tue Oct  8 16:58:32 2013
+elapsed time: 14 seconds
+

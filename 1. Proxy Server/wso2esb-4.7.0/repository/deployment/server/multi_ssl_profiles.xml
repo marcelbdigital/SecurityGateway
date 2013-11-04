@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<parameter name="SSLProfiles">
+    <profile>
+        <bindAddress>192.168.1.2</bindAddress>
+        <KeyStore>
+            <Location>/mnt/wso2/wso2_files/testing/keystores/pkcs12_new/testhost1/testhost1.p12</Location>
+            <Type>PKCS12</Type>
+            <Password>password</Password>
+            <KeyPassword>password</KeyPassword>
+        </KeyStore>
+    </profile>
+    <profile>
+        <bindAddress>192.168.1.3</bindAddress>
+        <KeyStore>
+            <Location>/mnt/wso2/wso2_files/testing/keystores/pkcs12_new/testhost2/testhost2.p12</Location>
+            <Type>PKCS12</Type>
+            <Password>password</Password>
+            <KeyPassword>password</KeyPassword>
+        </KeyStore>
+    </profile>
+    <profile>
+        <bindAddress>192.168.1.4</bindAddress>
+        <KeyStore>
+            <Location>/mnt/wso2/wso2_files/testing/keystores/pkcs12_new/testhost3/testhost3.p12</Location>
+            <Type>PKCS12</Type>
+            <Password>password</Password>
+            <KeyPassword>password</KeyPassword>
+        </KeyStore>
+        <TrustStore>
+            <Location>/mnt/wso2/wso2_files/testing/keystores/pkcs12_new/truststore/truststore.jks</Location>
+            <Type>JKS</Type>
+            <Password>password</Password>
+        </TrustStore>
+        <SSLVerifyClient>require</SSLVerifyClient>
+    </profile>
+</parameter>

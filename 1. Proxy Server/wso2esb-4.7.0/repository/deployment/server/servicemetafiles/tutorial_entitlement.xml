@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup name="tutorial_entitlement" successfullyAdded="true">
+   <service name="tutorial_entitlement"
+            serviceDocumentation="echo"
+            exposedAllTransports="false"
+            serviceDeployedTime="1380697846206"
+            successfullyAdded="true"
+            utEnabled="true">
+      <operation name="echoString">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <operation name="throwAxisFault">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <operation name="echoStringArrays">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <operation name="echoOMElement">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <operation name="echoInt">
+         <module name="activation" version="2.1.2" type="engagedModules"/>
+         <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+         <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+         <module name="addressing" version="4.1.0" type="engagedModules"/>
+         <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      </operation>
+      <bindings>
+         <binding name="tutorial_entitlementHttpBinding">
+            <operation name="echoString"/>
+            <operation name="throwAxisFault"/>
+            <operation name="echoStringArrays"/>
+            <operation name="echoOMElement"/>
+            <operation name="echoInt"/>
+            <policyUUID>UTOverTransport</policyUUID>
+         </binding>
+         <binding name="tutorial_entitlementSoap11Binding">
+            <operation name="echoString"/>
+            <operation name="throwAxisFault"/>
+            <operation name="echoStringArrays"/>
+            <operation name="echoOMElement"/>
+            <operation name="echoInt"/>
+            <policyUUID>UTOverTransport</policyUUID>
+         </binding>
+         <binding name="tutorial_entitlementSoap12Binding">
+            <operation name="echoString"/>
+            <operation name="throwAxisFault"/>
+            <operation name="echoStringArrays"/>
+            <operation name="echoOMElement"/>
+            <operation name="echoInt"/>
+            <policyUUID>UTOverTransport</policyUUID>
+         </binding>
+      </bindings>
+      <policies>
+         <policy policyType="9">
+            <policyUUID>UTOverTransport</policyUUID>
+            <wsp:Policy xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+                        xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                        wsu:Id="UTOverTransport">
+               <wsp:ExactlyOne>
+                  <wsp:All>
+                     <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                        <wsp:Policy>
+                           <sp:TransportToken>
+                              <wsp:Policy>
+                                 <sp:HttpsToken RequireClientCertificate="false"/>
+                              </wsp:Policy>
+                           </sp:TransportToken>
+                           <sp:AlgorithmSuite>
+                              <wsp:Policy>
+                                 <sp:Basic256/>
+                              </wsp:Policy>
+                           </sp:AlgorithmSuite>
+                           <sp:Layout>
+                              <wsp:Policy>
+                                 <sp:Lax/>
+                              </wsp:Policy>
+                           </sp:Layout>
+                           <sp:IncludeTimestamp/>
+                        </wsp:Policy>
+                     </sp:TransportBinding>
+                     <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+                        <wsp:Policy>
+                           <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient"/>
+                        </wsp:Policy>
+                     </sp:SignedSupportingTokens>
+                  </wsp:All>
+               </wsp:ExactlyOne>
+               <rampart:RampartConfig xmlns:rampart="http://ws.apache.org/rampart/policy">
+                  <rampart:encryptionUser>useReqSigCert</rampart:encryptionUser>
+                  <rampart:timestampPrecisionInMilliseconds>true</rampart:timestampPrecisionInMilliseconds>
+                  <rampart:timestampTTL>300</rampart:timestampTTL>
+                  <rampart:timestampMaxSkew>300</rampart:timestampMaxSkew>
+                  <rampart:timestampStrict>false</rampart:timestampStrict>
+                  <rampart:tokenStoreClass>org.wso2.carbon.security.util.SecurityTokenStore</rampart:tokenStoreClass>
+                  <rampart:nonceLifeTime>300</rampart:nonceLifeTime>
+               </rampart:RampartConfig>
+            </wsp:Policy>
+         </policy>
+      </policies>
+      <module name="activation" version="2.1.2" type="engagedModules"/>
+      <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+      <module name="wso2statistics" version="4.1.2" type="engagedModules"/>
+      <module name="addressing" version="4.1.0" type="engagedModules"/>
+      <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+      <parameter name="serviceType" type="1">proxy</parameter>
+      <parameter name="interface" type="1">echoPortType</parameter>
+      <module name="rampart" version="1.61-wso2v8" type="engagedModules"/>
+      <association destinationPath="/repository/transports/https/listener"
+                   type="exposedTransports"/>
+   </service>
+</serviceGroup>

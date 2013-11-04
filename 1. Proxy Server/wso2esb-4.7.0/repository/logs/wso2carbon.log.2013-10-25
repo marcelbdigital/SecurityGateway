@@ -1,0 +1,704 @@
+TID: [0] [ESB] [2013-10-25 09:28:29,545]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-25 09:28:29,522+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-25 09:30:08,562]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:30:08,575]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service AddPolicyProxy to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:30:08,584]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: AddPolicyProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:30:08,737]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:31:35,144]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:31:35,145]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service AddPolicyProxy to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:31:35,153]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: AddPolicyProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:31:35,221]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:32:07,516]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:32:07,532]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy/user/easit1/policy/high, MessageID: urn:uuid:b08e557d-981f-408c-a20f-edf93897e1ff, Direction: request, STEP = 1, token: = easit1, policy = high, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:32:07,534]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:32:07,534]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:32:07,534] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_896954e1e90418a4ca67cedb1e41e6010691a509fc247cfd currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-25 09:32:07,534] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_896954e1e90418a4ca67cedb1e41e6010691a509fc247cfd resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:32:07,534] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:32:07,534] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:32:08,041]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:0867e3e5-cd75-4df2-a754-ec00f071b3d8, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:32:08,042]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:32:08,053]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:32:08,053] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:32:08,147]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:32:08,147]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:32:08,148] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:32:08,148]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:1e019712-5c27-4a09-a20d-b935de081244, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:22,916]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:22,917]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy, MessageID: urn:uuid:1bb925ab-034b-42d9-92d0-db44e367d358, Direction: request, STEP = 1, token: = , policy = , Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:22,930]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:22,930]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:22,931] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_896954e1e90418a4ca67cedb1e41e6010691a509fc247cfd currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-25 09:33:22,931] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_896954e1e90418a4ca67cedb1e41e6010691a509fc247cfd resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:33:22,931] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:33:22,931] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:33:23,424]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:88f15fcf-436b-4372-8883-f907d6a8a636, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:23,426]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:33:23,426]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:33:23,427] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:33:23,543]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:5ce32b54-4123-4571-ba85-1ac900c74bfa, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:33:23,544]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:33:23,545]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:33:23,545] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:34:02,629]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-25 09:34:02,629+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-25 09:34:53,823]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Gracefully restarting WSO2 Enterprise Service Bus... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 09:34:53,859]  INFO {org.wso2.carbon.core.ServerManagement} -  Starting to switch to maintenance mode... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,860]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Stopping Pass-through HTTPS Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 09:34:53,863]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Stopping Pass-through HTTP Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 09:34:53,864]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  HTTPS Listener shutdown. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 09:34:53,895]  INFO {org.wso2.carbon.core.ServerManagement} -  Stopped all transport listeners {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,895]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for request service completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,894]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  HTTP Listener shutdown. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 09:34:53,934]  INFO {org.wso2.carbon.core.ServerManagement} -  All requests have been served. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,935]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for deployment completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,954]  INFO {org.wso2.carbon.core.ServerManagement} -  All deployment tasks have been completed. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,955]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for server task completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,955]  INFO {org.wso2.carbon.core.ServerManagement} -  All server tasks have been completed. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 09:34:53,956]  INFO {org.wso2.carbon.base.CarbonContextHolderBase} -  Completed unloading tenant {org.wso2.carbon.base.CarbonContextHolderBase}
+TID: [0] [ESB] [2013-10-25 09:34:53,958]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Starting a new Carbon instance. Current instance will be shutdown {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 09:34:53,959]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Halting JVM {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 09:35:13,832]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Starting WSO2 Carbon... {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,836]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Operating System : Linux 2.6.18-308.4.1.el5, amd64 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,836]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Home        : /home/marcel/jdk1.7.0_25/jre {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,836]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Version     : 1.7.0_25 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,836]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java VM          : Java HotSpot(TM) 64-Bit Server VM 23.25-b01,Oracle Corporation {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,836]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Carbon Home      : /home/marcel/ESB/wso2esb-4.7.0 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,836]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Temp Dir    : /home/marcel/ESB/wso2esb-4.7.0/tmp {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,837]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  User             : marcel, en-US, Europe/San_Marino {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 09:35:13,895]  WARN {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter} -  Open files limit :1024 of the system is below the recommended minimum count :4096 {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter}
+TID: [0] [ESB] [2013-10-25 09:35:13,908]  INFO {org.wso2.carbon.databridge.agent.thrift.AgentHolder} -  Agent created ! {org.wso2.carbon.databridge.agent.thrift.AgentHolder}
+TID: [0] [ESB] [2013-10-25 09:35:13,984]  INFO {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS} -  Successfully deployed Agent Client {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS}
+TID: [0] [ESB] [2013-10-25 09:35:22,109]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} -  Configured Registry in 53ms {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService}
+TID: [0] [ESB] [2013-10-25 09:35:22,383]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} -  Registry Mode    : READ-WRITE {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent}
+TID: [0] [ESB] [2013-10-25 09:35:33,369]  INFO {org.apache.axis2.deployment.ClusterBuilder} -  Clustering has been disabled {org.apache.axis2.deployment.ClusterBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:34,036]  INFO {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer} -  Deployed product landing page webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/home] {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer}
+TID: [0] [ESB] [2013-10-25 09:35:34,086]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-25 09:35:34,138]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:34,265]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:34,548]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Pass-through HTTPS Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-25 09:35:34,549]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-25 09:35:34,559]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Pass-through HTTP Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-25 09:35:35,324]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:35,437]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Version.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Version.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 09:35:35,503]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:35,938]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Echo.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Echo.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 09:35:36,112]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:36,413]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:36,544]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 09:35:36,556]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:36,559]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Subject DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:36,559]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Issuer DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:36,560]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:36,570]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 09:35:36,718]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: addressing-1.6.1-wso2v9 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/addressing-1.6.1-wso2v9.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-25 09:35:36,722]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: rampart-1.6.1-wso2v8 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/rampart-1.6.1-wso2v8.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-25 09:35:36,731]  INFO {org.apache.axis2.transport.tcp.TCPTransportSender} -  TCP Sender started {org.apache.axis2.transport.tcp.TCPTransportSender}
+TID: [0] [ESB] [2013-10-25 09:35:38,444]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.processor -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 09:35:38,459]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.store -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 09:35:40,385]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: wso2carbon-sts {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:40,778]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.sts -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 09:35:42,022]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.tryit -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 09:35:42,433]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Repository       : /home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/ {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 09:35:42,738]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} -  Permission cache updated for tenant -1234 {org.wso2.carbon.core.internal.permission.update.PermissionUpdater}
+TID: [0] [ESB] [2013-10-25 09:35:42,905]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Starting ESB... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-25 09:35:42,942]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Initializing Apache Synapse... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-25 09:35:42,948]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using Synapse home : /home/marcel/ESB/wso2esb-4.7.0/. {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 09:35:42,948]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using synapse.xml location : /home/marcel/ESB/wso2esb-4.7.0/././repository/deployment/server/synapse-configs/default {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 09:35:42,948]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using server name : localhost {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 09:35:43,059]  INFO {org.apache.synapse.SynapseControllerFactory} -  The timeout handler will run every : 15s {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 09:35:43,078]  INFO {org.apache.synapse.Axis2SynapseController} -  Initializing Synapse at : Fri Oct 25 09:35:43 CEST 2013 {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:43,082]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} -  Loading the mediation configuration from the file system {org.wso2.carbon.mediation.initializer.CarbonSynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:43,085]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} -  Building synapse configuration from the synapse artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:43,085]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} -  Generating the Synapse configuration model by parsing the XML configuration {org.apache.synapse.config.xml.XMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:44,770]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} -  Loaded Synapse configuration from the artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.SynapseConfigurationBuilder}
+TID: [0] [ESB] [2013-10-25 09:35:44,771]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying the Synapse service... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:44,773]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying Proxy services... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:44,773]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:44,775]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provasegonacloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:44,780]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provasegonacloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,256]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,257]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provasegonacloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,257]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,257]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service AddPolicyProxy to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,261]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: AddPolicyProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,294]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,294]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : AddPolicyProxy {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,294]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : UserRegistrationProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,294]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service UserRegistrationProxy to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,299]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: UserRegistrationProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,402]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : UserRegistrationProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,402]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : UserRegistrationProxy {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,402]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : tutorial_entitlement {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,444] ERROR {org.apache.synapse.core.axis2.ProxyService} -  Error reading from wsdl URI {org.apache.synapse.core.axis2.ProxyService}
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at org.apache.synapse.config.SynapseConfigUtils.getOMElementFromURL(SynapseConfigUtils.java:312)
+	at org.apache.synapse.core.axis2.ProxyService.buildAxisService(ProxyService.java:273)
+	at org.apache.synapse.Axis2SynapseController.deployProxyServices(Axis2SynapseController.java:673)
+	at org.apache.synapse.Axis2SynapseController.createSynapseEnvironment(Axis2SynapseController.java:380)
+	at org.apache.synapse.ServerManager.start(ServerManager.java:181)
+	at org.wso2.carbon.mediation.initializer.ServiceBusInitializer.initESB(ServiceBusInitializer.java:412)
+	at org.wso2.carbon.mediation.initializer.ServiceBusInitializer.activate(ServiceBusInitializer.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451)
+	at org.wso2.carbon.event.core.internal.builder.EventBrokerHandler.startEventBroker(EventBrokerHandler.java:57)
+	at org.wso2.carbon.event.core.internal.builder.EventBrokerBuilderDS.activate(EventBrokerBuilderDS.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:513)
+	at org.wso2.carbon.core.init.CarbonServerManager.start(CarbonServerManager.java:219)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.activate(CarbonCoreServiceComponent.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433)
+	at org.eclipse.equinox.http.servlet.internal.Activator.registerHttpService(Activator.java:81)
+	at org.eclipse.equinox.http.servlet.internal.Activator.addProxyServlet(Activator.java:60)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.init(ProxyServlet.java:40)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.init(DelegationServlet.java:38)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1267)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1186)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1081)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5027)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5314)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:35:45,453]  WARN {org.apache.synapse.Axis2SynapseController} -  The proxy service tutorial_entitlement cannot be deployed - Continue in Proxy Service fail-safe mode. {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,453]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,454]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,459]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,494]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,494]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : GatewayToPreferences {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,494]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,495]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,503]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,538]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,538]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : Entitlement_prova {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,538]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,539]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provaCloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,543]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provaCloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,573]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,574]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provaCloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,574]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : prova_condicionals {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,574]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service prova_condicionals to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,578]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: prova_condicionals {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:45,832]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : prova_condicionals {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,832]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : prova_condicionals {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:45,832]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,832]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service prova_urlrewrite_condicional to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:45,836]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: prova_urlrewrite_condicional {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 09:35:46,147]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 09:35:46,147]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : prova_urlrewrite_condicional {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:46,147]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying EventSources... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:46,148]  INFO {org.apache.synapse.Axis2SynapseController} -  Loading mediator extensions... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 09:35:46,155] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : jorjuAET {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-25 09:35:46,201] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : prova1 {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-25 09:35:46,207]  INFO {org.apache.synapse.ServerManager} -  Server ready for processing... {org.apache.synapse.ServerManager}
+TID: [0] [ESB] [2013-10-25 09:35:46,289]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Statistic Reporter is Disabled {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-25 09:35:46,290]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Can't register an observer for mediationStatisticsStore. If you have disabled StatisticsReporter, please enable it in the Carbon.xml {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-25 09:35:46,377]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} -  Successfully registered the Rule Config service {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS}
+TID: [0] [ESB] [2013-10-25 09:35:48,053]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Starting Pass-through HTTPS Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 09:35:48,105]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Pass-through HTTPS Listener started on 0.0.0.0:8243 {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 09:35:48,105]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Starting Pass-through HTTP Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 09:35:48,144]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Pass-through HTTP Listener started on 0.0.0.0:8280 {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 09:35:48,587]  INFO {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent} -  Successfully Initialized Eventing on Registry {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent}
+TID: [0] [ESB] [2013-10-25 09:35:49,919]  INFO {org.wso2.carbon.core.init.JMXServerManager} -  JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi {org.wso2.carbon.core.init.JMXServerManager}
+TID: [0] [ESB] [2013-10-25 09:35:49,919]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  Server           :  WSO2 Enterprise Service Bus-4.7.0 {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-25 09:35:49,920]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  WSO2 Carbon started in 53 sec {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-25 09:35:50,332]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} -  Mgt Console URL  : https://172.20.10.118:9443/carbon/ {org.wso2.carbon.ui.internal.CarbonUIServiceComponent}
+TID: [0] [ESB] [2013-10-25 09:36:04,668]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:04,676]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy, MessageID: urn:uuid:dfb13bf8-99b5-45fc-9a31-603f43becbf7, Direction: request, STEP = 1, token: = , policy = , Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:04,688]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:04,689]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:04,689] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_6a3675902a952d544ef7e1c1fe5d60ca217a8de219053939 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-25 09:36:04,689] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_6a3675902a952d544ef7e1c1fe5d60ca217a8de219053939 resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:36:04,689] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:36:04,689] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:36:04,706]  INFO {org.apache.synapse.core.axis2.TimeoutHandler} -  This engine will expire all callbacks after : 120 seconds, irrespective of the timeout action, after the specified or optional timeout {org.apache.synapse.core.axis2.TimeoutHandler}
+TID: [0] [ESB] [2013-10-25 09:36:05,043]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:d222dc44-2cd0-4b38-b38e-fb5022e26491, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:05,043]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:05,044]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:05,044] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:36:05,174]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:1bfa8ca1-81ab-4a7c-abf6-c4566ed33f14, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:05,175]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:05,179]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:05,180] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:36:44,437]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:44,438]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy/user/easit1/policy/high, MessageID: urn:uuid:0ca1b783-3839-485b-8aa5-bd6f1e43cc4e, Direction: request, STEP = 1, token: = easit1, policy = high, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:44,443]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:44,443]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:44,443] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_6a3675902a952d544ef7e1c1fe5d60ca217a8de219053939 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-25 09:36:44,443] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_6a3675902a952d544ef7e1c1fe5d60ca217a8de219053939 resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:36:44,444] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:36:44,444] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:36:44,652]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:44,656]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:44,657] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:36:44,658]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:72079366-2ba8-457f-a526-e763b6b38c29, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:36:44,752]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:44,752]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:36:44,753] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:36:44,756]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:a6e11e3e-5ccc-419e-961b-c84c1d914594, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:37:12,986]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-25 09:37:12,984+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-25 09:39:16,003]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 0 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:39:16,018]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /services/AddPolicyProxy/user/easit1/policy/high, MessageID: urn:uuid:160311a3-deb4-4105-8f44-5c239cfa1553, Direction: request, STEP = 1, token: = easit1, policy = high, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:39:16,022]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 2 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:39:16,026]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  STEP = 3 {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:39:16,026] DEBUG {org.apache.synapse.endpoints.EndpointContext} -  Checking if endpoint : endpoint_6a3675902a952d544ef7e1c1fe5d60ca217a8de219053939 currently at state ACTIVE can be used now? {org.apache.synapse.endpoints.EndpointContext}
+TID: [0] [ESB] [2013-10-25 09:39:16,026] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  Sending message through endpoint : endpoint_6a3675902a952d544ef7e1c1fe5d60ca217a8de219053939 resolving to address = https://172.20.10.118:9445/services/EntitlementPolicyAdminService/ {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:39:16,026] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  SOAPAction: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:39:16,026] DEBUG {org.apache.synapse.endpoints.AddressEndpoint} -  WSA-Action: null {org.apache.synapse.endpoints.AddressEndpoint}
+TID: [0] [ESB] [2013-10-25 09:39:16,384]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:0c5a0ec7-4274-4de2-8ec2-905621557dc6, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:39:16,384]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:39:16,385]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:39:16,385] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:39:16,481]  INFO {org.apache.synapse.mediators.builtin.LogMediator} -  To: /favicon.ico, MessageID: urn:uuid:9e83e5c1-b069-4dee-bc73-dcc20091375f, Direction: request, Envelope: <?xml version='1.0' encoding='utf-8'?><soapenv:Envelope xmlns:soapenv="http://www.w3.org/2003/05/soap-envelope"><soapenv:Body/></soapenv:Envelope> {org.apache.synapse.mediators.builtin.LogMediator}
+TID: [0] [ESB] [2013-10-25 09:39:16,481]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Illegal incoming connection state: REQUEST_DONE . Possibly two send backs are happening for the same request {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:39:16,482]  WARN {org.apache.synapse.transport.passthru.SourceHandler} -  Trying to write response body while the handler is in an inconsistent state REQUEST_DONE {org.apache.synapse.transport.passthru.SourceHandler}
+TID: [0] [ESB] [2013-10-25 09:39:16,482] ERROR {org.apache.synapse.transport.passthru.SourceHandler} -  Unexpected I/O error: java.nio.channels.ClosedChannelException {org.apache.synapse.transport.passthru.SourceHandler}
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.ensureWriteOpen(SocketChannelImpl.java:265)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:456)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.sendEncryptedData(SSLIOSession.java:331)
+	at org.apache.http.nio.reactor.ssl.SSLIOSession.outboundTransport(SSLIOSession.java:411)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.outputReady(AbstractIODispatch.java:150)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.writable(BaseIOReactor.java:181)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:346)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:320)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:280)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:106)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:604)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 09:41:57,258]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-25 09:41:57,258+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-25 13:01:54,853]  INFO {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil} -  'admin@carbon.super [-1234]' logged in at [2013-10-25 13:01:54,853+0200] {org.wso2.carbon.core.services.util.CarbonAuthenticationUtil}
+TID: [0] [ESB] [2013-10-25 13:02:14,454]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Gracefully restarting WSO2 Enterprise Service Bus... {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 13:02:14,484]  INFO {org.wso2.carbon.core.ServerManagement} -  Starting to switch to maintenance mode... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,485]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Stopping Pass-through HTTPS Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 13:02:14,499]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  HTTPS Listener shutdown. {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 13:02:14,500]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Stopping Pass-through HTTP Listener.. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 13:02:14,501]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  HTTP Listener shutdown. {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 13:02:14,502]  INFO {org.wso2.carbon.core.ServerManagement} -  Stopped all transport listeners {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,502]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for request service completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,622]  INFO {org.wso2.carbon.core.ServerManagement} -  All requests have been served. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,622]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for deployment completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,646]  INFO {org.wso2.carbon.core.ServerManagement} -  All deployment tasks have been completed. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,647]  INFO {org.wso2.carbon.core.ServerManagement} -  Waiting for server task completion... {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,648]  INFO {org.wso2.carbon.core.ServerManagement} -  All server tasks have been completed. {org.wso2.carbon.core.ServerManagement}
+TID: [0] [ESB] [2013-10-25 13:02:14,649]  INFO {org.wso2.carbon.base.CarbonContextHolderBase} -  Completed unloading tenant {org.wso2.carbon.base.CarbonContextHolderBase}
+TID: [0] [ESB] [2013-10-25 13:02:14,651]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Starting a new Carbon instance. Current instance will be shutdown {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 13:02:14,652]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Halting JVM {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 13:02:44,970]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Starting WSO2 Carbon... {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,977]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Operating System : Linux 2.6.18-308.4.1.el5, amd64 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,977]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Home        : /home/marcel/jdk1.7.0_25/jre {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,977]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Version     : 1.7.0_25 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,978]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java VM          : Java HotSpot(TM) 64-Bit Server VM 23.25-b01,Oracle Corporation {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,978]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Carbon Home      : /home/marcel/ESB/wso2esb-4.7.0 {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,978]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  Java Temp Dir    : /home/marcel/ESB/wso2esb-4.7.0/tmp {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:44,978]  INFO {org.wso2.carbon.core.internal.CarbonCoreActivator} -  User             : marcel, en-US, Europe/San_Marino {org.wso2.carbon.core.internal.CarbonCoreActivator}
+TID: [0] [ESB] [2013-10-25 13:02:45,079]  WARN {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter} -  Open files limit :1024 of the system is below the recommended minimum count :4096 {org.wso2.carbon.core.bootup.validator.util.ValidationResultPrinter}
+TID: [0] [ESB] [2013-10-25 13:02:45,105]  INFO {org.wso2.carbon.databridge.agent.thrift.AgentHolder} -  Agent created ! {org.wso2.carbon.databridge.agent.thrift.AgentHolder}
+TID: [0] [ESB] [2013-10-25 13:02:45,138]  INFO {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS} -  Successfully deployed Agent Client {org.wso2.carbon.databridge.agent.thrift.internal.AgentDS}
+TID: [0] [ESB] [2013-10-25 13:02:54,422]  INFO {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService} -  Configured Registry in 124ms {org.wso2.carbon.registry.core.jdbc.EmbeddedRegistryService}
+TID: [0] [ESB] [2013-10-25 13:02:54,668]  INFO {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent} -  Registry Mode    : READ-WRITE {org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent}
+TID: [0] [ESB] [2013-10-25 13:03:05,500]  INFO {org.apache.axis2.deployment.ClusterBuilder} -  Clustering has been disabled {org.apache.axis2.deployment.ClusterBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:06,329]  INFO {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer} -  Deployed product landing page webapp: StandardEngine[Catalina].StandardHost[localhost].StandardContext[/home] {org.wso2.carbon.stratos.landing.page.deployer.LandingPageWebappDeployer}
+TID: [0] [ESB] [2013-10-25 13:03:06,380]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-25 13:03:06,436]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:06,675]  INFO {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ClientConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:07,010]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender} -  Pass-through HTTPS Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSSLSender}
+TID: [0] [ESB] [2013-10-25 13:03:07,010]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Initializing Pass-through HTTP/S Sender... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-25 13:03:07,015]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSender} -  Pass-through HTTP Sender started... {org.apache.synapse.transport.passthru.PassThroughHttpSender}
+TID: [0] [ESB] [2013-10-25 13:03:07,334]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:07,408]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Version.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Version.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 13:03:07,444]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:07,619]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: Echo.aar - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/axis2services/Echo.aar {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 13:03:07,768]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Version {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:07,941]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: echo {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:08,032]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 13:03:08,045]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Identity Keystore from : repository/resources/security/wso2carbon.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:08,049]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Subject DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:08,049]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Issuer DN: CN=localhost, O=WSO2, L=Mountain View, ST=CA, C=US {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:08,049]  INFO {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder} -  HTTPS Loading Trust Keystore from : repository/resources/security/client-truststore.jks {org.apache.synapse.transport.nhttp.config.ServerConnFactoryBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:08,058]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Initializing Pass-through HTTP/S Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 13:03:08,243]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: addressing-1.6.1-wso2v9 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/addressing-1.6.1-wso2v9.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-25 13:03:08,252]  INFO {org.apache.axis2.deployment.ModuleDeployer} -  Deploying module: rampart-1.6.1-wso2v8 - file:/home/marcel/ESB/wso2esb-4.7.0/repository/deployment/client/modules/rampart-1.6.1-wso2v8.mar {org.apache.axis2.deployment.ModuleDeployer}
+TID: [0] [ESB] [2013-10-25 13:03:08,264]  INFO {org.apache.axis2.transport.tcp.TCPTransportSender} -  TCP Sender started {org.apache.axis2.transport.tcp.TCPTransportSender}
+TID: [0] [ESB] [2013-10-25 13:03:09,981]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.processor -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 13:03:09,994]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.message.store -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 13:03:13,818]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: wso2carbon-sts {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:14,749]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.sts -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 13:03:15,368]  INFO {org.apache.axis2.deployment.DeploymentEngine} -  Deploying Web service: org.wso2.carbon.tryit -  {org.apache.axis2.deployment.DeploymentEngine}
+TID: [0] [ESB] [2013-10-25 13:03:15,728]  INFO {org.wso2.carbon.core.init.CarbonServerManager} -  Repository       : /home/marcel/ESB/wso2esb-4.7.0/repository/deployment/server/ {org.wso2.carbon.core.init.CarbonServerManager}
+TID: [0] [ESB] [2013-10-25 13:03:15,833]  INFO {org.wso2.carbon.core.internal.permission.update.PermissionUpdater} -  Permission cache updated for tenant -1234 {org.wso2.carbon.core.internal.permission.update.PermissionUpdater}
+TID: [0] [ESB] [2013-10-25 13:03:15,907]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Starting ESB... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-25 13:03:15,929]  INFO {org.wso2.carbon.mediation.initializer.ServiceBusInitializer} -  Initializing Apache Synapse... {org.wso2.carbon.mediation.initializer.ServiceBusInitializer}
+TID: [0] [ESB] [2013-10-25 13:03:15,934]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using Synapse home : /home/marcel/ESB/wso2esb-4.7.0/. {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 13:03:15,934]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using synapse.xml location : /home/marcel/ESB/wso2esb-4.7.0/././repository/deployment/server/synapse-configs/default {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 13:03:15,935]  INFO {org.apache.synapse.SynapseControllerFactory} -  Using server name : localhost {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 13:03:15,945]  INFO {org.apache.synapse.SynapseControllerFactory} -  The timeout handler will run every : 15s {org.apache.synapse.SynapseControllerFactory}
+TID: [0] [ESB] [2013-10-25 13:03:15,971]  INFO {org.apache.synapse.Axis2SynapseController} -  Initializing Synapse at : Fri Oct 25 13:03:15 CEST 2013 {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:15,975]  INFO {org.wso2.carbon.mediation.initializer.CarbonSynapseController} -  Loading the mediation configuration from the file system {org.wso2.carbon.mediation.initializer.CarbonSynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:15,977]  INFO {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder} -  Building synapse configuration from the synapse artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.xml.MultiXMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:15,977]  INFO {org.apache.synapse.config.xml.XMLConfigurationBuilder} -  Generating the Synapse configuration model by parsing the XML configuration {org.apache.synapse.config.xml.XMLConfigurationBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:18,654]  INFO {org.apache.synapse.config.SynapseConfigurationBuilder} -  Loaded Synapse configuration from the artifact repository at : ././repository/deployment/server/synapse-configs/default {org.apache.synapse.config.SynapseConfigurationBuilder}
+TID: [0] [ESB] [2013-10-25 13:03:18,655]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying the Synapse service... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:18,657]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying Proxy services... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:18,657]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:18,670]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provasegonacloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:18,675]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provasegonacloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:19,222]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provasegonacloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,222]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provasegonacloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,222]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,223]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service AddPolicyProxy to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,228]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: AddPolicyProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:19,299]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : AddPolicyProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,300]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : AddPolicyProxy {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,300]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : UserRegistrationProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,300]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service UserRegistrationProxy to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,311]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: UserRegistrationProxy {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:19,369]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : UserRegistrationProxy {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,370]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : UserRegistrationProxy {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,370]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : tutorial_entitlement {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,456] ERROR {org.apache.synapse.core.axis2.ProxyService} -  Error reading from wsdl URI {org.apache.synapse.core.axis2.ProxyService}
+java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:378)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:473)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:203)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:290)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:306)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:995)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:931)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:849)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1299)
+	at org.apache.synapse.config.SynapseConfigUtils.getOMElementFromURL(SynapseConfigUtils.java:312)
+	at org.apache.synapse.core.axis2.ProxyService.buildAxisService(ProxyService.java:273)
+	at org.apache.synapse.Axis2SynapseController.deployProxyServices(Axis2SynapseController.java:673)
+	at org.apache.synapse.Axis2SynapseController.createSynapseEnvironment(Axis2SynapseController.java:380)
+	at org.apache.synapse.ServerManager.start(ServerManager.java:181)
+	at org.wso2.carbon.mediation.initializer.ServiceBusInitializer.initESB(ServiceBusInitializer.java:412)
+	at org.wso2.carbon.mediation.initializer.ServiceBusInitializer.activate(ServiceBusInitializer.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451)
+	at org.wso2.carbon.event.core.internal.builder.EventBrokerHandler.startEventBroker(EventBrokerHandler.java:57)
+	at org.wso2.carbon.event.core.internal.builder.EventBrokerBuilderDS.activate(EventBrokerBuilderDS.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:451)
+	at org.wso2.carbon.core.init.CarbonServerManager.initializeCarbon(CarbonServerManager.java:513)
+	at org.wso2.carbon.core.init.CarbonServerManager.start(CarbonServerManager.java:219)
+	at org.wso2.carbon.core.internal.CarbonCoreServiceComponent.activate(CarbonCoreServiceComponent.java:69)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:260)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.getEligible(Resolver.java:343)
+	at org.eclipse.equinox.internal.ds.SCRManager.serviceChanged(SCRManager.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.FilteredServiceListener.serviceChanged(FilteredServiceListener.java:107)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.dispatchEvent(BundleContextImpl.java:861)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEventPrivileged(ServiceRegistry.java:819)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.publishServiceEvent(ServiceRegistry.java:771)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.register(ServiceRegistrationImpl.java:130)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.registerService(ServiceRegistry.java:214)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.registerService(BundleContextImpl.java:433)
+	at org.eclipse.equinox.http.servlet.internal.Activator.registerHttpService(Activator.java:81)
+	at org.eclipse.equinox.http.servlet.internal.Activator.addProxyServlet(Activator.java:60)
+	at org.eclipse.equinox.http.servlet.internal.ProxyServlet.init(ProxyServlet.java:40)
+	at org.wso2.carbon.tomcat.ext.servlet.DelegationServlet.init(DelegationServlet.java:38)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1267)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1186)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1081)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5027)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5314)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+TID: [0] [ESB] [2013-10-25 13:03:19,475]  WARN {org.apache.synapse.Axis2SynapseController} -  The proxy service tutorial_entitlement cannot be deployed - Continue in Proxy Service fail-safe mode. {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,475]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,476]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service GatewayToPreferences to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,490]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: GatewayToPreferences {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:19,555]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : GatewayToPreferences {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,555]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : GatewayToPreferences {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,555]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,556]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service Entitlement_prova to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,564]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: Entitlement_prova {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:19,636]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : Entitlement_prova {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,636]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : Entitlement_prova {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,636]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,637]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service provaCloud4all to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,644]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: provaCloud4all {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:19,707]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : provaCloud4all {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,708]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : provaCloud4all {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:19,708]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : prova_condicionals {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,708]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service prova_condicionals to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:19,716]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: prova_condicionals {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:20,185]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : prova_condicionals {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:20,185]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : prova_condicionals {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:20,185]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Building Axis service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:20,190]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Adding service prova_urlrewrite_condicional to the Axis2 configuration {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:20,261]  INFO {org.wso2.carbon.core.deployment.DeploymentInterceptor} -  Deploying Axis2 service: prova_urlrewrite_condicional {super-tenant} {org.wso2.carbon.core.deployment.DeploymentInterceptor}
+TID: [0] [ESB] [2013-10-25 13:03:20,306]  INFO {org.apache.synapse.core.axis2.ProxyService} -  Successfully created the Axis2 service for Proxy service : prova_urlrewrite_condicional {org.apache.synapse.core.axis2.ProxyService}
+TID: [0] [ESB] [2013-10-25 13:03:20,306]  INFO {org.apache.synapse.Axis2SynapseController} -  Deployed Proxy service : prova_urlrewrite_condicional {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:20,306]  INFO {org.apache.synapse.Axis2SynapseController} -  Deploying EventSources... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:20,307]  INFO {org.apache.synapse.Axis2SynapseController} -  Loading mediator extensions... {org.apache.synapse.Axis2SynapseController}
+TID: [0] [ESB] [2013-10-25 13:03:20,314] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : jorjuAET {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-25 13:03:20,316] DEBUG {org.apache.synapse.endpoints.TemplateEndpoint} -  Loading template endpoint with key : prova1 {org.apache.synapse.endpoints.TemplateEndpoint}
+TID: [0] [ESB] [2013-10-25 13:03:20,322]  INFO {org.apache.synapse.ServerManager} -  Server ready for processing... {org.apache.synapse.ServerManager}
+TID: [0] [ESB] [2013-10-25 13:03:20,375]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Statistic Reporter is Disabled {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-25 13:03:20,376]  INFO {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent} -  Can't register an observer for mediationStatisticsStore. If you have disabled StatisticsReporter, please enable it in the Carbon.xml {org.wso2.carbon.bam.mediationstats.data.publisher.internal.MediationStatisticsComponent}
+TID: [0] [ESB] [2013-10-25 13:03:20,750]  INFO {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS} -  Successfully registered the Rule Config service {org.wso2.carbon.rule.kernel.internal.ds.RuleEngineConfigDS}
+TID: [0] [ESB] [2013-10-25 13:03:23,130]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Starting Pass-through HTTPS Listener... {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 13:03:23,181]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener} -  Pass-through HTTPS Listener started on 0.0.0.0:8243 {org.apache.synapse.transport.passthru.PassThroughHttpSSLListener}
+TID: [0] [ESB] [2013-10-25 13:03:23,181]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Starting Pass-through HTTP Listener... {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 13:03:23,225]  INFO {org.apache.synapse.transport.passthru.PassThroughHttpListener} -  Pass-through HTTP Listener started on 0.0.0.0:8280 {org.apache.synapse.transport.passthru.PassThroughHttpListener}
+TID: [0] [ESB] [2013-10-25 13:03:23,527]  INFO {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent} -  Successfully Initialized Eventing on Registry {org.wso2.carbon.registry.eventing.internal.RegistryEventingServiceComponent}
+TID: [0] [ESB] [2013-10-25 13:03:24,403]  INFO {org.wso2.carbon.core.init.JMXServerManager} -  JMX Service URL  : service:jmx:rmi://localhost:11111/jndi/rmi://localhost:9999/jmxrmi {org.wso2.carbon.core.init.JMXServerManager}
+TID: [0] [ESB] [2013-10-25 13:03:24,403]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  Server           :  WSO2 Enterprise Service Bus-4.7.0 {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-25 13:03:24,404]  INFO {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent} -  WSO2 Carbon started in 66 sec {org.wso2.carbon.core.internal.StartupFinalizerServiceComponent}
+TID: [0] [ESB] [2013-10-25 13:03:24,931]  INFO {org.wso2.carbon.ui.internal.CarbonUIServiceComponent} -  Mgt Console URL  : https://172.20.10.118:9443/carbon/ {org.wso2.carbon.ui.internal.CarbonUIServiceComponent}

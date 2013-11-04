@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse"
+       name="AddPolicyProxy"
+       transports="https http"
+       startOnLoad="true"
+       trace="disable">
+   <description/>
+   <target>
+      <inSequence>
+         <log level="custom">
+            <property name="STEP" value="0"/>
+         </log>
+         <property name="token"
+                   expression="substring-before(substring-after(get-property('To'),'user/'),'/policy')"
+                   scope="default"
+                   type="STRING"/>
+         <property name="policy"
+                   expression="substring-after(get-property('To'),'policy/')"
+                   scope="default"
+                   type="STRING"/>
+         <property name="Authorization"
+                   expression="fn:concat('Basic ', base64Encode('admin:admin'))"
+                   scope="transport"
+                   type="STRING"/>
+         <log level="full">
+            <property name="STEP" value="1"/>
+            <property name="token:" expression="get-property('token')"/>
+            <property name="policy" expression="get-property('policy')"/>
+         </log>
+         <payloadFactory media-type="xml">
+            <format>
+               <ns3:addPolicy xmlns:ns3="http://org.apache.axis2/xsd">
+                  <ns3:policyDTO>
+                     <ns1:policy xmlns:ns1="http://dto.entitlement.identity.carbon.wso2.org/xsd">$1</ns1:policy>
+                  </ns3:policyDTO>
+               </ns3:addPolicy>
+            </format>
+            <args>
+               <arg value="&amp;amp;lt;Policy xmlns=&amp;amp;quot;urn:oasis:names:tc:xacml:3.0:core:schema:wd-17&amp;amp;quot;  PolicyId=&amp;amp;quot;Policy_de_prova_payload_factory&amp;amp;quot; RuleCombiningAlgId=&amp;amp;quot;urn:oasis:names:tc:xacml:3.0:rule-combining-algorithm:deny-overrides&amp;amp;quot; Version=&amp;amp;quot;1.0&amp;amp;quot;&amp;amp;gt;    &amp;amp;lt;Target&amp;amp;gt;       &amp;amp;lt;AnyOf&amp;amp;gt;          &amp;amp;lt;AllOf&amp;amp;gt;             &amp;amp;lt;Match MatchId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:string-regexp-match&amp;amp;quot;&amp;amp;gt;                &amp;amp;lt;AttributeValue DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot;&amp;amp;gt;easit1&amp;amp;lt;/AttributeValue&amp;amp;gt;                &amp;amp;lt;AttributeDesignator AttributeId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:subject:subject-id&amp;amp;quot; Category=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:subject-category:access-subject&amp;amp;quot; DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot; MustBePresent=&amp;amp;quot;true&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/AttributeDesignator&amp;amp;gt;             &amp;amp;lt;/Match&amp;amp;gt;          &amp;amp;lt;/AllOf&amp;amp;gt;       &amp;amp;lt;/AnyOf&amp;amp;gt;    &amp;amp;lt;/Target&amp;amp;gt;    &amp;amp;lt;Rule Effect=&amp;amp;quot;Permit&amp;amp;quot; RuleId=&amp;amp;quot;Rule1&amp;amp;quot;&amp;amp;gt;       &amp;amp;lt;Target&amp;amp;gt;&amp;amp;lt;/Target&amp;amp;gt;       &amp;amp;lt;Condition&amp;amp;gt;          &amp;amp;lt;Apply FunctionId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:and&amp;amp;quot;&amp;amp;gt;             &amp;amp;lt;Apply FunctionId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:string-is-in&amp;amp;quot;&amp;amp;gt;                &amp;amp;lt;AttributeValue DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot;&amp;amp;gt;read&amp;amp;lt;/AttributeValue&amp;amp;gt;                &amp;amp;lt;AttributeDesignator AttributeId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:action:action-id&amp;amp;quot; Category=&amp;amp;quot;urn:oasis:names:tc:xacml:3.0:attribute-category:action&amp;amp;quot; DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot; MustBePresent=&amp;amp;quot;true&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/AttributeDesignator&amp;amp;gt;             &amp;amp;lt;/Apply&amp;amp;gt;             &amp;amp;lt;Apply FunctionId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:any-of&amp;amp;quot;&amp;amp;gt;                &amp;amp;lt;Function FunctionId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:string-equal&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/Function&amp;amp;gt;                &amp;amp;lt;AttributeValue DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot;&amp;amp;gt;172.20.100.127&amp;amp;lt;/AttributeValue&amp;amp;gt;                &amp;amp;lt;AttributeDesignator AttributeId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:environment:IP&amp;amp;quot; Category=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:attribute-category:environment&amp;amp;quot; DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot; MustBePresent=&amp;amp;quot;true&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/AttributeDesignator&amp;amp;gt;             &amp;amp;lt;/Apply&amp;amp;gt;             &amp;amp;lt;Apply FunctionId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:any-of&amp;amp;quot;&amp;amp;gt;                &amp;amp;lt;Function FunctionId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:function:string-equal&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/Function&amp;amp;gt;                &amp;amp;lt;AttributeValue DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot;&amp;amp;gt;12345&amp;amp;lt;/AttributeValue&amp;amp;gt;                &amp;amp;lt;AttributeDesignator AttributeId=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:environment:IDApp&amp;amp;quot; Category=&amp;amp;quot;urn:oasis:names:tc:xacml:1.0:attribute-category:environment&amp;amp;quot; DataType=&amp;amp;quot;http://www.w3.org/2001/XMLSchema#string&amp;amp;quot; MustBePresent=&amp;amp;quot;true&amp;amp;quot;&amp;amp;gt;&amp;amp;lt;/AttributeDesignator&amp;amp;gt;             &amp;amp;lt;/Apply&amp;amp;gt;          &amp;amp;lt;/Apply&amp;amp;gt;       &amp;amp;lt;/Condition&amp;amp;gt;    &amp;amp;lt;/Rule&amp;amp;gt; &amp;amp;lt;/Policy&amp;amp;gt;"/>
+            </args>
+         </payloadFactory>
+         <log level="custom">
+            <property name="STEP" value="2"/>
+         </log>
+         <property name="Action" value="addPolicy" scope="default" type="STRING"/>
+         <log level="custom">
+            <property name="STEP" value="3"/>
+         </log>
+         <send>
+            <endpoint>
+               <address uri="https://172.20.10.118:9445/services/EntitlementPolicyAdminService/"/>
+            </endpoint>
+         </send>
+      </inSequence>
+   </target>
+</proxy>
