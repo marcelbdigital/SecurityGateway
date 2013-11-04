@@ -1,0 +1,206 @@
+!SESSION 2013-10-10 16:14:47.260 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+
+!ENTRY org.eclipse.equinox.registry 2 0 2013-10-10 16:14:47.260
+!MESSAGE The extensions and extension-points from the bundle "datanucleus-api-jdo" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2013-10-10 16:14:47.261
+!MESSAGE The extensions and extension-points from the bundle "datanucleus-core" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2013-10-10 16:14:47.261
+!MESSAGE The extensions and extension-points from the bundle "datanucleus-enhancer" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2013-10-10 16:14:47.261
+!MESSAGE The extensions and extension-points from the bundle "datanucleus-rdbms" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.wso2.carbon.core 2 0 2013-10-10 16:14:48.257
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.wso2.stratos.permission.update.PermissionUpdateServiceComponent
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.core.internal.permission.update.PermissionUpdateServiceComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.stratos.permission.update.PermissionUpdateServiceComponent}
+	serviceFactory = false
+	serviceInterface = null
+	references = {
+		Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 1..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+		Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 1..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+	}
+	located in bundle = org.wso2.carbon.core_4.1.0 [213]
+]
+Component2: Component[
+	name = org.wso2.stratos.permission.update.PermissionUpdateServiceComponent
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.bam.dashboard.internal.BAMDashboardDS
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.stratos.permission.update.PermissionUpdateServiceComponent}
+	serviceFactory = false
+	serviceInterface = null
+	references = null
+	located in bundle = org.wso2.carbon.bam.dashboard_4.1.2 [184]
+]  
+
+!ENTRY org.wso2.carbon.dashboard.gadgetrepopopulator 2 0 2013-10-10 16:14:48.331
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.wso2.carbon.dashboard.gadgetrepopopulator
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.dashboard.gadgetrepopopulator.internal.GadgetRepoPopulatorServiceComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.carbon.dashboard.gadgetrepopopulator}
+	serviceFactory = false
+	serviceInterface = null
+	references = {
+		Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 1..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+		Reference[name = user.realm.delegating, interface = org.wso2.carbon.user.core.UserRealm, policy = dynamic, cardinality = 1..1, target = (RealmGenre=Delegating), bind = setUserRealm, unbind = unsetUserRealm]
+		Reference[name = login.subscription.service, interface = org.wso2.carbon.core.services.callback.LoginSubscriptionManagerService, policy = dynamic, cardinality = 0..1, target = null, bind = setLoginSubscriptionManagerService, unbind = unsetLoginSubscriptionManagerService]
+	}
+	located in bundle = org.wso2.carbon.dashboard.gadgetrepopopulator_4.1.0 [221]
+]
+Component2: Component[
+	name = org.wso2.carbon.dashboard.gadgetrepopopulator
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.dashboard.common.internal.OAuthServiceComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.carbon.dashboard.gadgetrepopopulator}
+	serviceFactory = false
+	serviceInterface = null
+	references = {
+		Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 1..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+		Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 1..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+	}
+	located in bundle = org.wso2.carbon.dashboard.common_4.1.0 [219]
+]  
+
+!ENTRY org.wso2.carbon.dashboard.mgt.users 2 0 2013-10-10 16:14:48.362
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.wso2.carbon.dashboard
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.dashboard.mgt.users.internal.GadgetServerUserManagementServiceComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.carbon.dashboard}
+	serviceFactory = false
+	serviceInterface = null
+	references = {
+		Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 1..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+		Reference[name = user.realm.delegating, interface = org.wso2.carbon.user.core.UserRealm, policy = dynamic, cardinality = 1..1, target = (RealmGenre=Delegating), bind = setUserRealm, unbind = unsetUserRealm]
+		Reference[name = login.subscription.service, interface = org.wso2.carbon.core.services.callback.LoginSubscriptionManagerService, policy = dynamic, cardinality = 0..1, target = null, bind = setLoginSubscriptionManagerService, unbind = unsetLoginSubscriptionManagerService]
+		Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 1..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+	}
+	located in bundle = org.wso2.carbon.dashboard.mgt.users_4.1.0 [226]
+]
+Component2: Component[
+	name = org.wso2.carbon.dashboard
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.dashboard.internal.DashboardServiceComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.carbon.dashboard}
+	serviceFactory = false
+	serviceInterface = null
+	references = {
+		Reference[name = registry.service, interface = org.wso2.carbon.registry.core.service.RegistryService, policy = dynamic, cardinality = 1..1, target = null, bind = setRegistryService, unbind = unsetRegistryService]
+		Reference[name = user.realm.delegating, interface = org.wso2.carbon.user.core.UserRealm, policy = dynamic, cardinality = 1..1, target = (RealmGenre=Delegating), bind = setUserRealm, unbind = unsetUserRealm]
+		Reference[name = config.context.service, interface = org.wso2.carbon.utils.ConfigurationContextService, policy = dynamic, cardinality = 1..1, target = null, bind = setConfigurationContextService, unbind = unsetConfigurationContextService]
+	}
+	located in bundle = org.wso2.carbon.dashboard_4.1.0 [218]
+]  
+
+!ENTRY org.wso2.carbon.ui.menu.stratos 2 0 2013-10-10 16:14:49.876
+!MESSAGE [SCR] Found components with duplicated names! Details: 
+Component1 : Component[
+	name = org.wso2.carbon.ui.menu.general.internal.StratosUIGeneralMenuDSComponent
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.ui.menu.stratos.internal.StratosUIGeneralMenuDSComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.carbon.ui.menu.general.internal.StratosUIGeneralMenuDSComponent}
+	serviceFactory = false
+	serviceInterface = null
+	references = null
+	located in bundle = org.wso2.carbon.ui.menu.stratos_2.1.0 [352]
+]
+Component2: Component[
+	name = org.wso2.carbon.ui.menu.general.internal.StratosUIGeneralMenuDSComponent
+	factory = null
+	autoenable = true
+	immediate = true
+	implementation = org.wso2.carbon.ui.menu.stratos.internal.StratosUIGeneralMenuDSComponent
+	state = Unsatisfied
+	properties = {service.pid=org.wso2.carbon.ui.menu.general.internal.StratosUIGeneralMenuDSComponent}
+	serviceFactory = false
+	serviceInterface = null
+	references = null
+	located in bundle = org.wso2.carbon.ui.menu.stratos_2.0.0 [351]
+]  
+
+!ENTRY org.eclipse.equinox.ds 4 0 2013-10-10 16:14:56.050
+!MESSAGE [SCR] Exception while activating instance org.wso2.carbon.webapp.mgt.internal.UrlMapperServiceComponent@7f862f23 of component org.wso2.carbon.webapp.mgt.internal.UrlMapperServiceComponent  
+!STACK 0
+java.lang.NoClassDefFoundError: org/wso2/carbon/url/mapper/HotUpdateService
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2521)
+	at java.lang.Class.getDeclaredMethod(Class.java:1992)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.getMethod(ServiceComponent.java:156)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:253)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473)
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217)
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816)
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783)
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89)
+	at org.eclipse.equinox.internal.util.impl.tpt.threadpool.Executor.run(Executor.java:70)
+Caused by: java.lang.ClassNotFoundException: org.wso2.carbon.url.mapper.HotUpdateService
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 15 more
+
+!ENTRY org.eclipse.equinox.ds 4 0 2013-10-10 16:14:56.051
+!MESSAGE [SCR] Exception while activating instance org.wso2.carbon.webapp.mgt.internal.UrlMapperServiceComponent@7f862f23 of component org.wso2.carbon.webapp.mgt.internal.UrlMapperServiceComponent  
+!STACK 0
+java.lang.NoClassDefFoundError: org/wso2/carbon/url/mapper/HotUpdateService
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2521)
+	at java.lang.Class.getDeclaredMethod(Class.java:1992)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.getMethod(ServiceComponent.java:156)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponent.activate(ServiceComponent.java:253)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.activate(ServiceComponentProp.java:146)
+	at org.eclipse.equinox.internal.ds.model.ServiceComponentProp.build(ServiceComponentProp.java:347)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponent(InstanceProcess.java:620)
+	at org.eclipse.equinox.internal.ds.InstanceProcess.buildComponents(InstanceProcess.java:197)
+	at org.eclipse.equinox.internal.ds.Resolver.buildNewlySatisfied(Resolver.java:473)
+	at org.eclipse.equinox.internal.ds.Resolver.enableComponents(Resolver.java:217)
+	at org.eclipse.equinox.internal.ds.SCRManager.performWork(SCRManager.java:816)
+	at org.eclipse.equinox.internal.ds.SCRManager$QueuedJob.dispatch(SCRManager.java:783)
+	at org.eclipse.equinox.internal.ds.WorkThread.run(WorkThread.java:89)
+	at org.eclipse.equinox.internal.util.impl.tpt.threadpool.Executor.run(Executor.java:70)
+Caused by: java.lang.ClassNotFoundException: org.wso2.carbon.url.mapper.HotUpdateService
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:501)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 15 more

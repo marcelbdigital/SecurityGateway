@@ -1,0 +1,165 @@
+INFO Start Level Event Dispatcher com.atomikos.logging.LoggerFactory - Using Slf4J for logging.
+WARN Start Level Event Dispatcher com.atomikos.icatch.config.UserTransactionServiceImp - Using init file: /home/marcel/BAM/wso2bam-2.3.0/lib/transactions.properties
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog-1.log
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING core version: 3.8.0
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_name = tm.out
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_count = 1
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.automatic_resource_registration = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.client_demarcation = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.threaded_2pc = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.serial_jta_transactions = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_dir = repository/data
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_log_level = INFO
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_actives = 50
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.checkpoint_interval = 500
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.enable_logging = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.output_dir = repository/logs
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_name = tmlog
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_limit = 1073741824
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_timeout = 8000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.tm_unique_name = 127.0.0.1.tm
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.provider.url = rmi://localhost:1099
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.service = com.atomikos.icatch.standalone.UserTransactionServiceFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.force_shutdown_on_vm_exit = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.default_jta_timeout = 5000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.thread.TaskManager - THREADS: using JDK thread pooling...
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000100001
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.TransactionServiceImp - Coordinator not recoverable: 127.0.0.1.tm0000100001
+INFO Start Level Event Dispatcher com.atomikos.icatch.jta.TransactionImp - enlistResource ( xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon ) with transaction 127.0.0.1.tm0000100001
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3132372E302E302E312E746D30303030313030303031:3132372E302E302E312E746D31 ) for transaction 127.0.0.1.tm0000100001
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.start ( 3132372E302E302E312E746D30303030313030303031:3132372E302E302E312E746D31 , XAResource.TMNOFLAGS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000100001
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.end ( 3132372E302E302E312E746D30303030313030303031:3132372E302E302E312E746D31 , XAResource.TMSUCCESS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.commit ( 3132372E302E302E312E746D30303030313030303031:3132372E302E302E312E746D31 , true ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000200001
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000200001
+INFO Thread-2 com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog0.log
+INFO Start Level Event Dispatcher com.atomikos.logging.LoggerFactory - Using Slf4J for logging.
+WARN Start Level Event Dispatcher com.atomikos.icatch.config.UserTransactionServiceImp - Using init file: /home/marcel/BAM/wso2bam-2.3.0/lib/transactions.properties
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Starting read of logfile /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog0.log
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000100001 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000100001 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000200001 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000200001 with state COMMITTING
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Done read of logfile
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog0.log
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING core version: 3.8.0
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_name = tm.out
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_count = 1
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.automatic_resource_registration = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.client_demarcation = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.threaded_2pc = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.serial_jta_transactions = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_dir = repository/data
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_log_level = INFO
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_actives = 50
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.checkpoint_interval = 500
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.enable_logging = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.output_dir = repository/logs
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_name = tmlog
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_limit = 1073741824
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_timeout = 8000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.tm_unique_name = 127.0.0.1.tm
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.provider.url = rmi://localhost:1099
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.service = com.atomikos.icatch.standalone.UserTransactionServiceFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.force_shutdown_on_vm_exit = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.default_jta_timeout = 5000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.thread.TaskManager - THREADS: using JDK thread pooling...
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000100002
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.TransactionServiceImp - Coordinator not recoverable: 127.0.0.1.tm0000100002
+INFO Start Level Event Dispatcher com.atomikos.icatch.jta.TransactionImp - enlistResource ( xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon ) with transaction 127.0.0.1.tm0000100002
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3132372E302E302E312E746D30303030313030303032:3132372E302E302E312E746D31 ) for transaction 127.0.0.1.tm0000100002
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.start ( 3132372E302E302E312E746D30303030313030303032:3132372E302E302E312E746D31 , XAResource.TMNOFLAGS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000100002
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.end ( 3132372E302E302E312E746D30303030313030303032:3132372E302E302E312E746D31 , XAResource.TMSUCCESS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.commit ( 3132372E302E302E312E746D30303030313030303032:3132372E302E302E312E746D31 , true ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000200002
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000200002
+INFO Thread-2 com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog1.log
+INFO Start Level Event Dispatcher com.atomikos.logging.LoggerFactory - Using Slf4J for logging.
+WARN Start Level Event Dispatcher com.atomikos.icatch.config.UserTransactionServiceImp - Using init file: /home/marcel/BAM/wso2bam-2.3.0/lib/transactions.properties
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Starting read of logfile /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog1.log
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000100002 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000100002 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000200002 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000200002 with state COMMITTING
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Done read of logfile
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog1.log
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING core version: 3.8.0
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_name = tm.out
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_count = 1
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.automatic_resource_registration = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.client_demarcation = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.threaded_2pc = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.serial_jta_transactions = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_dir = repository/data
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_log_level = INFO
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_actives = 50
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.checkpoint_interval = 500
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.enable_logging = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.output_dir = repository/logs
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_name = tmlog
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_limit = 1073741824
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_timeout = 8000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.tm_unique_name = 127.0.0.1.tm
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.provider.url = rmi://localhost:1099
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.service = com.atomikos.icatch.standalone.UserTransactionServiceFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.force_shutdown_on_vm_exit = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.default_jta_timeout = 5000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.thread.TaskManager - THREADS: using JDK thread pooling...
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000100003
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.TransactionServiceImp - Coordinator not recoverable: 127.0.0.1.tm0000100003
+INFO Start Level Event Dispatcher com.atomikos.icatch.jta.TransactionImp - enlistResource ( xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon ) with transaction 127.0.0.1.tm0000100003
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3132372E302E302E312E746D30303030313030303033:3132372E302E302E312E746D31 ) for transaction 127.0.0.1.tm0000100003
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.start ( 3132372E302E302E312E746D30303030313030303033:3132372E302E302E312E746D31 , XAResource.TMNOFLAGS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000100003
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.end ( 3132372E302E302E312E746D30303030313030303033:3132372E302E302E312E746D31 , XAResource.TMSUCCESS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.commit ( 3132372E302E302E312E746D30303030313030303033:3132372E302E302E312E746D31 , true ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000200003
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000200003
+INFO Thread-2 com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog2.log
+INFO Start Level Event Dispatcher com.atomikos.logging.LoggerFactory - Using Slf4J for logging.
+WARN Start Level Event Dispatcher com.atomikos.icatch.config.UserTransactionServiceImp - Using init file: /home/marcel/BAM/wso2bam-2.3.0/lib/transactions.properties
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Starting read of logfile /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog2.log
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000100003 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000100003 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000200003 with state COMMITTING
+WARN Start Level Event Dispatcher com.atomikos.icatch.imp.CoordinatorImp - Local heuristic termination of coordinator 127.0.0.1.tm0000200003 with state COMMITTING
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Done read of logfile
+INFO Start Level Event Dispatcher com.atomikos.persistence.imp.FileLogStream - Logfile closed: /home/marcel/BAM/wso2bam-2.3.0/repository/data/tmlog2.log
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING core version: 3.8.0
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_name = tm.out
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_count = 1
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.automatic_resource_registration = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.client_demarcation = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.threaded_2pc = false
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.serial_jta_transactions = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_dir = repository/data
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_log_level = INFO
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_actives = 50
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.checkpoint_interval = 500
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.enable_logging = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.output_dir = repository/logs
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.log_base_name = tmlog
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.console_file_limit = 1073741824
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.max_timeout = 8000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.tm_unique_name = 127.0.0.1.tm
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING java.naming.provider.url = rmi://localhost:1099
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.service = com.atomikos.icatch.standalone.UserTransactionServiceFactory
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.force_shutdown_on_vm_exit = true
+INFO Start Level Event Dispatcher com.atomikos.icatch.config.imp.AbstractUserTransactionService - USING com.atomikos.icatch.default_jta_timeout = 5000000
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.thread.TaskManager - THREADS: using JDK thread pooling...
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000100004
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.TransactionServiceImp - Coordinator not recoverable: 127.0.0.1.tm0000100004
+INFO Start Level Event Dispatcher com.atomikos.icatch.jta.TransactionImp - enlistResource ( xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon ) with transaction 127.0.0.1.tm0000100004
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3132372E302E302E312E746D30303030313030303034:3132372E302E302E312E746D31 ) for transaction 127.0.0.1.tm0000100004
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.start ( 3132372E302E302E312E746D30303030313030303034:3132372E302E302E312E746D31 , XAResource.TMNOFLAGS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000100004
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.end ( 3132372E302E302E312E746D30303030313030303034:3132372E302E302E312E746D31 , XAResource.TMSUCCESS ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.datasource.xa.XAResourceTransaction - XAResource.commit ( 3132372E302E302E312E746D30303030313030303034:3132372E302E302E312E746D31 , true ) on resource xads0: url=jdbc:h2:repository/database/RSS_DA represented by XAResource instance xads0: url=jdbc:h2:repository/database/RSS_DATABASE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000 user=wso2carbon
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.BaseTransactionManager - createCompositeTransaction ( 5000000 ): created new ROOT transaction with id 127.0.0.1.tm0000200004
+INFO Start Level Event Dispatcher com.atomikos.icatch.imp.CompositeTransactionImp - commit() done (by application) of transaction 127.0.0.1.tm0000200004

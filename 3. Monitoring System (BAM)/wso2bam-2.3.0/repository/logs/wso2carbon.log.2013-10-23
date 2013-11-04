@@ -1,0 +1,65 @@
+TID: [0] [BAM] [2013-10-24 00:00:08,748] ERROR {org.wso2.carbon.hadoop.hive.jdbc.storage.db.DBManager} -  Failed to get connection {org.wso2.carbon.hadoop.hive.jdbc.storage.db.DBManager}
+org.h2.jdbc.JdbcSQLException: Connection is broken: "Connection refused" [90067-140]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:327)
+	at org.h2.message.DbException.get(DbException.java:156)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:331)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:253)
+	at org.h2.engine.SessionRemote.createSession(SessionRemote.java:219)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:111)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:95)
+	at org.h2.Driver.connect(Driver.java:73)
+	at java.sql.DriverManager.getConnection(DriverManager.java:571)
+	at java.sql.DriverManager.getConnection(DriverManager.java:215)
+	at org.wso2.carbon.hadoop.hive.jdbc.storage.db.DBManager.createConnection(DBManager.java:73)
+	at org.wso2.carbon.hadoop.hive.jdbc.storage.db.DBManager.createConnection(DBManager.java:85)
+	at org.wso2.carbon.hadoop.hive.jdbc.storage.JDBCDataOutputFormat.getHiveRecordWriter(JDBCDataOutputFormat.java:48)
+	at org.apache.hadoop.hive.ql.io.HiveFileFormatUtils.getRecordWriter(HiveFileFormatUtils.java:236)
+	at org.apache.hadoop.hive.ql.io.HiveFileFormatUtils.getHiveRecordWriter(HiveFileFormatUtils.java:224)
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.createBucketFiles(FileSinkOperator.java:478)
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:526)
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+	at org.apache.hadoop.hive.ql.exec.ExtractOperator.processOp(ExtractOperator.java:45)
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:518)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:419)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:257)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:109)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:91)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:96)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:327)
+	... 25 more
+TID: [0] [BAM] [2013-10-24 00:00:08,788] FATAL {ExecReducer} -  org.apache.hadoop.hive.ql.metadata.HiveException: Hive Runtime Error while processing row (tag=0) {"key":{"reducesinkkey0":62},"value":{"_col0":"easit1","_col1":62},"alias":0}
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:256)
+	at org.apache.hadoop.mapred.ReduceTask.runOldReducer(ReduceTask.java:518)
+	at org.apache.hadoop.mapred.ReduceTask.run(ReduceTask.java:419)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:257)
+Caused by: java.lang.NullPointerException
+	at org.wso2.carbon.hadoop.hive.jdbc.storage.db.DBOperation.writeToDB(DBOperation.java:82)
+	at org.wso2.carbon.hadoop.hive.jdbc.storage.db.DBRecordWriter.write(DBRecordWriter.java:35)
+	at org.apache.hadoop.hive.ql.exec.FileSinkOperator.processOp(FileSinkOperator.java:589)
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+	at org.apache.hadoop.hive.ql.exec.SelectOperator.processOp(SelectOperator.java:84)
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+	at org.apache.hadoop.hive.ql.exec.Operator.forward(Operator.java:762)
+	at org.apache.hadoop.hive.ql.exec.ExtractOperator.processOp(ExtractOperator.java:45)
+	at org.apache.hadoop.hive.ql.exec.Operator.process(Operator.java:471)
+	at org.apache.hadoop.hive.ql.exec.ExecReducer.reduce(ExecReducer.java:247)
+	... 3 more
+ {ExecReducer}
+TID: [0] [BAM] [2013-10-24 00:00:09,137] ERROR {org.apache.hadoop.hive.ql.exec.ExecDriver} -  Ended Job = job_local_0001 with errors {org.apache.hadoop.hive.ql.exec.ExecDriver}
+TID: [0] [BAM] [2013-10-24 00:00:09,137] ERROR {org.apache.hadoop.hive.ql.exec.ExecDriver} -  Ended Job = job_local_0001 with errors {org.apache.hadoop.hive.ql.exec.ExecDriver}
+TID: [0] [BAM] [2013-10-24 00:00:09,140] ERROR {org.apache.hadoop.hive.ql.exec.ExecDriver} -  Error during job, obtaining debugging information... {org.apache.hadoop.hive.ql.exec.ExecDriver}
+TID: [0] [BAM] [2013-10-24 00:00:09,140] ERROR {org.apache.hadoop.hive.ql.exec.ExecDriver} -  Error during job, obtaining debugging information... {org.apache.hadoop.hive.ql.exec.ExecDriver}

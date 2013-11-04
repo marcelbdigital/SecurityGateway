@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?><serviceGroup name="org.wso2.carbon.rssmanager.core" successfullyAdded="true">
+    <service name="RSSAdmin" serviceDocumentation="RSSAdmin" exposedAllTransports="false" serviceDeployedTime="1381414509433" successfullyAdded="true">
+        <operation name="isDatabasePrivilegesTemplateExist">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="createDatabaseForTenant">
+            <parameter name="superTenantService" locked="true">true</parameter>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getRSSInstances">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getRSSInstance">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="detachUserFromDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="testConnection">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getUsersAttachedToDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="attachUserToDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getSystemRSSInstanceCount">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="isDatabaseExist">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabasePrivilegesTemplates">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getUserDatabasePermissions">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="editDatabaseUserPrivileges">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="createDatabasePrivilegesTemplate">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabaseForTenant">
+            <parameter name="superTenantService" locked="true">true</parameter>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabases">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="initializeTenant">
+            <parameter name="superTenantService" locked="true">true</parameter>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabaseUsers">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getAvailableUsersToAttachToDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="createDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="editRSSInstance">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="isInitializedTenant">
+            <parameter name="superTenantService" locked="true">true</parameter>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="dropRSSInstance">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="dropDatabaseUser">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="createDatabaseUser">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="editDatabasePrivilegesTemplate">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabaseUser">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabasesForTenant">
+            <parameter name="superTenantService" locked="true">true</parameter>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="dropDatabase">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="isDatabaseUserExist">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="createRSSInstance">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="dropDatabasePrivilegesTemplate">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="getDatabasePrivilegesTemplate">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="createCarbonDataSource">
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="RSSAdminHttpBinding">
+                <operation name="createDatabaseForTenant"/>
+                <operation name="isDatabasePrivilegesTemplateExist"/>
+                <operation name="getRSSInstance"/>
+                <operation name="getRSSInstances"/>
+                <operation name="detachUserFromDatabase"/>
+                <operation name="testConnection"/>
+                <operation name="getUsersAttachedToDatabase"/>
+                <operation name="getSystemRSSInstanceCount"/>
+                <operation name="attachUserToDatabase"/>
+                <operation name="isDatabaseExist"/>
+                <operation name="getDatabasePrivilegesTemplates"/>
+                <operation name="editDatabaseUserPrivileges"/>
+                <operation name="getUserDatabasePermissions"/>
+                <operation name="createDatabasePrivilegesTemplate"/>
+                <operation name="getDatabaseForTenant"/>
+                <operation name="getDatabases"/>
+                <operation name="initializeTenant"/>
+                <operation name="getDatabaseUsers"/>
+                <operation name="getAvailableUsersToAttachToDatabase"/>
+                <operation name="editRSSInstance"/>
+                <operation name="createDatabase"/>
+                <operation name="isInitializedTenant"/>
+                <operation name="dropRSSInstance"/>
+                <operation name="createDatabaseUser"/>
+                <operation name="dropDatabaseUser"/>
+                <operation name="getDatabase"/>
+                <operation name="editDatabasePrivilegesTemplate"/>
+                <operation name="getDatabaseUser"/>
+                <operation name="getDatabasesForTenant"/>
+                <operation name="dropDatabase"/>
+                <operation name="createRSSInstance"/>
+                <operation name="isDatabaseUserExist"/>
+                <operation name="dropDatabasePrivilegesTemplate"/>
+                <operation name="getDatabasePrivilegesTemplate"/>
+                <operation name="createCarbonDataSource"/>
+            </binding>
+            <binding name="RSSAdminSoap12Binding">
+                <operation name="createDatabaseForTenant"/>
+                <operation name="isDatabasePrivilegesTemplateExist"/>
+                <operation name="getRSSInstance"/>
+                <operation name="getRSSInstances"/>
+                <operation name="detachUserFromDatabase"/>
+                <operation name="testConnection"/>
+                <operation name="getUsersAttachedToDatabase"/>
+                <operation name="getSystemRSSInstanceCount"/>
+                <operation name="attachUserToDatabase"/>
+                <operation name="isDatabaseExist"/>
+                <operation name="getDatabasePrivilegesTemplates"/>
+                <operation name="editDatabaseUserPrivileges"/>
+                <operation name="getUserDatabasePermissions"/>
+                <operation name="createDatabasePrivilegesTemplate"/>
+                <operation name="getDatabaseForTenant"/>
+                <operation name="getDatabases"/>
+                <operation name="initializeTenant"/>
+                <operation name="getDatabaseUsers"/>
+                <operation name="getAvailableUsersToAttachToDatabase"/>
+                <operation name="editRSSInstance"/>
+                <operation name="createDatabase"/>
+                <operation name="isInitializedTenant"/>
+                <operation name="dropRSSInstance"/>
+                <operation name="createDatabaseUser"/>
+                <operation name="dropDatabaseUser"/>
+                <operation name="getDatabase"/>
+                <operation name="editDatabasePrivilegesTemplate"/>
+                <operation name="getDatabaseUser"/>
+                <operation name="getDatabasesForTenant"/>
+                <operation name="dropDatabase"/>
+                <operation name="createRSSInstance"/>
+                <operation name="isDatabaseUserExist"/>
+                <operation name="dropDatabasePrivilegesTemplate"/>
+                <operation name="getDatabasePrivilegesTemplate"/>
+                <operation name="createCarbonDataSource"/>
+            </binding>
+            <binding name="RSSAdminSoap11Binding">
+                <operation name="createDatabaseForTenant"/>
+                <operation name="isDatabasePrivilegesTemplateExist"/>
+                <operation name="getRSSInstance"/>
+                <operation name="getRSSInstances"/>
+                <operation name="detachUserFromDatabase"/>
+                <operation name="testConnection"/>
+                <operation name="getUsersAttachedToDatabase"/>
+                <operation name="getSystemRSSInstanceCount"/>
+                <operation name="attachUserToDatabase"/>
+                <operation name="isDatabaseExist"/>
+                <operation name="getDatabasePrivilegesTemplates"/>
+                <operation name="editDatabaseUserPrivileges"/>
+                <operation name="getUserDatabasePermissions"/>
+                <operation name="createDatabasePrivilegesTemplate"/>
+                <operation name="getDatabaseForTenant"/>
+                <operation name="getDatabases"/>
+                <operation name="initializeTenant"/>
+                <operation name="getDatabaseUsers"/>
+                <operation name="getAvailableUsersToAttachToDatabase"/>
+                <operation name="editRSSInstance"/>
+                <operation name="createDatabase"/>
+                <operation name="isInitializedTenant"/>
+                <operation name="dropRSSInstance"/>
+                <operation name="createDatabaseUser"/>
+                <operation name="dropDatabaseUser"/>
+                <operation name="getDatabase"/>
+                <operation name="editDatabasePrivilegesTemplate"/>
+                <operation name="getDatabaseUser"/>
+                <operation name="getDatabasesForTenant"/>
+                <operation name="dropDatabase"/>
+                <operation name="createRSSInstance"/>
+                <operation name="isDatabaseUserExist"/>
+                <operation name="dropDatabasePrivilegesTemplate"/>
+                <operation name="getDatabasePrivilegesTemplate"/>
+                <operation name="createCarbonDataSource"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <module name="addressing" version="4.1.0" type="engagedModules"/>
+        <parameter name="adminService" locked="true">true</parameter>
+        <parameter name="ServiceClass">
+            org.wso2.carbon.rssmanager.core.service.RSSAdmin
+        </parameter>
+        <parameter name="AuthorizationAction" locked="true">/permission/admin/configure/rssmanager</parameter>
+        <parameter name="hiddenService" locked="true">true</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+    </service>
+</serviceGroup>

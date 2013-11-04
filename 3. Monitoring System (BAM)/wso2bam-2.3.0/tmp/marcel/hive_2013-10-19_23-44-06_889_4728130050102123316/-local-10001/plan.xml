@@ -1,0 +1,1588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_25" class="java.beans.XMLDecoder">
+ <object class="org.apache.hadoop.hive.ql.plan.MapredWork">
+  <void property="aliasToPartnInfo">
+   <void method="put">
+    <string>usersdenied</string>
+    <object class="org.apache.hadoop.hive.ql.plan.PartitionDesc">
+     <void property="deserializerClass">
+      <class>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</class>
+     </void>
+     <void property="inputFileFormatClass">
+      <class>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</class>
+     </void>
+     <void property="outputFileFormatClass">
+      <class>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</class>
+     </void>
+     <void property="partSpec">
+      <object class="java.util.LinkedHashMap"/>
+     </void>
+     <void property="properties">
+      <object class="java.util.Properties">
+       <void method="put">
+        <string>columns.types</string>
+        <string>string:string</string>
+       </void>
+       <void method="put">
+        <string>location</string>
+        <string>file:/home/marcel/BAM/wso2bam-2.3.0/repository/data/hive/warehouse-1234/usersdenied</string>
+       </void>
+       <void method="put">
+        <string>columns</string>
+        <string>logid,token</string>
+       </void>
+       <void method="put">
+        <string>cassandra.host</string>
+        <string>127.0.0.1</string>
+       </void>
+       <void method="put">
+        <string>serialization.format</string>
+        <string>1</string>
+       </void>
+       <void method="put">
+        <string>cassandra.ks.name</string>
+        <string>EVENT_KS</string>
+       </void>
+       <void method="put">
+        <string>serialization.ddl</string>
+        <string>struct usersdenied { string logid, string token}</string>
+       </void>
+       <void method="put">
+        <string>transient_lastDdlTime</string>
+        <string>1381416260</string>
+       </void>
+       <void method="put">
+        <string>cassandra.ks.password</string>
+        <string>admin</string>
+       </void>
+       <void method="put">
+        <string>bucket_count</string>
+        <string>-1</string>
+       </void>
+       <void method="put">
+        <string>cassandra.columns.mapping</string>
+        <string>:key,payload_token,</string>
+       </void>
+       <void method="put">
+        <string>file.outputformat</string>
+        <string>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</string>
+       </void>
+       <void method="put">
+        <string>cassandra.ks.username</string>
+        <string>admin</string>
+       </void>
+       <void method="put">
+        <string>serialization.lib</string>
+        <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+       </void>
+       <void method="put">
+        <string>cassandra.cf.name</string>
+        <string>C4all_stream_deny</string>
+       </void>
+       <void method="put">
+        <string>storage_handler</string>
+        <string>org.apache.hadoop.hive.cassandra.CassandraStorageHandler</string>
+       </void>
+       <void method="put">
+        <string>file.inputformat</string>
+        <string>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</string>
+       </void>
+       <void method="put">
+        <string>EXTERNAL</string>
+        <string>TRUE</string>
+       </void>
+       <void method="put">
+        <string>cassandra.port</string>
+        <string>9163</string>
+       </void>
+       <void method="put">
+        <string>name</string>
+        <string>default.usersdenied</string>
+       </void>
+      </object>
+     </void>
+     <void property="serdeClassName">
+      <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+     </void>
+     <void property="tableDesc">
+      <object class="org.apache.hadoop.hive.ql.plan.TableDesc">
+       <void property="deserializerClass">
+        <class>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</class>
+       </void>
+       <void property="inputFileFormatClass">
+        <class>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</class>
+       </void>
+       <void property="outputFileFormatClass">
+        <class>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</class>
+       </void>
+       <void property="properties">
+        <object class="java.util.Properties">
+         <void method="put">
+          <string>columns.types</string>
+          <string>string:string</string>
+         </void>
+         <void method="put">
+          <string>location</string>
+          <string>file:/home/marcel/BAM/wso2bam-2.3.0/repository/data/hive/warehouse-1234/usersdenied</string>
+         </void>
+         <void method="put">
+          <string>columns</string>
+          <string>logid,token</string>
+         </void>
+         <void method="put">
+          <string>cassandra.host</string>
+          <string>127.0.0.1</string>
+         </void>
+         <void method="put">
+          <string>serialization.format</string>
+          <string>1</string>
+         </void>
+         <void method="put">
+          <string>cassandra.ks.name</string>
+          <string>EVENT_KS</string>
+         </void>
+         <void method="put">
+          <string>serialization.ddl</string>
+          <string>struct usersdenied { string logid, string token}</string>
+         </void>
+         <void method="put">
+          <string>transient_lastDdlTime</string>
+          <string>1381416260</string>
+         </void>
+         <void method="put">
+          <string>cassandra.ks.password</string>
+          <string>admin</string>
+         </void>
+         <void method="put">
+          <string>bucket_count</string>
+          <string>-1</string>
+         </void>
+         <void method="put">
+          <string>cassandra.columns.mapping</string>
+          <string>:key,payload_token,</string>
+         </void>
+         <void method="put">
+          <string>file.outputformat</string>
+          <string>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</string>
+         </void>
+         <void method="put">
+          <string>cassandra.ks.username</string>
+          <string>admin</string>
+         </void>
+         <void method="put">
+          <string>serialization.lib</string>
+          <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+         </void>
+         <void method="put">
+          <string>cassandra.cf.name</string>
+          <string>C4all_stream_deny</string>
+         </void>
+         <void method="put">
+          <string>storage_handler</string>
+          <string>org.apache.hadoop.hive.cassandra.CassandraStorageHandler</string>
+         </void>
+         <void method="put">
+          <string>file.inputformat</string>
+          <string>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</string>
+         </void>
+         <void method="put">
+          <string>EXTERNAL</string>
+          <string>TRUE</string>
+         </void>
+         <void method="put">
+          <string>cassandra.port</string>
+          <string>9163</string>
+         </void>
+         <void method="put">
+          <string>name</string>
+          <string>default.usersdenied</string>
+         </void>
+        </object>
+       </void>
+       <void property="serdeClassName">
+        <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+       </void>
+      </object>
+     </void>
+    </object>
+   </void>
+  </void>
+  <void property="aliasToWork">
+   <object class="java.util.LinkedHashMap">
+    <void method="put">
+     <string>usersdenied</string>
+     <object class="org.apache.hadoop.hive.ql.exec.TableScanOperator" id="TableScanOperator0">
+      <void property="childOperators">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <object class="org.apache.hadoop.hive.ql.exec.SelectOperator" id="SelectOperator0">
+          <void property="childOperators">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <object class="org.apache.hadoop.hive.ql.exec.GroupByOperator" id="GroupByOperator0">
+              <void property="childOperators">
+               <object class="java.util.ArrayList">
+                <void method="add">
+                 <object class="org.apache.hadoop.hive.ql.exec.ReduceSinkOperator" id="ReduceSinkOperator0">
+                  <void property="columnExprMap">
+                   <object class="java.util.HashMap">
+                    <void method="put">
+                     <string>KEY._col0</string>
+                     <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc" id="ExprNodeColumnDesc0">
+                      <void property="column">
+                       <string>_col0</string>
+                      </void>
+                      <void property="tabAlias">
+                       <string></string>
+                      </void>
+                      <void property="typeInfo">
+                       <object class="org.apache.hadoop.hive.serde2.typeinfo.PrimitiveTypeInfo" id="PrimitiveTypeInfo0">
+                        <void property="typeName">
+                         <string>string</string>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="conf">
+                   <object class="org.apache.hadoop.hive.ql.plan.ReduceSinkDesc">
+                    <void property="distinctColumnIndices">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object class="java.util.ArrayList">
+                        <void method="add">
+                         <int>1</int>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="keyCols">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object idref="ExprNodeColumnDesc0"/>
+                      </void>
+                      <void method="add">
+                       <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+                        <void property="column">
+                         <string>_col1</string>
+                        </void>
+                        <void property="tabAlias">
+                         <string></string>
+                        </void>
+                        <void property="typeInfo">
+                         <object idref="PrimitiveTypeInfo0"/>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="keySerializeInfo">
+                     <object class="org.apache.hadoop.hive.ql.plan.TableDesc" id="TableDesc0">
+                      <void property="deserializerClass">
+                       <class>org.apache.hadoop.hive.serde2.binarysortable.BinarySortableSerDe</class>
+                      </void>
+                      <void property="inputFileFormatClass">
+                       <class>org.apache.hadoop.mapred.SequenceFileInputFormat</class>
+                      </void>
+                      <void property="outputFileFormatClass">
+                       <class>org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat</class>
+                      </void>
+                      <void property="properties">
+                       <object class="java.util.Properties">
+                        <void method="put">
+                         <string>columns</string>
+                         <string>_col0,_col1</string>
+                        </void>
+                        <void method="put">
+                         <string>serialization.sort.order</string>
+                         <string>++</string>
+                        </void>
+                        <void method="put">
+                         <string>columns.types</string>
+                         <string>string,uniontype&lt;struct&lt;_col0:string&gt;&gt;</string>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="numDistributionKeys">
+                     <int>1</int>
+                    </void>
+                    <void property="numReducers">
+                     <int>-1</int>
+                    </void>
+                    <void property="outputKeyColumnNames">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <string>_col0</string>
+                      </void>
+                      <void method="add">
+                       <string>_col1</string>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="outputValueColumnNames">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <string>_col0</string>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="partitionCols">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object idref="ExprNodeColumnDesc0"/>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="tag">
+                     <int>-1</int>
+                    </void>
+                    <void property="valueCols">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+                        <void property="column">
+                         <string>_col2</string>
+                        </void>
+                        <void property="tabAlias">
+                         <string></string>
+                        </void>
+                        <void property="typeInfo">
+                         <object class="org.apache.hadoop.hive.serde2.typeinfo.PrimitiveTypeInfo" id="PrimitiveTypeInfo1">
+                          <void property="typeName">
+                           <string>bigint</string>
+                          </void>
+                         </object>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                    <void property="valueSerializeInfo">
+                     <object class="org.apache.hadoop.hive.ql.plan.TableDesc" id="TableDesc1">
+                      <void property="deserializerClass">
+                       <class>org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe</class>
+                      </void>
+                      <void property="inputFileFormatClass">
+                       <class>org.apache.hadoop.mapred.SequenceFileInputFormat</class>
+                      </void>
+                      <void property="outputFileFormatClass">
+                       <class>org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat</class>
+                      </void>
+                      <void property="properties">
+                       <object class="java.util.Properties">
+                        <void method="put">
+                         <string>columns</string>
+                         <string>_col0</string>
+                        </void>
+                        <void method="put">
+                         <string>columns.types</string>
+                         <string>bigint</string>
+                        </void>
+                        <void method="put">
+                         <string>escape.delim</string>
+                         <string>\</string>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="counterNames">
+                   <object class="java.util.ArrayList">
+                    <void method="add">
+                     <string>CNTR_NAME_RS_609875_NUM_INPUT_ROWS</string>
+                    </void>
+                    <void method="add">
+                     <string>CNTR_NAME_RS_609875_NUM_OUTPUT_ROWS</string>
+                    </void>
+                    <void method="add">
+                     <string>CNTR_NAME_RS_609875_TIME_TAKEN</string>
+                    </void>
+                    <void method="add">
+                     <string>CNTR_NAME_RS_609875_FATAL_ERROR</string>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="operatorId">
+                   <string>RS_609875</string>
+                  </void>
+                  <void property="parentOperators">
+                   <object class="java.util.ArrayList">
+                    <void method="add">
+                     <object idref="GroupByOperator0"/>
+                    </void>
+                   </object>
+                  </void>
+                  <void property="schema">
+                   <object class="org.apache.hadoop.hive.ql.exec.RowSchema">
+                    <void property="signature">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                        <void property="internalName">
+                         <string>KEY._col0</string>
+                        </void>
+                        <void property="type">
+                         <object idref="PrimitiveTypeInfo0"/>
+                        </void>
+                       </object>
+                      </void>
+                      <void method="add">
+                       <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                        <void property="internalName">
+                         <string>KEY._col1:0._col0</string>
+                        </void>
+                        <void property="type">
+                         <object idref="PrimitiveTypeInfo0"/>
+                        </void>
+                       </object>
+                      </void>
+                      <void method="add">
+                       <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                        <void property="internalName">
+                         <string>VALUE._col0</string>
+                        </void>
+                        <void property="type">
+                         <object idref="PrimitiveTypeInfo1"/>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="columnExprMap">
+               <object class="java.util.HashMap">
+                <void method="put">
+                 <string>_col1</string>
+                 <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc" id="ExprNodeColumnDesc1">
+                  <void property="column">
+                   <string>logid</string>
+                  </void>
+                  <void property="tabAlias">
+                   <string>usersdenied</string>
+                  </void>
+                  <void property="typeInfo">
+                   <object idref="PrimitiveTypeInfo0"/>
+                  </void>
+                 </object>
+                </void>
+                <void method="put">
+                 <string>_col0</string>
+                 <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc" id="ExprNodeColumnDesc2">
+                  <void property="column">
+                   <string>token</string>
+                  </void>
+                  <void property="tabAlias">
+                   <string>usersdenied</string>
+                  </void>
+                  <void property="typeInfo">
+                   <object idref="PrimitiveTypeInfo0"/>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="conf">
+               <object class="org.apache.hadoop.hive.ql.plan.GroupByDesc">
+                <void property="aggregators">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object class="org.apache.hadoop.hive.ql.plan.AggregationDesc">
+                    <void property="distinct">
+                     <boolean>true</boolean>
+                    </void>
+                    <void property="genericUDAFEvaluator">
+                     <object class="org.apache.hadoop.hive.ql.udf.generic.GenericUDAFCount$GenericUDAFCountEvaluator" id="GenericUDAFCount$GenericUDAFCountEvaluator0"/>
+                    </void>
+                    <void property="genericUDAFName">
+                     <string>count</string>
+                    </void>
+                    <void property="mode">
+                     <object class="java.lang.Enum" method="valueOf">
+                      <class>org.apache.hadoop.hive.ql.udf.generic.GenericUDAFEvaluator$Mode</class>
+                      <string>PARTIAL1</string>
+                     </object>
+                    </void>
+                    <void property="parameters">
+                     <object class="java.util.ArrayList">
+                      <void method="add">
+                       <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+                        <void property="column">
+                         <string>logid</string>
+                        </void>
+                        <void property="tabAlias">
+                         <string>usersdenied</string>
+                        </void>
+                        <void property="typeInfo">
+                         <object idref="PrimitiveTypeInfo0"/>
+                        </void>
+                       </object>
+                      </void>
+                     </object>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+                <void property="groupByMemoryUsage">
+                 <float>0.5</float>
+                </void>
+                <void property="keys">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object idref="ExprNodeColumnDesc2"/>
+                  </void>
+                  <void method="add">
+                   <object idref="ExprNodeColumnDesc1"/>
+                  </void>
+                 </object>
+                </void>
+                <void property="memoryThreshold">
+                 <float>0.9</float>
+                </void>
+                <void property="mode">
+                 <object class="java.lang.Enum" method="valueOf">
+                  <class>org.apache.hadoop.hive.ql.plan.GroupByDesc$Mode</class>
+                  <string>HASH</string>
+                 </object>
+                </void>
+                <void property="outputColumnNames">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <string>_col0</string>
+                  </void>
+                  <void method="add">
+                   <string>_col1</string>
+                  </void>
+                  <void method="add">
+                   <string>_col2</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="counterNames">
+               <object class="java.util.ArrayList">
+                <void method="add">
+                 <string>CNTR_NAME_GBY_609873_NUM_INPUT_ROWS</string>
+                </void>
+                <void method="add">
+                 <string>CNTR_NAME_GBY_609873_NUM_OUTPUT_ROWS</string>
+                </void>
+                <void method="add">
+                 <string>CNTR_NAME_GBY_609873_TIME_TAKEN</string>
+                </void>
+                <void method="add">
+                 <string>CNTR_NAME_GBY_609873_FATAL_ERROR</string>
+                </void>
+               </object>
+              </void>
+              <void property="operatorId">
+               <string>GBY_609873</string>
+              </void>
+              <void property="parentOperators">
+               <object class="java.util.ArrayList">
+                <void method="add">
+                 <object idref="SelectOperator0"/>
+                </void>
+               </object>
+              </void>
+              <void property="schema">
+               <object class="org.apache.hadoop.hive.ql.exec.RowSchema">
+                <void property="signature">
+                 <object class="java.util.ArrayList">
+                  <void method="add">
+                   <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                    <void property="internalName">
+                     <string>_col0</string>
+                    </void>
+                    <void property="tabAlias">
+                     <string></string>
+                    </void>
+                    <void property="type">
+                     <object idref="PrimitiveTypeInfo0"/>
+                    </void>
+                   </object>
+                  </void>
+                  <void method="add">
+                   <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                    <void property="internalName">
+                     <string>_col1</string>
+                    </void>
+                    <void property="tabAlias">
+                     <string></string>
+                    </void>
+                    <void property="type">
+                     <object idref="PrimitiveTypeInfo0"/>
+                    </void>
+                   </object>
+                  </void>
+                  <void method="add">
+                   <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                    <void property="internalName">
+                     <string>_col2</string>
+                    </void>
+                    <void property="tabAlias">
+                     <string></string>
+                    </void>
+                    <void property="type">
+                     <object idref="PrimitiveTypeInfo1"/>
+                    </void>
+                   </object>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="columnExprMap">
+           <object class="java.util.HashMap">
+            <void method="put">
+             <string>token</string>
+             <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+              <void property="column">
+               <string>token</string>
+              </void>
+              <void property="tabAlias">
+               <string>usersdenied</string>
+              </void>
+              <void property="typeInfo">
+               <object idref="PrimitiveTypeInfo0"/>
+              </void>
+             </object>
+            </void>
+            <void method="put">
+             <string>BLOCK__OFFSET__INSIDE__FILE</string>
+             <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+              <void property="column">
+               <string>BLOCK__OFFSET__INSIDE__FILE</string>
+              </void>
+              <void property="isPartitionColOrVirtualCol">
+               <boolean>true</boolean>
+              </void>
+              <void property="tabAlias">
+               <string>usersdenied</string>
+              </void>
+              <void property="typeInfo">
+               <object idref="PrimitiveTypeInfo1"/>
+              </void>
+             </object>
+            </void>
+            <void method="put">
+             <string>INPUT__FILE__NAME</string>
+             <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+              <void property="column">
+               <string>INPUT__FILE__NAME</string>
+              </void>
+              <void property="isPartitionColOrVirtualCol">
+               <boolean>true</boolean>
+              </void>
+              <void property="tabAlias">
+               <string>usersdenied</string>
+              </void>
+              <void property="typeInfo">
+               <object idref="PrimitiveTypeInfo0"/>
+              </void>
+             </object>
+            </void>
+            <void method="put">
+             <string>logid</string>
+             <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+              <void property="column">
+               <string>logid</string>
+              </void>
+              <void property="tabAlias">
+               <string>usersdenied</string>
+              </void>
+              <void property="typeInfo">
+               <object idref="PrimitiveTypeInfo0"/>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+          <void property="conf">
+           <object class="org.apache.hadoop.hive.ql.plan.SelectDesc">
+            <void property="colList">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+                <void property="column">
+                 <string>token</string>
+                </void>
+                <void property="tabAlias">
+                 <string>usersdenied</string>
+                </void>
+                <void property="typeInfo">
+                 <object idref="PrimitiveTypeInfo0"/>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+                <void property="column">
+                 <string>logid</string>
+                </void>
+                <void property="tabAlias">
+                 <string>usersdenied</string>
+                </void>
+                <void property="typeInfo">
+                 <object idref="PrimitiveTypeInfo0"/>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+            <void property="outputColumnNames">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <string>token</string>
+              </void>
+              <void method="add">
+               <string>logid</string>
+              </void>
+             </object>
+            </void>
+            <void property="selectStar">
+             <boolean>true</boolean>
+            </void>
+           </object>
+          </void>
+          <void property="counterNames">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <string>CNTR_NAME_SEL_609871_NUM_INPUT_ROWS</string>
+            </void>
+            <void method="add">
+             <string>CNTR_NAME_SEL_609871_NUM_OUTPUT_ROWS</string>
+            </void>
+            <void method="add">
+             <string>CNTR_NAME_SEL_609871_TIME_TAKEN</string>
+            </void>
+            <void method="add">
+             <string>CNTR_NAME_SEL_609871_FATAL_ERROR</string>
+            </void>
+           </object>
+          </void>
+          <void property="operatorId">
+           <string>SEL_609871</string>
+          </void>
+          <void property="parentOperators">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <object idref="TableScanOperator0"/>
+            </void>
+           </object>
+          </void>
+          <void property="schema">
+           <object class="org.apache.hadoop.hive.ql.exec.RowSchema">
+            <void property="signature">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo" id="ColumnInfo0">
+                <void property="internalName">
+                 <string>token</string>
+                </void>
+                <void property="tabAlias">
+                 <string>usersdenied</string>
+                </void>
+                <void property="type">
+                 <object idref="PrimitiveTypeInfo0"/>
+                </void>
+               </object>
+              </void>
+              <void method="add">
+               <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo" id="ColumnInfo1">
+                <void property="internalName">
+                 <string>logid</string>
+                </void>
+                <void property="tabAlias">
+                 <string>usersdenied</string>
+                </void>
+                <void property="type">
+                 <object idref="PrimitiveTypeInfo0"/>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="conf">
+       <object class="org.apache.hadoop.hive.ql.plan.TableScanDesc">
+        <void property="alias">
+         <string>usersdenied</string>
+        </void>
+        <void property="virtualCols">
+         <object class="java.util.ArrayList"/>
+        </void>
+       </object>
+      </void>
+      <void property="counterNames">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>CNTR_NAME_TS_609870_NUM_INPUT_ROWS</string>
+        </void>
+        <void method="add">
+         <string>CNTR_NAME_TS_609870_NUM_OUTPUT_ROWS</string>
+        </void>
+        <void method="add">
+         <string>CNTR_NAME_TS_609870_TIME_TAKEN</string>
+        </void>
+        <void method="add">
+         <string>CNTR_NAME_TS_609870_FATAL_ERROR</string>
+        </void>
+       </object>
+      </void>
+      <void property="neededColumnIDs">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <int>0</int>
+        </void>
+        <void method="add">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+      <void property="operatorId">
+       <string>TS_609870</string>
+      </void>
+      <void property="schema">
+       <object class="org.apache.hadoop.hive.ql.exec.RowSchema">
+        <void property="signature">
+         <object class="java.util.ArrayList">
+          <void method="add">
+           <object idref="ColumnInfo1"/>
+          </void>
+          <void method="add">
+           <object idref="ColumnInfo0"/>
+          </void>
+          <void method="add">
+           <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+            <void property="hiddenVirtualCol">
+             <boolean>true</boolean>
+            </void>
+            <void property="internalName">
+             <string>BLOCK__OFFSET__INSIDE__FILE</string>
+            </void>
+            <void property="tabAlias">
+             <string>usersdenied</string>
+            </void>
+            <void property="type">
+             <object idref="PrimitiveTypeInfo1"/>
+            </void>
+           </object>
+          </void>
+          <void method="add">
+           <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+            <void property="hiddenVirtualCol">
+             <boolean>true</boolean>
+            </void>
+            <void property="internalName">
+             <string>INPUT__FILE__NAME</string>
+            </void>
+            <void property="tabAlias">
+             <string>usersdenied</string>
+            </void>
+            <void property="type">
+             <object idref="PrimitiveTypeInfo0"/>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="keyDesc">
+   <object idref="TableDesc0"/>
+  </void>
+  <void property="nameToSplitSample">
+   <object class="java.util.HashMap"/>
+  </void>
+  <void property="numReduceTasks">
+   <int>1</int>
+  </void>
+  <void property="pathToAliases">
+   <object class="java.util.LinkedHashMap">
+    <void method="put">
+     <string>file:/home/marcel/BAM/wso2bam-2.3.0/repository/data/hive/warehouse-1234/usersdenied</string>
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <string>usersdenied</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="pathToPartitionInfo">
+   <object class="java.util.LinkedHashMap">
+    <void method="put">
+     <string>file:/home/marcel/BAM/wso2bam-2.3.0/repository/data/hive/warehouse-1234/usersdenied</string>
+     <object class="org.apache.hadoop.hive.ql.plan.PartitionDesc">
+      <void property="baseFileName">
+       <string>usersdenied</string>
+      </void>
+      <void property="deserializerClass">
+       <class>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</class>
+      </void>
+      <void property="inputFileFormatClass">
+       <class>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</class>
+      </void>
+      <void property="outputFileFormatClass">
+       <class>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</class>
+      </void>
+      <void property="partSpec">
+       <object class="java.util.LinkedHashMap"/>
+      </void>
+      <void property="properties">
+       <object class="java.util.Properties">
+        <void method="put">
+         <string>columns.types</string>
+         <string>string:string</string>
+        </void>
+        <void method="put">
+         <string>location</string>
+         <string>file:/home/marcel/BAM/wso2bam-2.3.0/repository/data/hive/warehouse-1234/usersdenied</string>
+        </void>
+        <void method="put">
+         <string>columns</string>
+         <string>logid,token</string>
+        </void>
+        <void method="put">
+         <string>cassandra.host</string>
+         <string>127.0.0.1</string>
+        </void>
+        <void method="put">
+         <string>serialization.format</string>
+         <string>1</string>
+        </void>
+        <void method="put">
+         <string>cassandra.ks.name</string>
+         <string>EVENT_KS</string>
+        </void>
+        <void method="put">
+         <string>serialization.ddl</string>
+         <string>struct usersdenied { string logid, string token}</string>
+        </void>
+        <void method="put">
+         <string>transient_lastDdlTime</string>
+         <string>1381416260</string>
+        </void>
+        <void method="put">
+         <string>cassandra.ks.password</string>
+         <string>admin</string>
+        </void>
+        <void method="put">
+         <string>bucket_count</string>
+         <string>-1</string>
+        </void>
+        <void method="put">
+         <string>cassandra.columns.mapping</string>
+         <string>:key,payload_token,</string>
+        </void>
+        <void method="put">
+         <string>file.outputformat</string>
+         <string>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</string>
+        </void>
+        <void method="put">
+         <string>cassandra.ks.username</string>
+         <string>admin</string>
+        </void>
+        <void method="put">
+         <string>serialization.lib</string>
+         <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+        </void>
+        <void method="put">
+         <string>cassandra.cf.name</string>
+         <string>C4all_stream_deny</string>
+        </void>
+        <void method="put">
+         <string>storage_handler</string>
+         <string>org.apache.hadoop.hive.cassandra.CassandraStorageHandler</string>
+        </void>
+        <void method="put">
+         <string>file.inputformat</string>
+         <string>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</string>
+        </void>
+        <void method="put">
+         <string>EXTERNAL</string>
+         <string>TRUE</string>
+        </void>
+        <void method="put">
+         <string>cassandra.port</string>
+         <string>9163</string>
+        </void>
+        <void method="put">
+         <string>name</string>
+         <string>default.usersdenied</string>
+        </void>
+       </object>
+      </void>
+      <void property="serdeClassName">
+       <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+      </void>
+      <void property="tableDesc">
+       <object class="org.apache.hadoop.hive.ql.plan.TableDesc">
+        <void property="deserializerClass">
+         <class>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</class>
+        </void>
+        <void property="inputFileFormatClass">
+         <class>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</class>
+        </void>
+        <void property="jobProperties">
+         <object class="java.util.LinkedHashMap">
+          <void method="put">
+           <string>cassandra.ks.name</string>
+           <string>EVENT_KS</string>
+          </void>
+          <void method="put">
+           <string>cassandra.host</string>
+           <string>127.0.0.1</string>
+          </void>
+          <void method="put">
+           <string>cassandra.port</string>
+           <string>9163</string>
+          </void>
+          <void method="put">
+           <string>cassandra.input.keyspace.username</string>
+           <string>admin</string>
+          </void>
+          <void method="put">
+           <string>cassandra.input.keyspace.passwd</string>
+           <string>admin</string>
+          </void>
+          <void method="put">
+           <string>cassandra.cf.name</string>
+           <string>C4all_stream_deny</string>
+          </void>
+          <void method="put">
+           <string>cassandra.columns.mapping</string>
+           <string>:key,payload_token,</string>
+          </void>
+          <void method="put">
+           <string>cassandra.partitioner</string>
+           <string>org.apache.cassandra.dht.RandomPartitioner</string>
+          </void>
+          <void method="put">
+           <string>cassandra.thrift.mode</string>
+           <string>framed</string>
+          </void>
+          <void method="put">
+           <string>cassandra.consistency.level</string>
+           <string>ONE</string>
+          </void>
+          <void method="put">
+           <string>cassandra.range.size</string>
+           <string>1000</string>
+          </void>
+          <void method="put">
+           <string>cassandra.slice.predicate.size</string>
+           <string>1000</string>
+          </void>
+          <void method="put">
+           <string>cassandra.input.split.size</string>
+           <string>65536</string>
+          </void>
+          <void method="put">
+           <string>cassandra.batchmutate.size</string>
+           <string>500</string>
+          </void>
+          <void method="put">
+           <string>cassandra.slice.predicate.range.finish</string>
+           <string></string>
+          </void>
+          <void method="put">
+           <string>cassandra.slice.predicate.range.comparator</string>
+           <string></string>
+          </void>
+          <void method="put">
+           <string>cassandra.slice.predicate.range.reversed</string>
+           <string>false</string>
+          </void>
+          <void method="put">
+           <string>cassandra.slice.predicate.range.count</string>
+           <string>false</string>
+          </void>
+          <void method="put">
+           <string>cassandra.slice.predicate.column_names</string>
+           <string></string>
+          </void>
+          <void method="put">
+           <string>cassandra.cf.counters</string>
+           <string>false</string>
+          </void>
+         </object>
+        </void>
+        <void property="outputFileFormatClass">
+         <class>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</class>
+        </void>
+        <void property="properties">
+         <object class="java.util.Properties">
+          <void method="put">
+           <string>columns.types</string>
+           <string>string:string</string>
+          </void>
+          <void method="put">
+           <string>location</string>
+           <string>file:/home/marcel/BAM/wso2bam-2.3.0/repository/data/hive/warehouse-1234/usersdenied</string>
+          </void>
+          <void method="put">
+           <string>columns</string>
+           <string>logid,token</string>
+          </void>
+          <void method="put">
+           <string>cassandra.host</string>
+           <string>127.0.0.1</string>
+          </void>
+          <void method="put">
+           <string>serialization.format</string>
+           <string>1</string>
+          </void>
+          <void method="put">
+           <string>cassandra.ks.name</string>
+           <string>EVENT_KS</string>
+          </void>
+          <void method="put">
+           <string>serialization.ddl</string>
+           <string>struct usersdenied { string logid, string token}</string>
+          </void>
+          <void method="put">
+           <string>transient_lastDdlTime</string>
+           <string>1381416260</string>
+          </void>
+          <void method="put">
+           <string>cassandra.ks.password</string>
+           <string>admin</string>
+          </void>
+          <void method="put">
+           <string>bucket_count</string>
+           <string>-1</string>
+          </void>
+          <void method="put">
+           <string>cassandra.columns.mapping</string>
+           <string>:key,payload_token,</string>
+          </void>
+          <void method="put">
+           <string>file.outputformat</string>
+           <string>org.apache.hadoop.hive.cassandra.output.HiveCassandraOutputFormat</string>
+          </void>
+          <void method="put">
+           <string>cassandra.ks.username</string>
+           <string>admin</string>
+          </void>
+          <void method="put">
+           <string>serialization.lib</string>
+           <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+          </void>
+          <void method="put">
+           <string>cassandra.cf.name</string>
+           <string>C4all_stream_deny</string>
+          </void>
+          <void method="put">
+           <string>storage_handler</string>
+           <string>org.apache.hadoop.hive.cassandra.CassandraStorageHandler</string>
+          </void>
+          <void method="put">
+           <string>file.inputformat</string>
+           <string>org.apache.hadoop.hive.cassandra.input.HiveCassandraStandardColumnInputFormat</string>
+          </void>
+          <void method="put">
+           <string>EXTERNAL</string>
+           <string>TRUE</string>
+          </void>
+          <void method="put">
+           <string>cassandra.port</string>
+           <string>9163</string>
+          </void>
+          <void method="put">
+           <string>name</string>
+           <string>default.usersdenied</string>
+          </void>
+         </object>
+        </void>
+        <void property="serdeClassName">
+         <string>org.apache.hadoop.hive.cassandra.serde.CassandraColumnSerDe</string>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="reducer">
+   <object class="org.apache.hadoop.hive.ql.exec.GroupByOperator" id="GroupByOperator1">
+    <void property="childOperators">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object class="org.apache.hadoop.hive.ql.exec.SelectOperator" id="SelectOperator1">
+        <void property="childOperators">
+         <object class="java.util.ArrayList">
+          <void method="add">
+           <object class="org.apache.hadoop.hive.ql.exec.FileSinkOperator">
+            <void property="conf">
+             <object class="org.apache.hadoop.hive.ql.plan.FileSinkDesc">
+              <void property="dirName">
+               <string>file:/home/marcel/BAM/wso2bam-2.3.0/tmp/marcel/hive_2013-10-19_23-44-06_889_4728130050102123316/-mr-10000</string>
+              </void>
+              <void property="numFiles">
+               <int>1</int>
+              </void>
+              <void property="tableInfo">
+               <object class="org.apache.hadoop.hive.ql.plan.TableDesc">
+                <void property="deserializerClass">
+                 <class>org.apache.hadoop.hive.serde2.lazybinary.LazyBinarySerDe</class>
+                </void>
+                <void property="inputFileFormatClass">
+                 <class>org.apache.hadoop.mapred.SequenceFileInputFormat</class>
+                </void>
+                <void property="outputFileFormatClass">
+                 <class>org.apache.hadoop.hive.ql.io.HiveSequenceFileOutputFormat</class>
+                </void>
+                <void property="properties">
+                 <object class="java.util.Properties">
+                  <void method="put">
+                   <string>columns</string>
+                   <string>_col0,_col1</string>
+                  </void>
+                  <void method="put">
+                   <string>columns.types</string>
+                   <string>string,bigint</string>
+                  </void>
+                  <void method="put">
+                   <string>escape.delim</string>
+                   <string>\</string>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+              <void property="totalFiles">
+               <int>1</int>
+              </void>
+             </object>
+            </void>
+            <void property="counterNames">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <string>CNTR_NAME_FS_609890_NUM_INPUT_ROWS</string>
+              </void>
+              <void method="add">
+               <string>CNTR_NAME_FS_609890_NUM_OUTPUT_ROWS</string>
+              </void>
+              <void method="add">
+               <string>CNTR_NAME_FS_609890_TIME_TAKEN</string>
+              </void>
+              <void method="add">
+               <string>CNTR_NAME_FS_609890_FATAL_ERROR</string>
+              </void>
+             </object>
+            </void>
+            <void property="operatorId">
+             <string>FS_609890</string>
+            </void>
+            <void property="parentOperators">
+             <object class="java.util.ArrayList">
+              <void method="add">
+               <object idref="SelectOperator1"/>
+              </void>
+             </object>
+            </void>
+            <void property="schema">
+             <object class="org.apache.hadoop.hive.ql.exec.RowSchema" id="RowSchema0">
+              <void property="signature">
+               <object class="java.util.ArrayList">
+                <void method="add">
+                 <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                  <void property="internalName">
+                   <string>_col0</string>
+                  </void>
+                  <void property="type">
+                   <object idref="PrimitiveTypeInfo0"/>
+                  </void>
+                 </object>
+                </void>
+                <void method="add">
+                 <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+                  <void property="internalName">
+                   <string>_col1</string>
+                  </void>
+                  <void property="type">
+                   <object idref="PrimitiveTypeInfo1"/>
+                  </void>
+                 </object>
+                </void>
+               </object>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="columnExprMap">
+         <object class="java.util.HashMap">
+          <void method="put">
+           <string>_col1</string>
+           <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc" id="ExprNodeColumnDesc3">
+            <void property="column">
+             <string>_col1</string>
+            </void>
+            <void property="tabAlias">
+             <string></string>
+            </void>
+            <void property="typeInfo">
+             <object idref="PrimitiveTypeInfo1"/>
+            </void>
+           </object>
+          </void>
+          <void method="put">
+           <string>_col0</string>
+           <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc" id="ExprNodeColumnDesc4">
+            <void property="column">
+             <string>_col0</string>
+            </void>
+            <void property="tabAlias">
+             <string></string>
+            </void>
+            <void property="typeInfo">
+             <object idref="PrimitiveTypeInfo0"/>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="conf">
+         <object class="org.apache.hadoop.hive.ql.plan.SelectDesc">
+          <void property="colList">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <object idref="ExprNodeColumnDesc4"/>
+            </void>
+            <void method="add">
+             <object idref="ExprNodeColumnDesc3"/>
+            </void>
+           </object>
+          </void>
+          <void property="outputColumnNames">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <string>_col0</string>
+            </void>
+            <void method="add">
+             <string>_col1</string>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+        <void property="counterNames">
+         <object class="java.util.ArrayList">
+          <void method="add">
+           <string>CNTR_NAME_SEL_609880_NUM_INPUT_ROWS</string>
+          </void>
+          <void method="add">
+           <string>CNTR_NAME_SEL_609880_NUM_OUTPUT_ROWS</string>
+          </void>
+          <void method="add">
+           <string>CNTR_NAME_SEL_609880_TIME_TAKEN</string>
+          </void>
+          <void method="add">
+           <string>CNTR_NAME_SEL_609880_FATAL_ERROR</string>
+          </void>
+         </object>
+        </void>
+        <void property="operatorId">
+         <string>SEL_609880</string>
+        </void>
+        <void property="parentOperators">
+         <object class="java.util.ArrayList">
+          <void method="add">
+           <object idref="GroupByOperator1"/>
+          </void>
+         </object>
+        </void>
+        <void property="schema">
+         <object idref="RowSchema0"/>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="columnExprMap">
+     <object class="java.util.HashMap">
+      <void method="put">
+       <string>_col0</string>
+       <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc" id="ExprNodeColumnDesc5">
+        <void property="column">
+         <string>KEY._col0</string>
+        </void>
+        <void property="typeInfo">
+         <object idref="PrimitiveTypeInfo0"/>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="conf">
+     <object class="org.apache.hadoop.hive.ql.plan.GroupByDesc">
+      <void property="aggregators">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <object class="org.apache.hadoop.hive.ql.plan.AggregationDesc">
+          <void property="distinct">
+           <boolean>true</boolean>
+          </void>
+          <void property="genericUDAFEvaluator">
+           <object idref="GenericUDAFCount$GenericUDAFCountEvaluator0"/>
+          </void>
+          <void property="genericUDAFName">
+           <string>count</string>
+          </void>
+          <void property="mode">
+           <object class="java.lang.Enum" method="valueOf">
+            <class>org.apache.hadoop.hive.ql.udf.generic.GenericUDAFEvaluator$Mode</class>
+            <string>COMPLETE</string>
+           </object>
+          </void>
+          <void property="parameters">
+           <object class="java.util.ArrayList">
+            <void method="add">
+             <object class="org.apache.hadoop.hive.ql.plan.ExprNodeColumnDesc">
+              <void property="column">
+               <string>KEY._col1:0._col0</string>
+              </void>
+              <void property="typeInfo">
+               <object idref="PrimitiveTypeInfo0"/>
+              </void>
+             </object>
+            </void>
+           </object>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+      <void property="groupByMemoryUsage">
+       <float>0.5</float>
+      </void>
+      <void property="keys">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <object idref="ExprNodeColumnDesc5"/>
+        </void>
+       </object>
+      </void>
+      <void property="memoryThreshold">
+       <float>0.9</float>
+      </void>
+      <void property="mode">
+       <object class="java.lang.Enum" method="valueOf">
+        <class>org.apache.hadoop.hive.ql.plan.GroupByDesc$Mode</class>
+        <string>MERGEPARTIAL</string>
+       </object>
+      </void>
+      <void property="outputColumnNames">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <string>_col0</string>
+        </void>
+        <void method="add">
+         <string>_col1</string>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+    <void property="counterNames">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <string>CNTR_NAME_GBY_609878_NUM_INPUT_ROWS</string>
+      </void>
+      <void method="add">
+       <string>CNTR_NAME_GBY_609878_NUM_OUTPUT_ROWS</string>
+      </void>
+      <void method="add">
+       <string>CNTR_NAME_GBY_609878_TIME_TAKEN</string>
+      </void>
+      <void method="add">
+       <string>CNTR_NAME_GBY_609878_FATAL_ERROR</string>
+      </void>
+     </object>
+    </void>
+    <void property="operatorId">
+     <string>GBY_609878</string>
+    </void>
+    <void property="parentOperators">
+     <object class="java.util.ArrayList">
+      <void method="add">
+       <object idref="ReduceSinkOperator0"/>
+      </void>
+     </object>
+    </void>
+    <void property="schema">
+     <object class="org.apache.hadoop.hive.ql.exec.RowSchema">
+      <void property="signature">
+       <object class="java.util.ArrayList">
+        <void method="add">
+         <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+          <void property="internalName">
+           <string>_col0</string>
+          </void>
+          <void property="tabAlias">
+           <string></string>
+          </void>
+          <void property="type">
+           <object idref="PrimitiveTypeInfo0"/>
+          </void>
+         </object>
+        </void>
+        <void method="add">
+         <object class="org.apache.hadoop.hive.ql.exec.ColumnInfo">
+          <void property="internalName">
+           <string>_col1</string>
+          </void>
+          <void property="tabAlias">
+           <string></string>
+          </void>
+          <void property="type">
+           <object idref="PrimitiveTypeInfo1"/>
+          </void>
+         </object>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="tagToValueDesc">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object idref="TableDesc1"/>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><serviceGroup name="Echo" hashValue="c9788331f37f6db7dd81c3a1dd643fc2" successfullyAdded="true">
+    <service name="echo" serviceDocumentation="echo" exposedAllTransports="false" serviceDeployedTime="1381489578917" successfullyAdded="true">
+        <operation name="echoStringArrays">
+            <module name="activation" version="2.1.0" type="engagedModules"/>
+            <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+            <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="echoOMElement">
+            <module name="activation" version="2.1.0" type="engagedModules"/>
+            <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+            <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="echoInt">
+            <module name="activation" version="2.1.0" type="engagedModules"/>
+            <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+            <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="throwAxisFault">
+            <module name="activation" version="2.1.0" type="engagedModules"/>
+            <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+            <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <operation name="echoString">
+            <module name="activation" version="2.1.0" type="engagedModules"/>
+            <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+            <module name="addressing" version="4.1.0" type="engagedModules"/>
+            <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+        </operation>
+        <bindings>
+            <binding name="echoHttpBinding">
+                <operation name="echoStringArrays"/>
+                <operation name="echoOMElement"/>
+                <operation name="echoInt"/>
+                <operation name="throwAxisFault"/>
+                <operation name="echoString"/>
+            </binding>
+            <binding name="echoSoap11Binding">
+                <operation name="echoStringArrays"/>
+                <operation name="echoOMElement"/>
+                <operation name="echoInt"/>
+                <operation name="throwAxisFault"/>
+                <operation name="echoString"/>
+            </binding>
+            <binding name="echoSoap12Binding">
+                <operation name="echoStringArrays"/>
+                <operation name="echoOMElement"/>
+                <operation name="echoInt"/>
+                <operation name="throwAxisFault"/>
+                <operation name="echoString"/>
+            </binding>
+        </bindings>
+        <policies/>
+        <module name="activation" version="2.1.0" type="engagedModules"/>
+        <module name="POXSecurityModule" version="4.1.0" type="engagedModules"/>
+        <module name="addressing" version="4.1.0" type="engagedModules"/>
+        <module name="ServerAdminModule" version="4.1.0" type="engagedModules"/>
+        <parameter name="ServiceClass" locked="true">org.wso2.carbon.core.services.echo.Echo</parameter>
+        <association destinationPath="/repository/transports/https/listener" type="exposedTransports"/>
+        <association destinationPath="/repository/transports/http/listener" type="exposedTransports"/>
+    </service>
+</serviceGroup>

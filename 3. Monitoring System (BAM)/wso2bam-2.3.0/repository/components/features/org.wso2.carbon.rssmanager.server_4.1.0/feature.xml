@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<feature id="org.wso2.carbon.rssmanager.server" label="RSS Manager Server Feature" provider-name="%providerName" version="4.1.0">
+  <description>This Feature Contains The Bundle Required For Back End Functionalities Of The RSS Manager</description>
+  <copyright>%copyright</copyright>
+  <license url="%licenseURL">%license</license>
+  <plugin id="org.wso2.carbon.rssmanager.core" unpack="false" version="4.1.0"/>
+  <plugin id="org.wso2.carbon.rssmanager.common" unpack="false" version="4.1.0"/>
+</feature>
